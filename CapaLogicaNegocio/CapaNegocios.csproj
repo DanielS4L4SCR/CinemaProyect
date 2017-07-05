@@ -7,8 +7,8 @@
     <ProjectGuid>{61B7BAC3-8CFA-40C4-83E3-A1CD8922A900}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CapaLogicaNegocio</RootNamespace>
-    <AssemblyName>CapaLogicaNegocio</AssemblyName>
+    <RootNamespace>CapaNegocios</RootNamespace>
+    <AssemblyName>CapaNegocios</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

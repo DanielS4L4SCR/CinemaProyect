@@ -7,8 +7,8 @@
     <ProjectGuid>{987AE52E-0DD6-4D29-9A4B-E95B63882AC1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CapaAccesoBase</RootNamespace>
-    <AssemblyName>CapaAccesoBase</AssemblyName>
+    <RootNamespace>CapaDatos</RootNamespace>
+    <AssemblyName>CapaDatos</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
