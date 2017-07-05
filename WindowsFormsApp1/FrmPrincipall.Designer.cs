@@ -205,7 +205,7 @@
             // btnRegresar
             // 
             this.btnRegresar.BackColor = System.Drawing.Color.Transparent;
-            this.btnRegresar.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.restart;
+            this.btnRegresar.BackgroundImage = global::CapaVista.Properties.Resources.restart;
             this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRegresar.FlatAppearance.BorderSize = 0;
             this.btnRegresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(212)))), ((int)(((byte)(227)))));
@@ -232,7 +232,7 @@
             // BtnMenu
             // 
             this.BtnMenu.BackColor = System.Drawing.Color.Transparent;
-            this.BtnMenu.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.menu_1;
+            this.BtnMenu.BackgroundImage = global::CapaVista.Properties.Resources.menu_1;
             this.BtnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnMenu.FlatAppearance.BorderSize = 0;
             this.BtnMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(161)))));
@@ -264,7 +264,7 @@
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancelar.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.icons8_Delete_50;
+            this.btnCancelar.BackgroundImage = global::CapaVista.Properties.Resources.icons8_Delete_50;
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(162)))), ((int)(((byte)(187)))));
@@ -383,7 +383,7 @@
             // btnCancelar2
             // 
             this.btnCancelar2.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancelar2.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.icons8_Delete_50;
+            this.btnCancelar2.BackgroundImage = global::CapaVista.Properties.Resources.icons8_Delete_50;
             this.btnCancelar2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCancelar2.FlatAppearance.BorderSize = 0;
             this.btnCancelar2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(236)))), ((int)(((byte)(237)))));
@@ -464,7 +464,7 @@
             // btnCancelar3
             // 
             this.btnCancelar3.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancelar3.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.icons8_Delete_50;
+            this.btnCancelar3.BackgroundImage = global::CapaVista.Properties.Resources.icons8_Delete_50;
             this.btnCancelar3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCancelar3.FlatAppearance.BorderSize = 0;
             this.btnCancelar3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(161)))));
@@ -510,7 +510,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.click_click1;
+            this.panel1.BackgroundImage = global::CapaVista.Properties.Resources.click_click1;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.lbCinemaPro);
             this.panel1.Location = new System.Drawing.Point(451, 0);
