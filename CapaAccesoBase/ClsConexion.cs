@@ -12,7 +12,7 @@ namespace CapaAccesoBase
     {
         private MySqlConnection oCN = new MySqlConnection("server=127.0.0.1:3307,port=3307;database=cinemaproyectdb;Uid=root;pwd=salitas7781");
         
-        public bool AbrirConexion()
+        private bool AbrirConexion()
         {
             try
             {
@@ -25,7 +25,7 @@ namespace CapaAccesoBase
             }
             
         }
-        public bool CerrarConexion()
+        private bool CerrarConexion()
         {
             try
             {
