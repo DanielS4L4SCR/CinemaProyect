@@ -52,14 +52,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnFacturacion = new System.Windows.Forms.Button();
             this.panelReportes3 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btnFondos = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnCancelar3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbCinemaPro = new System.Windows.Forms.Label();
-            this.btnFondos = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panelSubMenu.SuspendLayout();
             this.panelMenú.SuspendLayout();
             this.panelAgregar1.SuspendLayout();
@@ -441,6 +441,46 @@
             this.panelReportes3.TabIndex = 9;
             this.panelReportes3.Visible = false;
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Segoe UI Emoji", 14F);
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.ImageIndex = 17;
+            this.button3.ImageList = this.IconsList;
+            this.button3.Location = new System.Drawing.Point(0, 271);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(227, 76);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "Reservaciones";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // btnFondos
+            // 
+            this.btnFondos.BackColor = System.Drawing.Color.Transparent;
+            this.btnFondos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFondos.FlatAppearance.BorderSize = 0;
+            this.btnFondos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
+            this.btnFondos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
+            this.btnFondos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFondos.Font = new System.Drawing.Font("Segoe UI Emoji", 14F);
+            this.btnFondos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFondos.ImageIndex = 7;
+            this.btnFondos.ImageList = this.IconsList;
+            this.btnFondos.Location = new System.Drawing.Point(1, 207);
+            this.btnFondos.Name = "btnFondos";
+            this.btnFondos.Size = new System.Drawing.Size(227, 76);
+            this.btnFondos.TabIndex = 9;
+            this.btnFondos.Text = "Reporte Fondos";
+            this.btnFondos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFondos.UseVisualStyleBackColor = false;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
@@ -528,46 +568,6 @@
             this.lbCinemaPro.Size = new System.Drawing.Size(588, 118);
             this.lbCinemaPro.TabIndex = 0;
             this.lbCinemaPro.Text = "CinemaPro";
-            // 
-            // btnFondos
-            // 
-            this.btnFondos.BackColor = System.Drawing.Color.Transparent;
-            this.btnFondos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFondos.FlatAppearance.BorderSize = 0;
-            this.btnFondos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
-            this.btnFondos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
-            this.btnFondos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFondos.Font = new System.Drawing.Font("Segoe UI Emoji", 14F);
-            this.btnFondos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFondos.ImageIndex = 7;
-            this.btnFondos.ImageList = this.IconsList;
-            this.btnFondos.Location = new System.Drawing.Point(1, 207);
-            this.btnFondos.Name = "btnFondos";
-            this.btnFondos.Size = new System.Drawing.Size(227, 76);
-            this.btnFondos.TabIndex = 9;
-            this.btnFondos.Text = "Reporte Fondos";
-            this.btnFondos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnFondos.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Emoji", 14F);
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.ImageIndex = 17;
-            this.button3.ImageList = this.IconsList;
-            this.button3.Location = new System.Drawing.Point(0, 271);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(227, 76);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Reservaciones";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = false;
             // 
             // FrmPrincipall
             // 
