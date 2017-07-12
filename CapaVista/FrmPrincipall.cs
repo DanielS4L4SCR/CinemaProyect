@@ -17,6 +17,7 @@ namespace CapaVista
         public FrmPrincipall()
         {
             InitializeComponent();
+            
         }
         public static class Util {
             public enum Effect { Roll,Slide,Center, Blend }
@@ -48,7 +49,7 @@ namespace CapaVista
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void metroContextMenu1_Opening(object sender, CancelEventArgs e)
@@ -196,6 +197,16 @@ namespace CapaVista
         }
 
         private void panelMenú_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

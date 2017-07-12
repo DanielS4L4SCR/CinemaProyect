@@ -10,7 +10,7 @@ namespace CapaDatos
 {
     public class ClsConexion
     {
-        private MySqlConnection oCN = new MySqlConnection("server=127.0.0.1:3307,port=3307;database=cinemaproyectdb;Uid=root;pwd=salitas7781");
+        private MySqlConnection oCN = new MySqlConnection("server=localhost;user id=root;database=cinemaproyectdb");
         
         private bool AbrirConexion()
         {
@@ -68,6 +68,24 @@ namespace CapaDatos
 
             return oDT;
         }
-        
+        public bool ejecutarInsert (String txtInsert)
+            {
+            MySqlCommand cInsert = new MySqlCommand(txtInsert);
+            try
+            {
+                cInsert.Connection = oCN;
+                cInsert.CommandType = CommandType.Text;
+                if (AbrirConexion())
+                {
+                    cInsert.ExecuteNonQuery();
+                }
+                CerrarConexion();
+                return true;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
     }
 }
