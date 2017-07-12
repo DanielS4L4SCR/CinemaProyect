@@ -22,7 +22,7 @@ namespace CapaVista
 
         private void txtContraseña_Click(object sender, EventArgs e)
         {
-           
+            txtContraseña.Text = "";
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
@@ -43,6 +43,26 @@ namespace CapaVista
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cboMostrar_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cboMostrar.Checked == true) 
+            {
+                txtContraseña.UseSystemPasswordChar = false;
+                txtContraseña.PasswordChar = '\0';
+
+
+            }
+            else
+            {
+                txtContraseña.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void txtUsuario_Click(object sender, EventArgs e)
+        {
+            txtUsuario.Text = "";
         }
     }
 }

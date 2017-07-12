@@ -31,17 +31,20 @@
             this.txtUsuario = new MetroFramework.Controls.MetroTextBox();
             this.txtContraseña = new MetroFramework.Controls.MetroTextBox();
             this.btnIngresar = new MetroFramework.Controls.MetroButton();
-            this.lbUsuario = new System.Windows.Forms.Label();
-            this.lbPassword = new System.Windows.Forms.Label();
+            this.cboMostrar = new MetroFramework.Controls.MetroCheckBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // txtUsuario
             // 
+            this.txtUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(65)))), ((int)(((byte)(73)))));
             // 
             // 
             // 
             this.txtUsuario.CustomButton.Image = null;
-            this.txtUsuario.CustomButton.Location = new System.Drawing.Point(92, 1);
+            this.txtUsuario.CustomButton.Location = new System.Drawing.Point(145, 1);
             this.txtUsuario.CustomButton.Name = "";
             this.txtUsuario.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtUsuario.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -49,8 +52,10 @@
             this.txtUsuario.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtUsuario.CustomButton.UseSelectable = true;
             this.txtUsuario.CustomButton.Visible = false;
-            this.txtUsuario.Lines = new string[0];
-            this.txtUsuario.Location = new System.Drawing.Point(179, 82);
+            this.txtUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.txtUsuario.Lines = new string[] {
+        "Usuario"};
+            this.txtUsuario.Location = new System.Drawing.Point(141, 116);
             this.txtUsuario.MaxLength = 32767;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.PasswordChar = '\0';
@@ -59,19 +64,25 @@
             this.txtUsuario.SelectionLength = 0;
             this.txtUsuario.SelectionStart = 0;
             this.txtUsuario.ShortcutsEnabled = true;
-            this.txtUsuario.Size = new System.Drawing.Size(114, 23);
+            this.txtUsuario.Size = new System.Drawing.Size(167, 23);
             this.txtUsuario.TabIndex = 0;
+            this.txtUsuario.Text = "Usuario";
+            this.txtUsuario.UseCustomBackColor = true;
+            this.txtUsuario.UseCustomForeColor = true;
             this.txtUsuario.UseSelectable = true;
+            this.txtUsuario.UseStyleColors = true;
             this.txtUsuario.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtUsuario.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtUsuario.Click += new System.EventHandler(this.txtUsuario_Click);
             // 
             // txtContraseña
             // 
+            this.txtContraseña.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(65)))), ((int)(((byte)(73)))));
             // 
             // 
             // 
             this.txtContraseña.CustomButton.Image = null;
-            this.txtContraseña.CustomButton.Location = new System.Drawing.Point(92, 1);
+            this.txtContraseña.CustomButton.Location = new System.Drawing.Point(145, 1);
             this.txtContraseña.CustomButton.Name = "";
             this.txtContraseña.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtContraseña.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -79,8 +90,10 @@
             this.txtContraseña.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtContraseña.CustomButton.UseSelectable = true;
             this.txtContraseña.CustomButton.Visible = false;
-            this.txtContraseña.Lines = new string[0];
-            this.txtContraseña.Location = new System.Drawing.Point(179, 141);
+            this.txtContraseña.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.txtContraseña.Lines = new string[] {
+        "●●●●●●●●●●●●"};
+            this.txtContraseña.Location = new System.Drawing.Point(141, 145);
             this.txtContraseña.MaxLength = 32767;
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '●';
@@ -89,9 +102,13 @@
             this.txtContraseña.SelectionLength = 0;
             this.txtContraseña.SelectionStart = 0;
             this.txtContraseña.ShortcutsEnabled = true;
-            this.txtContraseña.Size = new System.Drawing.Size(114, 23);
+            this.txtContraseña.Size = new System.Drawing.Size(167, 23);
             this.txtContraseña.TabIndex = 1;
+            this.txtContraseña.Text = "●●●●●●●●●●●●";
+            this.txtContraseña.UseCustomBackColor = true;
+            this.txtContraseña.UseCustomForeColor = true;
             this.txtContraseña.UseSelectable = true;
+            this.txtContraseña.UseStyleColors = true;
             this.txtContraseña.UseSystemPasswordChar = true;
             this.txtContraseña.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtContraseña.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -99,42 +116,71 @@
             // 
             // btnIngresar
             // 
-            this.btnIngresar.Location = new System.Drawing.Point(205, 190);
+            this.btnIngresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
+            this.btnIngresar.ForeColor = System.Drawing.Color.White;
+            this.btnIngresar.Location = new System.Drawing.Point(141, 191);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(88, 23);
+            this.btnIngresar.Size = new System.Drawing.Size(167, 33);
             this.btnIngresar.TabIndex = 4;
             this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.UseCustomBackColor = true;
+            this.btnIngresar.UseCustomForeColor = true;
             this.btnIngresar.UseSelectable = true;
+            this.btnIngresar.UseStyleColors = true;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
-            // lbUsuario
+            // cboMostrar
             // 
-            this.lbUsuario.AutoSize = true;
-            this.lbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lbUsuario.Location = new System.Drawing.Point(112, 88);
-            this.lbUsuario.Name = "lbUsuario";
-            this.lbUsuario.Size = new System.Drawing.Size(61, 17);
-            this.lbUsuario.TabIndex = 5;
-            this.lbUsuario.Text = "Usuario:";
-            this.lbUsuario.Click += new System.EventHandler(this.label1_Click);
+            this.cboMostrar.AutoSize = true;
+            this.cboMostrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.cboMostrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.cboMostrar.Location = new System.Drawing.Point(314, 153);
+            this.cboMostrar.Name = "cboMostrar";
+            this.cboMostrar.Size = new System.Drawing.Size(127, 15);
+            this.cboMostrar.TabIndex = 7;
+            this.cboMostrar.Text = "Mostrar Contraseña";
+            this.cboMostrar.UseCustomBackColor = true;
+            this.cboMostrar.UseCustomForeColor = true;
+            this.cboMostrar.UseSelectable = true;
+            this.cboMostrar.CheckedChanged += new System.EventHandler(this.cboMostrar_CheckedChanged);
             // 
-            // lbPassword
+            // panel3
             // 
-            this.lbPassword.AutoSize = true;
-            this.lbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lbPassword.Location = new System.Drawing.Point(88, 141);
-            this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(85, 17);
-            this.lbPassword.TabIndex = 6;
-            this.lbPassword.Text = "Contraseña:";
+            this.panel3.BackgroundImage = global::CapaVista.Properties.Resources.locked_2;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(105, 146);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(30, 26);
+            this.panel3.TabIndex = 10;
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::CapaVista.Properties.Resources.user_6;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(105, 113);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(30, 26);
+            this.panel2.TabIndex = 9;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::CapaVista.Properties.Resources.user_3;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.Location = new System.Drawing.Point(168, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(109, 85);
+            this.panel1.TabIndex = 8;
             // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(330, 230);
-            this.Controls.Add(this.lbPassword);
-            this.Controls.Add(this.lbUsuario);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.ClientSize = new System.Drawing.Size(474, 262);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.cboMostrar);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtUsuario);
@@ -150,7 +196,9 @@
         private MetroFramework.Controls.MetroTextBox txtUsuario;
         private MetroFramework.Controls.MetroTextBox txtContraseña;
         private MetroFramework.Controls.MetroButton btnIngresar;
-        private System.Windows.Forms.Label lbUsuario;
-        private System.Windows.Forms.Label lbPassword;
+        private MetroFramework.Controls.MetroCheckBox cboMostrar;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }

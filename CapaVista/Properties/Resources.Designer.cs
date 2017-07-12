@@ -183,6 +183,16 @@ namespace CapaVista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap locked_2 {
+            get {
+                object obj = ResourceManager.GetObject("locked-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap menu_1 {
             get {
                 object obj = ResourceManager.GetObject("menu-1", resourceCulture);
@@ -206,6 +216,26 @@ namespace CapaVista.Properties {
         internal static System.Drawing.Bitmap restart {
             get {
                 object obj = ResourceManager.GetObject("restart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_3 {
+            get {
+                object obj = ResourceManager.GetObject("user-3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_6 {
+            get {
+                object obj = ResourceManager.GetObject("user-6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
