@@ -63,6 +63,19 @@ namespace CapaVista
         private void txtUsuario_Click(object sender, EventArgs e)
         {
             txtUsuario.Text = "";
+
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+            if (Control.IsKeyLocked(Keys.CapsLock))
+            {
+                lbCaps.Visible = true;
+            }
+            else
+            {
+                lbCaps.Visible = false;
+            }
         }
     }
 }

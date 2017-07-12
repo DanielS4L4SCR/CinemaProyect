@@ -35,6 +35,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbCaps = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -171,12 +172,24 @@
             this.panel1.Size = new System.Drawing.Size(109, 85);
             this.panel1.TabIndex = 8;
             // 
+            // lbCaps
+            // 
+            this.lbCaps.AutoSize = true;
+            this.lbCaps.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.lbCaps.Location = new System.Drawing.Point(314, 126);
+            this.lbCaps.Name = "lbCaps";
+            this.lbCaps.Size = new System.Drawing.Size(100, 13);
+            this.lbCaps.TabIndex = 11;
+            this.lbCaps.Text = "CapsLock Activado";
+            this.lbCaps.Visible = false;
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
             this.ClientSize = new System.Drawing.Size(474, 262);
+            this.Controls.Add(this.lbCaps);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -186,6 +199,7 @@
             this.Controls.Add(this.txtUsuario);
             this.Name = "FrmLogin";
             this.Text = "CinemaPRO Login";
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,5 +214,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label lbCaps;
     }
 }
