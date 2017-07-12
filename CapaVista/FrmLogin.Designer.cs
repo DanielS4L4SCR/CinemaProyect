@@ -148,7 +148,7 @@
             // 
             this.panel3.BackgroundImage = global::CapaVista.Properties.Resources.locked_2;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Location = new System.Drawing.Point(105, 146);
+            this.panel3.Location = new System.Drawing.Point(106, 146);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(30, 26);
             this.panel3.TabIndex = 10;
@@ -157,7 +157,7 @@
             // 
             this.panel2.BackgroundImage = global::CapaVista.Properties.Resources.user_6;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(105, 113);
+            this.panel2.Location = new System.Drawing.Point(106, 113);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(30, 26);
             this.panel2.TabIndex = 9;
