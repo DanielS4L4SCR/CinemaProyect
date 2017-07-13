@@ -31,7 +31,7 @@
             this.txtUsuario = new MetroFramework.Controls.MetroTextBox();
             this.txtContraseña = new MetroFramework.Controls.MetroTextBox();
             this.btnIngresar = new MetroFramework.Controls.MetroButton();
-            this.cboMostrar = new MetroFramework.Controls.MetroCheckBox();
+            this.cboxMostrar = new MetroFramework.Controls.MetroCheckBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -130,20 +130,20 @@
             this.btnIngresar.UseStyleColors = true;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
-            // cboMostrar
+            // cboxMostrar
             // 
-            this.cboMostrar.AutoSize = true;
-            this.cboMostrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            this.cboMostrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.cboMostrar.Location = new System.Drawing.Point(314, 153);
-            this.cboMostrar.Name = "cboMostrar";
-            this.cboMostrar.Size = new System.Drawing.Size(127, 15);
-            this.cboMostrar.TabIndex = 7;
-            this.cboMostrar.Text = "Mostrar Contraseña";
-            this.cboMostrar.UseCustomBackColor = true;
-            this.cboMostrar.UseCustomForeColor = true;
-            this.cboMostrar.UseSelectable = true;
-            this.cboMostrar.CheckedChanged += new System.EventHandler(this.cboMostrar_CheckedChanged);
+            this.cboxMostrar.AutoSize = true;
+            this.cboxMostrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.cboxMostrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.cboxMostrar.Location = new System.Drawing.Point(314, 153);
+            this.cboxMostrar.Name = "cboxMostrar";
+            this.cboxMostrar.Size = new System.Drawing.Size(127, 15);
+            this.cboxMostrar.TabIndex = 7;
+            this.cboxMostrar.Text = "Mostrar Contraseña";
+            this.cboxMostrar.UseCustomBackColor = true;
+            this.cboxMostrar.UseCustomForeColor = true;
+            this.cboxMostrar.UseSelectable = true;
+            this.cboxMostrar.CheckedChanged += new System.EventHandler(this.cboMostrar_CheckedChanged);
             // 
             // panel3
             // 
@@ -193,7 +193,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.cboMostrar);
+            this.Controls.Add(this.cboxMostrar);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtUsuario);
@@ -211,7 +211,7 @@
         private MetroFramework.Controls.MetroTextBox txtUsuario;
         private MetroFramework.Controls.MetroTextBox txtContraseña;
         private MetroFramework.Controls.MetroButton btnIngresar;
-        private MetroFramework.Controls.MetroCheckBox cboMostrar;
+        private MetroFramework.Controls.MetroCheckBox cboxMostrar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;

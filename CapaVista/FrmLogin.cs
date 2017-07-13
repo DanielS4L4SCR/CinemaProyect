@@ -32,14 +32,20 @@ namespace CapaVista
             if(login.login(txtUsuario.Text,txtContraseña.Text).Rows.Count>0)
             {
                 new FrmPrincipall().Show();
-                
+                limpiar();
+                new FrmLogin().Close();
             }
             else
             {
                 MessageBox.Show("Usuario o contraseña invalidos, intente de nuevo.");
             }
         }
-
+        public void limpiar()
+        {
+            txtUsuario.Text = "";
+            txtContraseña.Text = "";
+            cboxMostrar.Checked = false;
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -47,7 +53,7 @@ namespace CapaVista
 
         private void cboMostrar_CheckedChanged(object sender, EventArgs e)
         {
-            if (cboMostrar.Checked == true) 
+            if (cboxMostrar.Checked == true) 
             {
                 txtContraseña.UseSystemPasswordChar = false;
                 txtContraseña.PasswordChar = '\0';

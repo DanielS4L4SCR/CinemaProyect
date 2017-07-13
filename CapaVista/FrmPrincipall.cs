@@ -216,5 +216,16 @@ namespace CapaVista
             FrmCliente cliente = new FrmCliente();
             cliente.Show();
         }
+
+        private void btnNewMovie_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddEmpleado_Click(object sender, EventArgs e)
+        {
+            FrmEmpleados empleado = new FrmEmpleados();
+            empleado.Show();
+        }
     }
 }
