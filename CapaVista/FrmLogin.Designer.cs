@@ -198,6 +198,7 @@
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtUsuario);
             this.Name = "FrmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CinemaPRO Login";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.ResumeLayout(false);

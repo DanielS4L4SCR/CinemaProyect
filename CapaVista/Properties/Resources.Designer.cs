@@ -183,6 +183,16 @@ namespace CapaVista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap id_card_4 {
+            get {
+                object obj = ResourceManager.GetObject("id-card-4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap locked_2 {
             get {
                 object obj = ResourceManager.GetObject("locked-2", resourceCulture);

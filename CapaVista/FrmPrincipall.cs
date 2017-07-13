@@ -210,5 +210,11 @@ namespace CapaVista
         {
 
         }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            FrmCliente cliente = new FrmCliente();
+            cliente.Show();
+        }
     }
 }
