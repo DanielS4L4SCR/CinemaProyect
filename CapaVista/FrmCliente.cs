@@ -108,6 +108,12 @@ namespace CapaVista
             rbFemale.Checked = false;
             rbAdultM.Checked = false;
             rbChildren.Checked = false;
+            rbAdult.Checked = false;
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
