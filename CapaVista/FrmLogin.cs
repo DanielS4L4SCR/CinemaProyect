@@ -58,7 +58,6 @@ namespace CapaVista
                 txtContraseña.UseSystemPasswordChar = false;
                 txtContraseña.PasswordChar = '\0';
 
-
             }
             else
             {

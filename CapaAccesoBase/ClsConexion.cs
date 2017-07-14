@@ -10,7 +10,7 @@ namespace CapaDatos
 {
     public class ClsConexion
     {
-        private MySqlConnection oCN = new MySqlConnection("server=localhost;user id=root;database=cinemaproyectdb");
+        private MySqlConnection oCN = new MySqlConnection("server=localhost;user id=root;database=cinemaproyectdbv1.0");
         
         private bool AbrirConexion()
         {

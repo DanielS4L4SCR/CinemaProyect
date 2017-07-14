@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
             this.lbNuevoEmp = new MetroFramework.Controls.MetroLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rbMasculino = new MetroFramework.Controls.MetroRadioButton();
@@ -62,30 +61,25 @@
             this.lbTel = new MetroFramework.Controls.MetroLabel();
             this.txtMail = new MetroFramework.Controls.MetroTextBox();
             this.lbMain = new MetroFramework.Controls.MetroLabel();
-            this.cboTel = new MetroFramework.Controls.MetroComboBox();
             this.cboMail = new MetroFramework.Controls.MetroComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
-            this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
-            this.txtDireccion = new MetroFramework.Controls.MetroTextBox();
-            this.metroComboBox3 = new MetroFramework.Controls.MetroComboBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.cboProv = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.txtDireccion = new MetroFramework.Controls.MetroTextBox();
+            this.cboCanton = new MetroFramework.Controls.MetroComboBox();
+            this.cboDistri = new MetroFramework.Controls.MetroComboBox();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.cboTel = new MetroFramework.Controls.MetroComboBox();
+            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::CapaVista.Properties.Resources.id_card_2;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(171, 49);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(110, 103);
-            this.panel1.TabIndex = 0;
             // 
             // lbNuevoEmp
             // 
@@ -156,6 +150,7 @@
             this.btnAceptar.UseCustomForeColor = true;
             this.btnAceptar.UseSelectable = true;
             this.btnAceptar.UseStyleColors = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // lbGenero
             // 
@@ -719,6 +714,205 @@
             this.lbMain.UseCustomForeColor = true;
             this.lbMain.UseStyleColors = true;
             // 
+            // cboMail
+            // 
+            this.cboMail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.cboMail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.cboMail.FormattingEnabled = true;
+            this.cboMail.ItemHeight = 23;
+            this.cboMail.Location = new System.Drawing.Point(336, 488);
+            this.cboMail.Name = "cboMail";
+            this.cboMail.Size = new System.Drawing.Size(121, 29);
+            this.cboMail.TabIndex = 54;
+            this.cboMail.UseCustomBackColor = true;
+            this.cboMail.UseCustomForeColor = true;
+            this.cboMail.UseSelectable = true;
+            this.cboMail.UseStyleColors = true;
+            this.cboMail.SelectedIndexChanged += new System.EventHandler(this.cboMail_SelectedIndexChanged);
+            this.cboMail.Click += new System.EventHandler(this.cboMail_SelectedIndexChanged);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.metroLabel6);
+            this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.cboProv);
+            this.groupBox3.Controls.Add(this.metroLabel5);
+            this.groupBox3.Controls.Add(this.txtDireccion);
+            this.groupBox3.Controls.Add(this.cboCanton);
+            this.groupBox3.Controls.Add(this.cboDistri);
+            this.groupBox3.Controls.Add(this.metroLabel4);
+            this.groupBox3.Controls.Add(this.metroLabel3);
+            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.groupBox3.Location = new System.Drawing.Point(25, 525);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(422, 141);
+            this.groupBox3.TabIndex = 55;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Dirección";
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::CapaVista.Properties.Resources.repeat;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(195, 100);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(22, 23);
+            this.button2.TabIndex = 63;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::CapaVista.Properties.Resources.repeat;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(195, 64);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(22, 23);
+            this.button1.TabIndex = 62;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cboProv
+            // 
+            this.cboProv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.cboProv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.cboProv.FormattingEnabled = true;
+            this.cboProv.ItemHeight = 23;
+            this.cboProv.Location = new System.Drawing.Point(68, 16);
+            this.cboProv.Name = "cboProv";
+            this.cboProv.Size = new System.Drawing.Size(121, 29);
+            this.cboProv.TabIndex = 59;
+            this.cboProv.UseCustomBackColor = true;
+            this.cboProv.UseCustomForeColor = true;
+            this.cboProv.UseSelectable = true;
+            this.cboProv.UseStyleColors = true;
+            this.cboProv.SelectedIndexChanged += new System.EventHandler(this.cboProv_SelectedIndexChanged);
+            this.cboProv.Click += new System.EventHandler(this.cboProv_SelectedIndexChanged);
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.metroLabel5.Location = new System.Drawing.Point(4, 16);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(65, 19);
+            this.metroLabel5.TabIndex = 58;
+            this.metroLabel5.Text = "Provincia:";
+            this.metroLabel5.UseCustomBackColor = true;
+            this.metroLabel5.UseCustomForeColor = true;
+            this.metroLabel5.UseStyleColors = true;
+            // 
+            // txtDireccion
+            // 
+            // 
+            // 
+            // 
+            this.txtDireccion.CustomButton.Image = null;
+            this.txtDireccion.CustomButton.Location = new System.Drawing.Point(172, 1);
+            this.txtDireccion.CustomButton.Name = "";
+            this.txtDireccion.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtDireccion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtDireccion.CustomButton.TabIndex = 1;
+            this.txtDireccion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtDireccion.CustomButton.UseSelectable = true;
+            this.txtDireccion.CustomButton.Visible = false;
+            this.txtDireccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.txtDireccion.Lines = new string[] {
+        "Ingrese Dirección Exacta"};
+            this.txtDireccion.Location = new System.Drawing.Point(224, 112);
+            this.txtDireccion.MaxLength = 32767;
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.PasswordChar = '\0';
+            this.txtDireccion.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtDireccion.SelectedText = "";
+            this.txtDireccion.SelectionLength = 0;
+            this.txtDireccion.SelectionStart = 0;
+            this.txtDireccion.ShortcutsEnabled = true;
+            this.txtDireccion.Size = new System.Drawing.Size(194, 23);
+            this.txtDireccion.TabIndex = 57;
+            this.txtDireccion.Text = "Ingrese Dirección Exacta";
+            this.txtDireccion.UseCustomBackColor = true;
+            this.txtDireccion.UseCustomForeColor = true;
+            this.txtDireccion.UseSelectable = true;
+            this.txtDireccion.UseStyleColors = true;
+            this.txtDireccion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtDireccion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtDireccion.Click += new System.EventHandler(this.txtDireccion_Click);
+            // 
+            // cboCanton
+            // 
+            this.cboCanton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.cboCanton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.cboCanton.FormattingEnabled = true;
+            this.cboCanton.ItemHeight = 23;
+            this.cboCanton.Location = new System.Drawing.Point(68, 58);
+            this.cboCanton.Name = "cboCanton";
+            this.cboCanton.Size = new System.Drawing.Size(121, 29);
+            this.cboCanton.TabIndex = 56;
+            this.cboCanton.UseCustomBackColor = true;
+            this.cboCanton.UseCustomForeColor = true;
+            this.cboCanton.UseSelectable = true;
+            this.cboCanton.UseStyleColors = true;
+            this.cboCanton.SelectedIndexChanged += new System.EventHandler(this.cboCanton_SelectedIndexChanged);
+            this.cboCanton.Click += new System.EventHandler(this.cboCanton_SelectedIndexChanged);
+            // 
+            // cboDistri
+            // 
+            this.cboDistri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.cboDistri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.cboDistri.FormattingEnabled = true;
+            this.cboDistri.ItemHeight = 23;
+            this.cboDistri.Location = new System.Drawing.Point(68, 98);
+            this.cboDistri.Name = "cboDistri";
+            this.cboDistri.Size = new System.Drawing.Size(121, 29);
+            this.cboDistri.TabIndex = 55;
+            this.cboDistri.UseCustomBackColor = true;
+            this.cboDistri.UseCustomForeColor = true;
+            this.cboDistri.UseSelectable = true;
+            this.cboDistri.UseStyleColors = true;
+            this.cboDistri.SelectedIndexChanged += new System.EventHandler(this.cboDistri_SelectedIndexChanged);
+            this.cboDistri.Click += new System.EventHandler(this.cboDistri_SelectedIndexChanged);
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.metroLabel4.Location = new System.Drawing.Point(6, 58);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(54, 19);
+            this.metroLabel4.TabIndex = 53;
+            this.metroLabel4.Text = "Cantón:";
+            this.metroLabel4.UseCustomBackColor = true;
+            this.metroLabel4.UseCustomForeColor = true;
+            this.metroLabel4.UseStyleColors = true;
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.metroLabel3.Location = new System.Drawing.Point(6, 104);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(53, 19);
+            this.metroLabel3.TabIndex = 52;
+            this.metroLabel3.Text = "Distrito:";
+            this.metroLabel3.UseCustomBackColor = true;
+            this.metroLabel3.UseCustomForeColor = true;
+            this.metroLabel3.UseStyleColors = true;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::CapaVista.Properties.Resources.id_card_2;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(171, 49);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(110, 103);
+            this.panel1.TabIndex = 0;
+            // 
             // cboTel
             // 
             this.cboTel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
@@ -734,159 +928,21 @@
             this.cboTel.UseSelectable = true;
             this.cboTel.UseStyleColors = true;
             this.cboTel.SelectedIndexChanged += new System.EventHandler(this.cboTel_SelectedIndexChanged);
+            this.cboTel.TextUpdate += new System.EventHandler(this.cboTel_SelectedIndexChanged);
+            this.cboTel.Click += new System.EventHandler(this.cboTel_SelectedIndexChanged);
             // 
-            // cboMail
+            // metroLabel6
             // 
-            this.cboMail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            this.cboMail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.cboMail.FormattingEnabled = true;
-            this.cboMail.ItemHeight = 23;
-            this.cboMail.Location = new System.Drawing.Point(336, 488);
-            this.cboMail.Name = "cboMail";
-            this.cboMail.Size = new System.Drawing.Size(121, 29);
-            this.cboMail.TabIndex = 54;
-            this.cboMail.UseCustomBackColor = true;
-            this.cboMail.UseCustomForeColor = true;
-            this.cboMail.UseSelectable = true;
-            this.cboMail.UseStyleColors = true;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.metroComboBox3);
-            this.groupBox3.Controls.Add(this.metroLabel5);
-            this.groupBox3.Controls.Add(this.txtDireccion);
-            this.groupBox3.Controls.Add(this.metroComboBox2);
-            this.groupBox3.Controls.Add(this.metroComboBox1);
-            this.groupBox3.Controls.Add(this.metroLabel4);
-            this.groupBox3.Controls.Add(this.metroLabel3);
-            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.groupBox3.Location = new System.Drawing.Point(25, 525);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(422, 141);
-            this.groupBox3.TabIndex = 55;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Dirección";
-            // 
-            // metroLabel3
-            // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.metroLabel3.Location = new System.Drawing.Point(6, 104);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(53, 19);
-            this.metroLabel3.TabIndex = 52;
-            this.metroLabel3.Text = "Distrito:";
-            this.metroLabel3.UseCustomBackColor = true;
-            this.metroLabel3.UseCustomForeColor = true;
-            this.metroLabel3.UseStyleColors = true;
-            // 
-            // metroLabel4
-            // 
-            this.metroLabel4.AutoSize = true;
-            this.metroLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.metroLabel4.Location = new System.Drawing.Point(6, 58);
-            this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(54, 19);
-            this.metroLabel4.TabIndex = 53;
-            this.metroLabel4.Text = "Cantón:";
-            this.metroLabel4.UseCustomBackColor = true;
-            this.metroLabel4.UseCustomForeColor = true;
-            this.metroLabel4.UseStyleColors = true;
-            // 
-            // metroComboBox1
-            // 
-            this.metroComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            this.metroComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Location = new System.Drawing.Point(68, 98);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(121, 29);
-            this.metroComboBox1.TabIndex = 55;
-            this.metroComboBox1.UseCustomBackColor = true;
-            this.metroComboBox1.UseCustomForeColor = true;
-            this.metroComboBox1.UseSelectable = true;
-            this.metroComboBox1.UseStyleColors = true;
-            // 
-            // metroComboBox2
-            // 
-            this.metroComboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            this.metroComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.metroComboBox2.FormattingEnabled = true;
-            this.metroComboBox2.ItemHeight = 23;
-            this.metroComboBox2.Location = new System.Drawing.Point(68, 58);
-            this.metroComboBox2.Name = "metroComboBox2";
-            this.metroComboBox2.Size = new System.Drawing.Size(121, 29);
-            this.metroComboBox2.TabIndex = 56;
-            this.metroComboBox2.UseCustomBackColor = true;
-            this.metroComboBox2.UseCustomForeColor = true;
-            this.metroComboBox2.UseSelectable = true;
-            this.metroComboBox2.UseStyleColors = true;
-            // 
-            // txtDireccion
-            // 
-            // 
-            // 
-            // 
-            this.txtDireccion.CustomButton.Image = null;
-            this.txtDireccion.CustomButton.Location = new System.Drawing.Point(188, 1);
-            this.txtDireccion.CustomButton.Name = "";
-            this.txtDireccion.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtDireccion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtDireccion.CustomButton.TabIndex = 1;
-            this.txtDireccion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtDireccion.CustomButton.UseSelectable = true;
-            this.txtDireccion.CustomButton.Visible = false;
-            this.txtDireccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.txtDireccion.Lines = new string[] {
-        "Ingrese Dirección Exacta"};
-            this.txtDireccion.Location = new System.Drawing.Point(206, 104);
-            this.txtDireccion.MaxLength = 32767;
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.PasswordChar = '\0';
-            this.txtDireccion.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtDireccion.SelectedText = "";
-            this.txtDireccion.SelectionLength = 0;
-            this.txtDireccion.SelectionStart = 0;
-            this.txtDireccion.ShortcutsEnabled = true;
-            this.txtDireccion.Size = new System.Drawing.Size(210, 23);
-            this.txtDireccion.TabIndex = 57;
-            this.txtDireccion.Text = "Ingrese Dirección Exacta";
-            this.txtDireccion.UseCustomBackColor = true;
-            this.txtDireccion.UseCustomForeColor = true;
-            this.txtDireccion.UseSelectable = true;
-            this.txtDireccion.UseStyleColors = true;
-            this.txtDireccion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtDireccion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.txtDireccion.Click += new System.EventHandler(this.txtDireccion_Click);
-            // 
-            // metroComboBox3
-            // 
-            this.metroComboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            this.metroComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.metroComboBox3.FormattingEnabled = true;
-            this.metroComboBox3.ItemHeight = 23;
-            this.metroComboBox3.Location = new System.Drawing.Point(68, 16);
-            this.metroComboBox3.Name = "metroComboBox3";
-            this.metroComboBox3.Size = new System.Drawing.Size(121, 29);
-            this.metroComboBox3.TabIndex = 59;
-            this.metroComboBox3.UseCustomBackColor = true;
-            this.metroComboBox3.UseCustomForeColor = true;
-            this.metroComboBox3.UseSelectable = true;
-            this.metroComboBox3.UseStyleColors = true;
-            // 
-            // metroLabel5
-            // 
-            this.metroLabel5.AutoSize = true;
-            this.metroLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.metroLabel5.Location = new System.Drawing.Point(4, 16);
-            this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(65, 19);
-            this.metroLabel5.TabIndex = 58;
-            this.metroLabel5.Text = "Provincia:";
-            this.metroLabel5.UseCustomBackColor = true;
-            this.metroLabel5.UseCustomForeColor = true;
-            this.metroLabel5.UseStyleColors = true;
+            this.metroLabel6.AutoSize = true;
+            this.metroLabel6.ForeColor = System.Drawing.Color.Brown;
+            this.metroLabel6.Location = new System.Drawing.Point(224, 68);
+            this.metroLabel6.Name = "metroLabel6";
+            this.metroLabel6.Size = new System.Drawing.Size(181, 19);
+            this.metroLabel6.TabIndex = 64;
+            this.metroLabel6.Text = "*Debe actualizar los campos*";
+            this.metroLabel6.UseCustomBackColor = true;
+            this.metroLabel6.UseCustomForeColor = true;
+            this.metroLabel6.UseStyleColors = true;
             // 
             // FrmEmpleados
             // 
@@ -978,15 +1034,18 @@
         private MetroFramework.Controls.MetroLabel lbTel;
         private MetroFramework.Controls.MetroTextBox txtMail;
         private MetroFramework.Controls.MetroLabel lbMain;
-        private MetroFramework.Controls.MetroComboBox cboTel;
         private MetroFramework.Controls.MetroComboBox cboMail;
         private System.Windows.Forms.GroupBox groupBox3;
         private MetroFramework.Controls.MetroTextBox txtDireccion;
-        private MetroFramework.Controls.MetroComboBox metroComboBox2;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        private MetroFramework.Controls.MetroComboBox cboCanton;
+        private MetroFramework.Controls.MetroComboBox cboDistri;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroLabel metroLabel3;
-        private MetroFramework.Controls.MetroComboBox metroComboBox3;
+        private MetroFramework.Controls.MetroComboBox cboProv;
         private MetroFramework.Controls.MetroLabel metroLabel5;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private MetroFramework.Controls.MetroComboBox cboTel;
+        private MetroFramework.Controls.MetroLabel metroLabel6;
     }
 }
