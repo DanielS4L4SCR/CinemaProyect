@@ -219,7 +219,8 @@ namespace CapaVista
 
         private void btnNewMovie_Click(object sender, EventArgs e)
         {
-
+            FrmPelicula pelicula = new FrmPelicula();
+            pelicula.Show();
         }
 
         private void btnAddEmpleado_Click(object sender, EventArgs e)

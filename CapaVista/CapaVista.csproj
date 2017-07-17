@@ -76,6 +76,12 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPelicula.Designer.cs">
+      <DependentUpon>FrmPelicula.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipall.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPelicula.resx">
+      <DependentUpon>FrmPelicula.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipall.resx">
       <DependentUpon>FrmPrincipall.cs</DependentUpon>
@@ -190,6 +199,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\repeat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\film.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
