@@ -9,16 +9,16 @@ namespace CapaNegocios
     public class clsEmpleado
 
     {
-        public bool insertarNacional(String identificacion, String nombre, String apellido1, String apellido2, int genero, int IdEmpleado, String Usuario, String Contraseña, int TipoEmpleado, int provincia, int canton, int Distrito, String Descripcion)
+        public bool insertarNacional(String identificacion, String nombre, String apellido1, String apellido2, int genero,String Usuario, String Contraseña,int TipoEmpleado, int provincia, int canton, int Distrito, String Descripcion,int activo, int telefono, int tipoTelefono, String mail, int tipoMail)
         {
-            return new CapaDatos.ClsEmpleado().insertarNacional(identificacion, nombre, apellido1, apellido2, genero, IdEmpleado, Usuario, Contraseña, TipoEmpleado, provincia, canton, Distrito, Descripcion);
+            return new CapaDatos.ClsEmpleado().insertarNacional(identificacion, nombre, apellido1, apellido2, genero, Usuario, Contraseña,TipoEmpleado, provincia, canton, Distrito, Descripcion,activo,telefono,tipoTelefono,mail,tipoMail);
 
         }
 
 
-        public bool insertarExtranjero(String identificacion, String nombre, String apellido1, String apellido2, int genero, int IdEmpleado, String Usuario, String Contraseña, int TipoEmpleado, int provincia, int canton, int Distrito, String Descripcion)
+        public bool insertarExtranjero(String identificacion, String nombre, String apellido1, String apellido2, int genero, String Usuario, String Contraseña,int TipoEmpleado, int provincia, int canton, int Distrito, String Descripcion,int activo, int telefono, int tipoTelefono, String mail, int tipoMail)
         {
-            return new CapaDatos.ClsEmpleado().insertarExtranjero(identificacion, nombre, apellido1, apellido2, genero, IdEmpleado, Usuario, Contraseña, TipoEmpleado,provincia,canton,Distrito,Descripcion);
+            return new CapaDatos.ClsEmpleado().insertarExtranjero(identificacion, nombre, apellido1, apellido2, genero, Usuario, Contraseña,TipoEmpleado,provincia,canton,Distrito,Descripcion,activo, telefono, tipoTelefono, mail, tipoMail);
         }
 
         public DataTable LlenarCamposTel()

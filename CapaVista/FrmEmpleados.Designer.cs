@@ -29,11 +29,7 @@
         private void InitializeComponent()
         {
             this.lbNuevoEmp = new MetroFramework.Controls.MetroLabel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rbMasculino = new MetroFramework.Controls.MetroRadioButton();
-            this.rbFemale = new MetroFramework.Controls.MetroRadioButton();
             this.btnAceptar = new MetroFramework.Controls.MetroButton();
-            this.lbGenero = new MetroFramework.Controls.MetroLabel();
             this.txtApe2 = new MetroFramework.Controls.MetroTextBox();
             this.txtApe1 = new MetroFramework.Controls.MetroTextBox();
             this.txtNom = new MetroFramework.Controls.MetroTextBox();
@@ -48,21 +44,21 @@
             this.rbNacional = new MetroFramework.Controls.MetroRadioButton();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbLimpiador = new MetroFramework.Controls.MetroRadioButton();
             this.rbCajero = new MetroFramework.Controls.MetroRadioButton();
             this.rbAdmin = new MetroFramework.Controls.MetroRadioButton();
             this.txtUser = new MetroFramework.Controls.MetroTextBox();
             this.lbUser = new MetroFramework.Controls.MetroLabel();
-            this.txtIDEmp = new MetroFramework.Controls.MetroTextBox();
-            this.lbidEmpleado = new MetroFramework.Controls.MetroLabel();
             this.txtPassword = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.metroCheckBox1 = new MetroFramework.Controls.MetroCheckBox();
+            this.CboxAddUser = new MetroFramework.Controls.MetroCheckBox();
             this.txtTel = new MetroFramework.Controls.MetroTextBox();
             this.lbTel = new MetroFramework.Controls.MetroLabel();
             this.txtMail = new MetroFramework.Controls.MetroTextBox();
             this.lbMain = new MetroFramework.Controls.MetroLabel();
             this.cboMail = new MetroFramework.Controls.MetroComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.cboProv = new MetroFramework.Controls.MetroComboBox();
@@ -74,11 +70,14 @@
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cboTel = new MetroFramework.Controls.MetroComboBox();
-            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
-            this.groupBox2.SuspendLayout();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.rbFemale = new MetroFramework.Controls.MetroRadioButton();
+            this.rbMale = new MetroFramework.Controls.MetroRadioButton();
+            this.txtGenero = new MetroFramework.Controls.MetroLabel();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbNuevoEmp
@@ -97,51 +96,11 @@
             this.lbNuevoEmp.UseStyleColors = true;
             this.lbNuevoEmp.WrapToLine = true;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.rbMasculino);
-            this.groupBox2.Controls.Add(this.rbFemale);
-            this.groupBox2.Location = new System.Drawing.Point(148, 672);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(197, 52);
-            this.groupBox2.TabIndex = 36;
-            this.groupBox2.TabStop = false;
-            // 
-            // rbMasculino
-            // 
-            this.rbMasculino.AutoSize = true;
-            this.rbMasculino.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            this.rbMasculino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.rbMasculino.Location = new System.Drawing.Point(11, 20);
-            this.rbMasculino.Name = "rbMasculino";
-            this.rbMasculino.Size = new System.Drawing.Size(78, 15);
-            this.rbMasculino.TabIndex = 14;
-            this.rbMasculino.Text = "Masculino";
-            this.rbMasculino.UseCustomBackColor = true;
-            this.rbMasculino.UseCustomForeColor = true;
-            this.rbMasculino.UseSelectable = true;
-            this.rbMasculino.UseStyleColors = true;
-            // 
-            // rbFemale
-            // 
-            this.rbFemale.AutoSize = true;
-            this.rbFemale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            this.rbFemale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.rbFemale.Location = new System.Drawing.Point(101, 20);
-            this.rbFemale.Name = "rbFemale";
-            this.rbFemale.Size = new System.Drawing.Size(76, 15);
-            this.rbFemale.TabIndex = 15;
-            this.rbFemale.Text = "Femenino";
-            this.rbFemale.UseCustomBackColor = true;
-            this.rbFemale.UseCustomForeColor = true;
-            this.rbFemale.UseSelectable = true;
-            this.rbFemale.UseStyleColors = true;
-            // 
             // btnAceptar
             // 
             this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
             this.btnAceptar.ForeColor = System.Drawing.Color.White;
-            this.btnAceptar.Location = new System.Drawing.Point(149, 918);
+            this.btnAceptar.Location = new System.Drawing.Point(149, 894);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(196, 33);
             this.btnAceptar.TabIndex = 34;
@@ -151,19 +110,6 @@
             this.btnAceptar.UseSelectable = true;
             this.btnAceptar.UseStyleColors = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
-            // 
-            // lbGenero
-            // 
-            this.lbGenero.AutoSize = true;
-            this.lbGenero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.lbGenero.Location = new System.Drawing.Point(66, 683);
-            this.lbGenero.Name = "lbGenero";
-            this.lbGenero.Size = new System.Drawing.Size(55, 19);
-            this.lbGenero.TabIndex = 33;
-            this.lbGenero.Text = "Género:";
-            this.lbGenero.UseCustomBackColor = true;
-            this.lbGenero.UseCustomForeColor = true;
-            this.lbGenero.UseStyleColors = true;
             // 
             // txtApe2
             // 
@@ -181,7 +127,7 @@
             this.txtApe2.CustomButton.Visible = false;
             this.txtApe2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtApe2.Lines = new string[0];
-            this.txtApe2.Location = new System.Drawing.Point(181, 369);
+            this.txtApe2.Location = new System.Drawing.Point(181, 420);
             this.txtApe2.MaxLength = 32767;
             this.txtApe2.Name = "txtApe2";
             this.txtApe2.PasswordChar = '\0';
@@ -215,7 +161,7 @@
             this.txtApe1.CustomButton.Visible = false;
             this.txtApe1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtApe1.Lines = new string[0];
-            this.txtApe1.Location = new System.Drawing.Point(181, 331);
+            this.txtApe1.Location = new System.Drawing.Point(181, 382);
             this.txtApe1.MaxLength = 32767;
             this.txtApe1.Name = "txtApe1";
             this.txtApe1.PasswordChar = '\0';
@@ -249,7 +195,7 @@
             this.txtNom.CustomButton.Visible = false;
             this.txtNom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtNom.Lines = new string[0];
-            this.txtNom.Location = new System.Drawing.Point(181, 290);
+            this.txtNom.Location = new System.Drawing.Point(181, 341);
             this.txtNom.MaxLength = 32767;
             this.txtNom.Name = "txtNom";
             this.txtNom.PasswordChar = '\0';
@@ -283,7 +229,7 @@
             this.txtID.CustomButton.Visible = false;
             this.txtID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtID.Lines = new string[0];
-            this.txtID.Location = new System.Drawing.Point(181, 248);
+            this.txtID.Location = new System.Drawing.Point(181, 299);
             this.txtID.MaxLength = 32767;
             this.txtID.Name = "txtID";
             this.txtID.PasswordChar = '\0';
@@ -305,7 +251,7 @@
             // 
             this.lbOpcional.AutoSize = true;
             this.lbOpcional.ForeColor = System.Drawing.Color.Brown;
-            this.lbOpcional.Location = new System.Drawing.Point(328, 373);
+            this.lbOpcional.Location = new System.Drawing.Point(328, 424);
             this.lbOpcional.Name = "lbOpcional";
             this.lbOpcional.Size = new System.Drawing.Size(86, 19);
             this.lbOpcional.TabIndex = 28;
@@ -319,7 +265,7 @@
             // 
             this.lbApellido2.AutoSize = true;
             this.lbApellido2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.lbApellido2.Location = new System.Drawing.Point(100, 373);
+            this.lbApellido2.Location = new System.Drawing.Point(100, 424);
             this.lbApellido2.Name = "lbApellido2";
             this.lbApellido2.Size = new System.Drawing.Size(68, 19);
             this.lbApellido2.TabIndex = 27;
@@ -332,7 +278,7 @@
             // 
             this.lbApellido.AutoSize = true;
             this.lbApellido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.lbApellido.Location = new System.Drawing.Point(101, 331);
+            this.lbApellido.Location = new System.Drawing.Point(101, 382);
             this.lbApellido.Name = "lbApellido";
             this.lbApellido.Size = new System.Drawing.Size(66, 19);
             this.lbApellido.TabIndex = 26;
@@ -345,7 +291,7 @@
             // 
             this.lnNombre.AutoSize = true;
             this.lnNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.lnNombre.Location = new System.Drawing.Point(105, 290);
+            this.lnNombre.Location = new System.Drawing.Point(105, 341);
             this.lnNombre.Name = "lnNombre";
             this.lnNombre.Size = new System.Drawing.Size(62, 19);
             this.lnNombre.TabIndex = 25;
@@ -358,7 +304,7 @@
             // 
             this.lbIdentificacion.AutoSize = true;
             this.lbIdentificacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.lbIdentificacion.Location = new System.Drawing.Point(83, 248);
+            this.lbIdentificacion.Location = new System.Drawing.Point(83, 299);
             this.lbIdentificacion.Name = "lbIdentificacion";
             this.lbIdentificacion.Size = new System.Drawing.Size(88, 19);
             this.lbIdentificacion.TabIndex = 24;
@@ -413,7 +359,7 @@
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.metroLabel1.Location = new System.Drawing.Point(46, 849);
+            this.metroLabel1.Location = new System.Drawing.Point(46, 810);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(102, 19);
             this.metroLabel1.TabIndex = 45;
@@ -424,20 +370,38 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.rbLimpiador);
             this.groupBox1.Controls.Add(this.rbCajero);
             this.groupBox1.Controls.Add(this.rbAdmin);
-            this.groupBox1.Location = new System.Drawing.Point(149, 834);
+            this.groupBox1.Location = new System.Drawing.Point(149, 795);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(196, 68);
+            this.groupBox1.Size = new System.Drawing.Size(196, 83);
             this.groupBox1.TabIndex = 44;
             this.groupBox1.TabStop = false;
+            // 
+            // rbLimpiador
+            // 
+            this.rbLimpiador.AutoSize = true;
+            this.rbLimpiador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.rbLimpiador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.rbLimpiador.Location = new System.Drawing.Point(56, 61);
+            this.rbLimpiador.Name = "rbLimpiador";
+            this.rbLimpiador.Size = new System.Drawing.Size(77, 15);
+            this.rbLimpiador.TabIndex = 17;
+            this.rbLimpiador.Text = "Limpiador";
+            this.rbLimpiador.UseCustomBackColor = true;
+            this.rbLimpiador.UseCustomForeColor = true;
+            this.rbLimpiador.UseSelectable = true;
+            this.rbLimpiador.UseStyleColors = true;
+            this.rbLimpiador.CheckedChanged += new System.EventHandler(this.rbLimpiador_CheckedChanged);
+            this.rbLimpiador.Click += new System.EventHandler(this.rbLimpiador_CheckedChanged);
             // 
             // rbCajero
             // 
             this.rbCajero.AutoSize = true;
             this.rbCajero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
             this.rbCajero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.rbCajero.Location = new System.Drawing.Point(56, 47);
+            this.rbCajero.Location = new System.Drawing.Point(56, 40);
             this.rbCajero.Name = "rbCajero";
             this.rbCajero.Size = new System.Drawing.Size(57, 15);
             this.rbCajero.TabIndex = 16;
@@ -479,7 +443,7 @@
             this.txtUser.Enabled = false;
             this.txtUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtUser.Lines = new string[0];
-            this.txtUser.Location = new System.Drawing.Point(148, 755);
+            this.txtUser.Location = new System.Drawing.Point(148, 716);
             this.txtUser.MaxLength = 32767;
             this.txtUser.Name = "txtUser";
             this.txtUser.PasswordChar = '\0';
@@ -501,7 +465,7 @@
             // 
             this.lbUser.AutoSize = true;
             this.lbUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.lbUser.Location = new System.Drawing.Point(39, 755);
+            this.lbUser.Location = new System.Drawing.Point(39, 716);
             this.lbUser.Name = "lbUser";
             this.lbUser.Size = new System.Drawing.Size(110, 19);
             this.lbUser.TabIndex = 40;
@@ -509,53 +473,6 @@
             this.lbUser.UseCustomBackColor = true;
             this.lbUser.UseCustomForeColor = true;
             this.lbUser.UseStyleColors = true;
-            // 
-            // txtIDEmp
-            // 
-            // 
-            // 
-            // 
-            this.txtIDEmp.CustomButton.Image = null;
-            this.txtIDEmp.CustomButton.Location = new System.Drawing.Point(127, 1);
-            this.txtIDEmp.CustomButton.Name = "";
-            this.txtIDEmp.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtIDEmp.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtIDEmp.CustomButton.TabIndex = 1;
-            this.txtIDEmp.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtIDEmp.CustomButton.UseSelectable = true;
-            this.txtIDEmp.CustomButton.Visible = false;
-            this.txtIDEmp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.txtIDEmp.Lines = new string[0];
-            this.txtIDEmp.Location = new System.Drawing.Point(181, 410);
-            this.txtIDEmp.MaxLength = 32767;
-            this.txtIDEmp.Name = "txtIDEmp";
-            this.txtIDEmp.PasswordChar = '\0';
-            this.txtIDEmp.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtIDEmp.SelectedText = "";
-            this.txtIDEmp.SelectionLength = 0;
-            this.txtIDEmp.SelectionStart = 0;
-            this.txtIDEmp.ShortcutsEnabled = true;
-            this.txtIDEmp.Size = new System.Drawing.Size(149, 23);
-            this.txtIDEmp.TabIndex = 39;
-            this.txtIDEmp.UseCustomBackColor = true;
-            this.txtIDEmp.UseCustomForeColor = true;
-            this.txtIDEmp.UseSelectable = true;
-            this.txtIDEmp.UseStyleColors = true;
-            this.txtIDEmp.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtIDEmp.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // lbidEmpleado
-            // 
-            this.lbidEmpleado.AutoSize = true;
-            this.lbidEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.lbidEmpleado.Location = new System.Drawing.Point(79, 410);
-            this.lbidEmpleado.Name = "lbidEmpleado";
-            this.lbidEmpleado.Size = new System.Drawing.Size(88, 19);
-            this.lbidEmpleado.TabIndex = 38;
-            this.lbidEmpleado.Text = "ID Empleado:";
-            this.lbidEmpleado.UseCustomBackColor = true;
-            this.lbidEmpleado.UseCustomForeColor = true;
-            this.lbidEmpleado.UseStyleColors = true;
             // 
             // txtPassword
             // 
@@ -574,7 +491,7 @@
             this.txtPassword.Enabled = false;
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtPassword.Lines = new string[0];
-            this.txtPassword.Location = new System.Drawing.Point(150, 803);
+            this.txtPassword.Location = new System.Drawing.Point(150, 764);
             this.txtPassword.MaxLength = 32767;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '\0';
@@ -596,7 +513,7 @@
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.metroLabel2.Location = new System.Drawing.Point(60, 803);
+            this.metroLabel2.Location = new System.Drawing.Point(60, 764);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(78, 19);
             this.metroLabel2.TabIndex = 46;
@@ -605,20 +522,20 @@
             this.metroLabel2.UseCustomForeColor = true;
             this.metroLabel2.UseStyleColors = true;
             // 
-            // metroCheckBox1
+            // CboxAddUser
             // 
-            this.metroCheckBox1.AutoSize = true;
-            this.metroCheckBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.metroCheckBox1.Location = new System.Drawing.Point(249, 734);
-            this.metroCheckBox1.Name = "metroCheckBox1";
-            this.metroCheckBox1.Size = new System.Drawing.Size(111, 15);
-            this.metroCheckBox1.TabIndex = 48;
-            this.metroCheckBox1.Text = "Agregar Usuario ";
-            this.metroCheckBox1.UseCustomBackColor = true;
-            this.metroCheckBox1.UseCustomForeColor = true;
-            this.metroCheckBox1.UseSelectable = true;
-            this.metroCheckBox1.UseStyleColors = true;
-            this.metroCheckBox1.CheckedChanged += new System.EventHandler(this.metroCheckBox1_CheckedChanged);
+            this.CboxAddUser.AutoSize = true;
+            this.CboxAddUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.CboxAddUser.Location = new System.Drawing.Point(249, 695);
+            this.CboxAddUser.Name = "CboxAddUser";
+            this.CboxAddUser.Size = new System.Drawing.Size(111, 15);
+            this.CboxAddUser.TabIndex = 48;
+            this.CboxAddUser.Text = "Agregar Usuario ";
+            this.CboxAddUser.UseCustomBackColor = true;
+            this.CboxAddUser.UseCustomForeColor = true;
+            this.CboxAddUser.UseSelectable = true;
+            this.CboxAddUser.UseStyleColors = true;
+            this.CboxAddUser.CheckedChanged += new System.EventHandler(this.metroCheckBox1_CheckedChanged);
             // 
             // txtTel
             // 
@@ -636,7 +553,7 @@
             this.txtTel.CustomButton.Visible = false;
             this.txtTel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtTel.Lines = new string[0];
-            this.txtTel.Location = new System.Drawing.Point(181, 453);
+            this.txtTel.Location = new System.Drawing.Point(181, 463);
             this.txtTel.MaxLength = 32767;
             this.txtTel.Name = "txtTel";
             this.txtTel.PasswordChar = '\0';
@@ -658,7 +575,7 @@
             // 
             this.lbTel.AutoSize = true;
             this.lbTel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.lbTel.Location = new System.Drawing.Point(100, 453);
+            this.lbTel.Location = new System.Drawing.Point(100, 463);
             this.lbTel.Name = "lbTel";
             this.lbTel.Size = new System.Drawing.Size(61, 19);
             this.lbTel.TabIndex = 49;
@@ -683,7 +600,7 @@
             this.txtMail.CustomButton.Visible = false;
             this.txtMail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtMail.Lines = new string[0];
-            this.txtMail.Location = new System.Drawing.Point(181, 488);
+            this.txtMail.Location = new System.Drawing.Point(181, 498);
             this.txtMail.MaxLength = 32767;
             this.txtMail.Name = "txtMail";
             this.txtMail.PasswordChar = '\0';
@@ -705,7 +622,7 @@
             // 
             this.lbMain.AutoSize = true;
             this.lbMain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.lbMain.Location = new System.Drawing.Point(105, 488);
+            this.lbMain.Location = new System.Drawing.Point(105, 498);
             this.lbMain.Name = "lbMain";
             this.lbMain.Size = new System.Drawing.Size(54, 19);
             this.lbMain.TabIndex = 51;
@@ -720,7 +637,7 @@
             this.cboMail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.cboMail.FormattingEnabled = true;
             this.cboMail.ItemHeight = 23;
-            this.cboMail.Location = new System.Drawing.Point(336, 488);
+            this.cboMail.Location = new System.Drawing.Point(336, 498);
             this.cboMail.Name = "cboMail";
             this.cboMail.Size = new System.Drawing.Size(121, 29);
             this.cboMail.TabIndex = 54;
@@ -744,12 +661,25 @@
             this.groupBox3.Controls.Add(this.metroLabel4);
             this.groupBox3.Controls.Add(this.metroLabel3);
             this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.groupBox3.Location = new System.Drawing.Point(25, 525);
+            this.groupBox3.Location = new System.Drawing.Point(25, 543);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(422, 141);
             this.groupBox3.TabIndex = 55;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Dirección";
+            // 
+            // metroLabel6
+            // 
+            this.metroLabel6.AutoSize = true;
+            this.metroLabel6.ForeColor = System.Drawing.Color.Brown;
+            this.metroLabel6.Location = new System.Drawing.Point(224, 68);
+            this.metroLabel6.Name = "metroLabel6";
+            this.metroLabel6.Size = new System.Drawing.Size(181, 19);
+            this.metroLabel6.TabIndex = 64;
+            this.metroLabel6.Text = "*Debe actualizar los campos*";
+            this.metroLabel6.UseCustomBackColor = true;
+            this.metroLabel6.UseCustomForeColor = true;
+            this.metroLabel6.UseStyleColors = true;
             // 
             // button2
             // 
@@ -919,7 +849,7 @@
             this.cboTel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.cboTel.FormattingEnabled = true;
             this.cboTel.ItemHeight = 23;
-            this.cboTel.Location = new System.Drawing.Point(336, 447);
+            this.cboTel.Location = new System.Drawing.Point(336, 457);
             this.cboTel.Name = "cboTel";
             this.cboTel.Size = new System.Drawing.Size(121, 29);
             this.cboTel.TabIndex = 53;
@@ -931,25 +861,69 @@
             this.cboTel.TextUpdate += new System.EventHandler(this.cboTel_SelectedIndexChanged);
             this.cboTel.Click += new System.EventHandler(this.cboTel_SelectedIndexChanged);
             // 
-            // metroLabel6
+            // groupBox5
             // 
-            this.metroLabel6.AutoSize = true;
-            this.metroLabel6.ForeColor = System.Drawing.Color.Brown;
-            this.metroLabel6.Location = new System.Drawing.Point(224, 68);
-            this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(181, 19);
-            this.metroLabel6.TabIndex = 64;
-            this.metroLabel6.Text = "*Debe actualizar los campos*";
-            this.metroLabel6.UseCustomBackColor = true;
-            this.metroLabel6.UseCustomForeColor = true;
-            this.metroLabel6.UseStyleColors = true;
+            this.groupBox5.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox5.Controls.Add(this.rbFemale);
+            this.groupBox5.Controls.Add(this.rbMale);
+            this.groupBox5.ForeColor = System.Drawing.Color.Maroon;
+            this.groupBox5.Location = new System.Drawing.Point(181, 233);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(149, 54);
+            this.groupBox5.TabIndex = 24;
+            this.groupBox5.TabStop = false;
+            // 
+            // rbFemale
+            // 
+            this.rbFemale.AutoSize = true;
+            this.rbFemale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.rbFemale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.rbFemale.Location = new System.Drawing.Point(4, 33);
+            this.rbFemale.Name = "rbFemale";
+            this.rbFemale.Size = new System.Drawing.Size(76, 15);
+            this.rbFemale.TabIndex = 3;
+            this.rbFemale.Text = "Femenino";
+            this.rbFemale.UseCustomBackColor = true;
+            this.rbFemale.UseCustomForeColor = true;
+            this.rbFemale.UseSelectable = true;
+            this.rbFemale.UseStyleColors = true;
+            // 
+            // rbMale
+            // 
+            this.rbMale.AutoSize = true;
+            this.rbMale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.rbMale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.rbMale.Location = new System.Drawing.Point(4, 9);
+            this.rbMale.Name = "rbMale";
+            this.rbMale.Size = new System.Drawing.Size(78, 15);
+            this.rbMale.TabIndex = 0;
+            this.rbMale.Text = "Masculino";
+            this.rbMale.UseCustomBackColor = true;
+            this.rbMale.UseCustomForeColor = true;
+            this.rbMale.UseSelectable = true;
+            this.rbMale.UseStyleColors = true;
+            // 
+            // txtGenero
+            // 
+            this.txtGenero.AutoSize = true;
+            this.txtGenero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.txtGenero.Location = new System.Drawing.Point(113, 242);
+            this.txtGenero.Name = "txtGenero";
+            this.txtGenero.Size = new System.Drawing.Size(55, 19);
+            this.txtGenero.TabIndex = 56;
+            this.txtGenero.Text = "Género:";
+            this.txtGenero.UseCustomBackColor = true;
+            this.txtGenero.UseCustomForeColor = true;
+            this.txtGenero.UseStyleColors = true;
             // 
             // FrmEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            this.ClientSize = new System.Drawing.Size(459, 956);
+            this.ClientSize = new System.Drawing.Size(468, 938);
+            this.Controls.Add(this.txtGenero);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.cboMail);
             this.Controls.Add(this.cboTel);
@@ -957,18 +931,14 @@
             this.Controls.Add(this.lbMain);
             this.Controls.Add(this.txtTel);
             this.Controls.Add(this.lbTel);
-            this.Controls.Add(this.metroCheckBox1);
+            this.Controls.Add(this.CboxAddUser);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.lbUser);
-            this.Controls.Add(this.txtIDEmp);
-            this.Controls.Add(this.lbidEmpleado);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.lbGenero);
             this.Controls.Add(this.txtApe2);
             this.Controls.Add(this.txtApe1);
             this.Controls.Add(this.txtNom);
@@ -985,14 +955,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Empleados";
             this.Load += new System.EventHandler(this.FrmEmpleados_Load);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1002,11 +972,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private MetroFramework.Controls.MetroLabel lbNuevoEmp;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private MetroFramework.Controls.MetroRadioButton rbMasculino;
-        private MetroFramework.Controls.MetroRadioButton rbFemale;
         private MetroFramework.Controls.MetroButton btnAceptar;
-        private MetroFramework.Controls.MetroLabel lbGenero;
         private MetroFramework.Controls.MetroTextBox txtApe2;
         private MetroFramework.Controls.MetroTextBox txtApe1;
         private MetroFramework.Controls.MetroTextBox txtNom;
@@ -1025,11 +991,9 @@
         private MetroFramework.Controls.MetroRadioButton rbAdmin;
         private MetroFramework.Controls.MetroTextBox txtUser;
         private MetroFramework.Controls.MetroLabel lbUser;
-        private MetroFramework.Controls.MetroTextBox txtIDEmp;
-        private MetroFramework.Controls.MetroLabel lbidEmpleado;
         private MetroFramework.Controls.MetroTextBox txtPassword;
         private MetroFramework.Controls.MetroLabel metroLabel2;
-        private MetroFramework.Controls.MetroCheckBox metroCheckBox1;
+        private MetroFramework.Controls.MetroCheckBox CboxAddUser;
         private MetroFramework.Controls.MetroTextBox txtTel;
         private MetroFramework.Controls.MetroLabel lbTel;
         private MetroFramework.Controls.MetroTextBox txtMail;
@@ -1047,5 +1011,10 @@
         private System.Windows.Forms.Button button1;
         private MetroFramework.Controls.MetroComboBox cboTel;
         private MetroFramework.Controls.MetroLabel metroLabel6;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private MetroFramework.Controls.MetroRadioButton rbFemale;
+        private MetroFramework.Controls.MetroRadioButton rbMale;
+        private MetroFramework.Controls.MetroLabel txtGenero;
+        private MetroFramework.Controls.MetroRadioButton rbLimpiador;
     }
 }

@@ -69,21 +69,82 @@ namespace CapaVista
          
         private void metroCheckBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if(metroCheckBox1.Checked)
+            if(CboxAddUser.Checked)
             {
                 txtUser.Enabled = true;
                 txtPassword.Enabled = true;
+                rbLimpiador.Enabled = false;
+                rbAdmin.Enabled = true;
+                rbCajero.Enabled = true;
             }
             else
             {
                 txtUser.Enabled = false;
                 txtPassword.Enabled = false;
+                rbLimpiador.Enabled = true;
+                rbAdmin.Enabled = false;
+                rbCajero.Enabled = false;
             }
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-           
+            CapaNegocios.clsEmpleado empleado = new CapaNegocios.clsEmpleado();
+            if(rbNacional.Checked==true)
+            {
+                if (empleado.insertarNacional(txtID.Text, txtNom.Text, txtApe1.Text, txtApe2.Text, Genero(), txtUser.Text, txtPassword.Text, TipoEmpleado(), Convert.ToInt32(cboProv.SelectedValue), Convert.ToInt32(cboCanton.SelectedValue), Convert.ToInt32(cboDistri.SelectedValue),txtDireccion.Text,activo(),int.Parse(txtTel.Text),Convert.ToInt32(cboTel.SelectedValue),txtMail.Text, Convert.ToInt32(cboMail.SelectedValue)))
+                {
+                    MessageBox.Show("Empleado Insertado");
+                }
+            }
+            if(rbExtranjero.Checked==true)
+            {
+                if (empleado.insertarExtranjero(txtID.Text, txtNom.Text, txtApe1.Text, txtApe2.Text, Genero(), txtUser.Text, txtPassword.Text, TipoEmpleado(), Convert.ToInt32(cboProv.SelectedValue), Convert.ToInt32(cboCanton.SelectedValue), Convert.ToInt32(cboDistri.SelectedValue), txtDireccion.Text, activo(), int.Parse(txtTel.Text), Convert.ToInt32(cboTel.SelectedValue), txtMail.Text, Convert.ToInt32(cboMail.SelectedValue)))
+                {
+                    MessageBox.Show("Empleado Insertado");
+                }
+            }
+        }
+        public int Genero()
+        {
+            int result = 0;
+            if (rbMale.Checked==true)
+            {
+                return result = 1;
+            }
+            else if (rbFemale.Checked == true)
+            {
+                return result = 2;
+            }
+            return result;
+        }
+        public int TipoEmpleado()
+        {
+            int result = 0;
+            if(rbAdmin.Checked==true)
+            {
+                return result = 1;
+
+            }else if (rbCajero.Checked==true)
+            {
+                return result = 2;
+            }else if(rbLimpiador.Checked==true)
+            {
+                return result = 3;
+            }
+            return result;
+        }
+        public int activo()
+        {
+            int result = 0;
+            if(CboxAddUser.Checked==true)
+            {
+                result = 1;
+            }else if(CboxAddUser.Checked==false)
+            {
+                result = 0;
+            }
+            return result;
         }
 
         private void cboCanton_SelectedIndexChanged(object sender, EventArgs e)
@@ -136,6 +197,9 @@ namespace CapaVista
        
         }
 
-       
+        private void rbLimpiador_CheckedChanged(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

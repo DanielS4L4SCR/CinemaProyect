@@ -11,17 +11,18 @@ namespace CapaDatos
     {
         ClsConexion conect = new ClsConexion();
 
-        public bool insertarNacional(String identificacion, String nombre, String apellido1, String apellido2, int genero, int IdEmpleado, String Usuario, String Contraseña, int TipoEmpleado, int provincia, int canton, int Distrito, String Descripcion)
+        public bool insertarNacional(String identificacion, String nombre, String apellido1, String apellido2, int genero, String Usuario, String Contraseña, int TipoEmpleado, int provincia, int canton, int Distrito, String Descripcion,int activo, int telefono, int tipoTelefono, String mail, int tipoMail)
         {
-            bool creandoPersona, creandoNacional,creandoUsuario,creandoEmpleado,creandoDireccion;
+            bool creandoPersona, creandoNacional,creandoUsuario,creandoEmpleado,creandoDireccion,creandoTel,creandoMail;
 
             creandoPersona = conect.ejecutarInsert("insert into persona (idPersona,TipoPersona_idTipoPersona) values ('" + identificacion + "',1)");
             creandoNacional = conect.ejecutarInsert("insert into personanacional(Persona_idPersona,Nombre,Apellido1,Apellido2,Genero_idGenero) values ('" + identificacion + "','" + nombre + "','" + apellido1 + "','" + apellido2 + "'," + genero + ")");
-            creandoUsuario = conect.ejecutarInsert("insert into usuario(Persona_idPersona,NombreUsuario,Contraseña) values ('" +identificacion+ "','" +Usuario+ "','" +Contraseña+ "'," +TipoEmpleado+ ")");
-            creandoEmpleado = conect.ejecutarInsert("insert into empleado (id_Empleado,Usuario_NombreUsuario,Usuario_Persona_idPersona,TipoEmpleado_idTipoEmpleado) values (" +IdEmpleado+ ",'" +Usuario+ "'," +TipoEmpleado+ ")");
+            creandoUsuario = conect.ejecutarInsert("insert into usuario(Persona_idPersona,NombreUsuario,Contraseña,TipoUsuario_idTipoUsuario,Activo) values ('" + identificacion+ "','" +Usuario+ "','" +Contraseña+ "'," +TipoEmpleado+ "," +activo+ ")");
+            creandoEmpleado = conect.ejecutarInsert("insert into empleado (Usuario_NombreUsuario,Usuario_Persona_idPersona,TipoEmpleado_idTipoEmpleado) values ('" +Usuario+ "'," +identificacion+ "," +TipoEmpleado+ ")");
             creandoDireccion = conect.ejecutarInsert("insert into direccion(Persona_idPersona,Distrito_idDistrito,Distrito_Canton_idCanton,Distrito_Canton_Provincia_idProvincia,Descripcion) values('" + identificacion + "'," + Distrito + "," + canton + "," + provincia + ",'" + Descripcion + "')");
-
-            if (creandoPersona && creandoNacional &&creandoEmpleado && creandoUsuario && creandoDireccion)
+            creandoTel = conect.ejecutarInsert("insert into telefono(Persona_idPersona,idTelefono,TipoTelefonio_idTipoTelefonio) values ('" + identificacion + "'," + telefono + "," + tipoTelefono + ")");
+            creandoMail = conect.ejecutarInsert("insert into correo (idCorreo,Persona_idPersona,TipoCorreo_idTipoCorreo) values ('" + mail + "','" + identificacion + "'," + tipoMail + ")");
+            if (creandoPersona && creandoNacional &&creandoEmpleado && creandoUsuario && creandoDireccion && creandoTel && creandoMail)
             {
                 return true;
             }
@@ -29,16 +30,18 @@ namespace CapaDatos
         }
 
 
-        public bool insertarExtranjero(String identificacion, String nombre, String apellido1, String apellido2, int genero, int IdEmpleado, String Usuario, String Contraseña, int TipoEmpleado, int provincia,int canton,int Distrito, String Descripcion)
+        public bool insertarExtranjero(String identificacion, String nombre, String apellido1, String apellido2, int genero, String Usuario, String Contraseña, int TipoEmpleado, int provincia,int canton,int Distrito, String Descripcion,int activo,int telefono,int tipoTelefono,String mail,int tipoMail)
         {
-            bool creandoPersona, creandoExtranjero, creandoUsuario, creandoEmpleado,creandoDireccion;
+            bool creandoPersona, creandoExtranjero, creandoUsuario, creandoEmpleado,creandoDireccion,creandoTel,creandoMail;
 
             creandoPersona = conect.ejecutarInsert("insert into persona (idPersona,TipoPersona_idTipoPersona) values ('" + identificacion + "',2)");
             creandoExtranjero = conect.ejecutarInsert("insert into personaextranjera(Persona_idPersona,Nombre,Apellido1,Apellido2,Genero_idGenero) values ('" + identificacion + "','" + nombre + "','" + apellido1 + "','" + apellido2 + "'," + genero + ")");
-            creandoUsuario = conect.ejecutarInsert("insert into usuario(Persona_idPersona,NombreUsuario,Contraseña) values ('" + identificacion + "','" + Usuario + "','" + Contraseña + "'," + TipoEmpleado + ")");
-            creandoEmpleado = conect.ejecutarInsert("insert into empleado (id_Empleado,Usuario_NombreUsuario,Usuario_Persona_idPersona,TipoEmpleado_idTipoEmpleado) values (" + IdEmpleado + ",'" + Usuario + "'," + TipoEmpleado + ")");
+            creandoUsuario = conect.ejecutarInsert("insert into usuario(Persona_idPersona,NombreUsuario,Contraseña,TipoUsuario_idTipoUsuario,Activo) values ('" + identificacion + "','" + Usuario + "','" + Contraseña + "'," + TipoEmpleado + ","+activo+")");
+            creandoEmpleado = conect.ejecutarInsert("insert into empleado (Usuario_NombreUsuario,Usuario_Persona_idPersona,TipoEmpleado_idTipoEmpleado) values ('" + Usuario + "'," + identificacion + "," + TipoEmpleado + ")");
             creandoDireccion = conect.ejecutarInsert("insert into direccion(Persona_idPersona,Distrito_idDistrito,Distrito_Canton_idCanton,Distrito_Canton_Provincia_idProvincia,Descripcion) values('" + identificacion + "'," + Distrito + ","+canton+","+provincia+",'"+Descripcion+"')");
-            if (creandoPersona && creandoExtranjero && creandoEmpleado && creandoUsuario && creandoDireccion)
+            creandoTel = conect.ejecutarInsert("insert into telefono(Personona_idPersona,idTelefono,TipoTelefonio_idTipoTelefonio) values ('"+identificacion+"',"+telefono+","+tipoTelefono+")");
+            creandoMail = conect.ejecutarInsert("insert into correo (idCorreo,Persona_idPersona,TipoCorreo_idTipoCorreo) values ('"+mail+"','"+identificacion+"',"+tipoMail+")");
+            if (creandoPersona && creandoExtranjero && creandoEmpleado && creandoUsuario && creandoDireccion && creandoTel && creandoMail)
             {
                 return true;
             }
