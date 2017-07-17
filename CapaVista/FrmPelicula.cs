@@ -39,7 +39,16 @@ namespace CapaVista
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            CapaNegocios.clsPeliculas peli = new CapaNegocios.clsPeliculas();
+            if (peli.insertarPelicula(int.Parse(txtidPelicula.Text), txtNom.Text, txtDuracion.Text, Convert.ToInt32(cboTipoPel.SelectedValue), Convert.ToInt32(cboGenPeli.SelectedValue)))
+            {
+                MessageBox.Show("Pelicula Agregada al sistema");
+            }
+        }
 
+        private void txtDuracion_Click(object sender, EventArgs e)
+        {
+            txtDuracion.Text = "";
         }
     }
 }

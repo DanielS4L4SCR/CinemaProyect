@@ -109,7 +109,8 @@
             this.txtDuracion.CustomButton.UseSelectable = true;
             this.txtDuracion.CustomButton.Visible = false;
             this.txtDuracion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.txtDuracion.Lines = new string[0];
+            this.txtDuracion.Lines = new string[] {
+        "HH:MM:SS"};
             this.txtDuracion.Location = new System.Drawing.Point(140, 274);
             this.txtDuracion.MaxLength = 32767;
             this.txtDuracion.Name = "txtDuracion";
@@ -121,12 +122,14 @@
             this.txtDuracion.ShortcutsEnabled = true;
             this.txtDuracion.Size = new System.Drawing.Size(149, 23);
             this.txtDuracion.TabIndex = 37;
+            this.txtDuracion.Text = "HH:MM:SS";
             this.txtDuracion.UseCustomBackColor = true;
             this.txtDuracion.UseCustomForeColor = true;
             this.txtDuracion.UseSelectable = true;
             this.txtDuracion.UseStyleColors = true;
             this.txtDuracion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtDuracion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtDuracion.Click += new System.EventHandler(this.txtDuracion_Click);
             // 
             // metroLabel3
             // 
