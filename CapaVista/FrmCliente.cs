@@ -31,13 +31,6 @@ namespace CapaVista
         {
             lbOpcional.Visible = true;
         }
-
-        private void rbMale_CheckedChanged(object sender, EventArgs e)
-        {
-         
-        }
-
-        
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             CapaNegocios.clsCliente cliente = new CapaNegocios.clsCliente();
@@ -110,10 +103,6 @@ namespace CapaVista
             rbChildren.Checked = false;
             rbAdult.Checked = false;
         }
-
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
-
         }
     }
-}
+

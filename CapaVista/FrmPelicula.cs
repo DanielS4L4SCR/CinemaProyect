@@ -44,11 +44,28 @@ namespace CapaVista
             {
                 MessageBox.Show("Pelicula Agregada al sistema");
             }
+            DialogResult result;
+            result=MessageBox.Show("¿Deseea agregar esta pelicula a una proyección?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == System.Windows.Forms.DialogResult.Yes)
+		{
+                FrmProyecciones proyecciones = new FrmProyecciones();
+                proyecciones.Show();
+            }
         }
 
         private void txtDuracion_Click(object sender, EventArgs e)
         {
             txtDuracion.Text = "";
+        }
+
+        private void FrmPelicula_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
         }
     }
 }

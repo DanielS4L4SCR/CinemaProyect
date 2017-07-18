@@ -51,37 +51,6 @@ namespace CapaVista
         {
             
         }
-
-        private void metroContextMenu1_Opening(object sender, CancelEventArgs e)
-        {
-
-        }
-
-        private void metroButton1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void metroPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void metroLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void button5_Click(object sender, EventArgs e)
         {
             if (panelAgregar1.Visible == true)
@@ -97,11 +66,6 @@ namespace CapaVista
             {
                 Util.Animate(panelVentas2, Util.Effect.Roll, 150, 360);
             }
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void btnMenú_Click(object sender, EventArgs e)
@@ -152,11 +116,6 @@ namespace CapaVista
             }
         }
 
-        private void btnPeliculas_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAgregar_Click(object sender, EventArgs e)
         {
 
@@ -197,16 +156,6 @@ namespace CapaVista
         }
 
         private void panelMenú_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lbUser_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

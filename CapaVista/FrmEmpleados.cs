@@ -57,10 +57,6 @@ namespace CapaVista
 
 
         }
-        private void cboTel_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-        }
 
         private void txtDireccion_Click(object sender, EventArgs e)
         {
@@ -90,9 +86,18 @@ namespace CapaVista
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             CapaNegocios.clsEmpleado empleado = new CapaNegocios.clsEmpleado();
-            if(rbNacional.Checked==true)
+           /* if (txtID.Text == "" || txtNom.Text == "" || txtApe1.Text == "" || txtUser.Text == "" || txtPassword.Text == "" || cboProv.Text == "" || cboCanton.Text == "" || cboDistri.Text == "" || txtDireccion.Text == "" || txtTel.Text == "" || cboTel.Text == "" || txtMail.Text == "" || cboMail.Text == "")
             {
-                if (empleado.insertarNacional(txtID.Text, txtNom.Text, txtApe1.Text, txtApe2.Text, Genero(), txtUser.Text, txtPassword.Text, TipoEmpleado(), Convert.ToInt32(cboProv.SelectedValue), Convert.ToInt32(cboCanton.SelectedValue), Convert.ToInt32(cboDistri.SelectedValue),txtDireccion.Text,activo(),int.Parse(txtTel.Text),Convert.ToInt32(cboTel.SelectedValue),txtMail.Text, Convert.ToInt32(cboMail.SelectedValue)))
+                DialogResult result;
+                result = MessageBox.Show("Faltan campos por completar", "Error#001", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                if(result == System.Windows.Forms.DialogResult.Cancel)
+                {
+                    this.Close();
+                }
+            }*/
+            if (rbNacional.Checked == true)
+            {
+               if (empleado.insertarNacional(txtID.Text, txtNom.Text, txtApe1.Text, txtApe2.Text, Genero(), txtUser.Text, txtPassword.Text, TipoEmpleado(), Convert.ToInt32(cboProv.SelectedValue), Convert.ToInt32(cboCanton.SelectedValue), Convert.ToInt32(cboDistri.SelectedValue),txtDireccion.Text,activo(),int.Parse(txtTel.Text),Convert.ToInt32(cboTel.SelectedValue),txtMail.Text, Convert.ToInt32(cboMail.SelectedValue)))
                 {
                     MessageBox.Show("Empleado Insertado");
                 }
@@ -147,24 +152,6 @@ namespace CapaVista
             return result;
         }
 
-        private void cboCanton_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void cboProv_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void cboProv_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void metroButton2_Click(object sender, EventArgs e)
-        {
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -185,21 +172,6 @@ namespace CapaVista
             cboDistri.DataSource = oDT5;
             cboDistri.DisplayMember = "Nombre_Distrito";
             cboDistri.ValueMember = "ID_Distrito";
-        }
-
-        private void cboDistri_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void cboMail_SelectedIndexChanged(object sender, EventArgs e)
-        {
-       
-        }
-
-        private void rbLimpiador_CheckedChanged(object sender, EventArgs e)
-        {
-           
         }
     }
 }

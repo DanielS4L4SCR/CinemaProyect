@@ -357,7 +357,6 @@
             this.rbMale.UseCustomForeColor = true;
             this.rbMale.UseSelectable = true;
             this.rbMale.UseStyleColors = true;
-            this.rbMale.CheckedChanged += new System.EventHandler(this.rbMale_CheckedChanged);
             // 
             // rbFemale
             // 
@@ -453,7 +452,6 @@
             this.groupBox3.Size = new System.Drawing.Size(197, 71);
             this.groupBox3.TabIndex = 22;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // rbAdolescente
             // 

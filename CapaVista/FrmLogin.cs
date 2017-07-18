@@ -46,10 +46,6 @@ namespace CapaVista
             txtContraseña.Text = "";
             cboxMostrar.Checked = false;
         }
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void cboMostrar_CheckedChanged(object sender, EventArgs e)
         {

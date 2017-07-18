@@ -41,6 +41,8 @@
             this.cboTipoPel = new MetroFramework.Controls.MetroComboBox();
             this.btnAceptar = new MetroFramework.Controls.MetroButton();
             this.cboGenPeli = new MetroFramework.Controls.MetroComboBox();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // lbNuevoEmp
@@ -287,12 +289,32 @@
             this.cboGenPeli.SelectedIndexChanged += new System.EventHandler(this.cboGenPeli_SelectedIndexChanged);
             this.cboGenPeli.Click += new System.EventHandler(this.cboGenPeli_SelectedIndexChanged);
             // 
+            // metroButton1
+            // 
+            this.metroButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
+            this.metroButton1.ForeColor = System.Drawing.Color.White;
+            this.metroButton1.Location = new System.Drawing.Point(35, 436);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(90, 33);
+            this.metroButton1.TabIndex = 57;
+            this.metroButton1.Text = "insertar Imagen";
+            this.metroButton1.UseCustomBackColor = true;
+            this.metroButton1.UseCustomForeColor = true;
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.UseStyleColors = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // FrmPelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            this.ClientSize = new System.Drawing.Size(314, 481);
+            this.ClientSize = new System.Drawing.Size(314, 513);
+            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.cboGenPeli);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.cboTipoPel);
@@ -310,6 +332,7 @@
             this.Name = "FrmPelicula";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Peliculas";
+            this.Load += new System.EventHandler(this.FrmPelicula_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,5 +353,7 @@
         private MetroFramework.Controls.MetroComboBox cboTipoPel;
         private MetroFramework.Controls.MetroButton btnAceptar;
         private MetroFramework.Controls.MetroComboBox cboGenPeli;
+        private MetroFramework.Controls.MetroButton metroButton1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

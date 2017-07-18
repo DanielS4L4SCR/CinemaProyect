@@ -393,8 +393,7 @@
             this.rbLimpiador.UseCustomForeColor = true;
             this.rbLimpiador.UseSelectable = true;
             this.rbLimpiador.UseStyleColors = true;
-            this.rbLimpiador.CheckedChanged += new System.EventHandler(this.rbLimpiador_CheckedChanged);
-            this.rbLimpiador.Click += new System.EventHandler(this.rbLimpiador_CheckedChanged);
+           
             // 
             // rbCajero
             // 
@@ -645,8 +644,6 @@
             this.cboMail.UseCustomForeColor = true;
             this.cboMail.UseSelectable = true;
             this.cboMail.UseStyleColors = true;
-            this.cboMail.SelectedIndexChanged += new System.EventHandler(this.cboMail_SelectedIndexChanged);
-            this.cboMail.Click += new System.EventHandler(this.cboMail_SelectedIndexChanged);
             // 
             // groupBox3
             // 
@@ -721,8 +718,7 @@
             this.cboProv.UseCustomForeColor = true;
             this.cboProv.UseSelectable = true;
             this.cboProv.UseStyleColors = true;
-            this.cboProv.SelectedIndexChanged += new System.EventHandler(this.cboProv_SelectedIndexChanged);
-            this.cboProv.Click += new System.EventHandler(this.cboProv_SelectedIndexChanged);
+            
             // 
             // metroLabel5
             // 
@@ -788,8 +784,6 @@
             this.cboCanton.UseCustomForeColor = true;
             this.cboCanton.UseSelectable = true;
             this.cboCanton.UseStyleColors = true;
-            this.cboCanton.SelectedIndexChanged += new System.EventHandler(this.cboCanton_SelectedIndexChanged);
-            this.cboCanton.Click += new System.EventHandler(this.cboCanton_SelectedIndexChanged);
             // 
             // cboDistri
             // 
@@ -805,8 +799,6 @@
             this.cboDistri.UseCustomForeColor = true;
             this.cboDistri.UseSelectable = true;
             this.cboDistri.UseStyleColors = true;
-            this.cboDistri.SelectedIndexChanged += new System.EventHandler(this.cboDistri_SelectedIndexChanged);
-            this.cboDistri.Click += new System.EventHandler(this.cboDistri_SelectedIndexChanged);
             // 
             // metroLabel4
             // 
@@ -857,9 +849,6 @@
             this.cboTel.UseCustomForeColor = true;
             this.cboTel.UseSelectable = true;
             this.cboTel.UseStyleColors = true;
-            this.cboTel.SelectedIndexChanged += new System.EventHandler(this.cboTel_SelectedIndexChanged);
-            this.cboTel.TextUpdate += new System.EventHandler(this.cboTel_SelectedIndexChanged);
-            this.cboTel.Click += new System.EventHandler(this.cboTel_SelectedIndexChanged);
             // 
             // groupBox5
             // 

@@ -83,7 +83,6 @@
             this.panelSubMenu.Size = new System.Drawing.Size(222, 1000);
             this.panelSubMenu.TabIndex = 6;
             this.panelSubMenu.Visible = false;
-            this.panelSubMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // lbRegresar
             // 
@@ -114,7 +113,7 @@
             this.btnPeliculas.Text = "Cartelera";
             this.btnPeliculas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPeliculas.UseVisualStyleBackColor = false;
-            this.btnPeliculas.Click += new System.EventHandler(this.btnPeliculas_Click);
+           
             // 
             // IconsList
             // 
@@ -560,7 +559,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2000, 1000);
             this.panel1.TabIndex = 10;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // lbCinemaPro
             // 
