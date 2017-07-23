@@ -177,5 +177,22 @@ namespace CapaVista
             FrmEmpleados empleado = new FrmEmpleados();
             empleado.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FrmProyeccion proyeccion = new FrmProyeccion();
+            proyeccion.Show();
+        }
+
+        private void btnPromo_Click(object sender, EventArgs e)
+        {
+            FrmPromocion promocion = new FrmPromocion();
+            promocion.Show();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

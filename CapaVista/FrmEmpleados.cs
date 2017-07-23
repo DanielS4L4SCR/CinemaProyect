@@ -99,14 +99,15 @@ namespace CapaVista
             {
                if (empleado.insertarNacional(txtID.Text, txtNom.Text, txtApe1.Text, txtApe2.Text, Genero(), txtUser.Text, txtPassword.Text, TipoEmpleado(), Convert.ToInt32(cboProv.SelectedValue), Convert.ToInt32(cboCanton.SelectedValue), Convert.ToInt32(cboDistri.SelectedValue),txtDireccion.Text,activo(),int.Parse(txtTel.Text),Convert.ToInt32(cboTel.SelectedValue),txtMail.Text, Convert.ToInt32(cboMail.SelectedValue)))
                 {
-                    MessageBox.Show("Empleado Insertado");
+                   
+                    MessageBox.Show("Empleado insertado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.None);
                 }
             }
             if(rbExtranjero.Checked==true)
             {
                 if (empleado.insertarExtranjero(txtID.Text, txtNom.Text, txtApe1.Text, txtApe2.Text, Genero(), txtUser.Text, txtPassword.Text, TipoEmpleado(), Convert.ToInt32(cboProv.SelectedValue), Convert.ToInt32(cboCanton.SelectedValue), Convert.ToInt32(cboDistri.SelectedValue), txtDireccion.Text, activo(), int.Parse(txtTel.Text), Convert.ToInt32(cboTel.SelectedValue), txtMail.Text, Convert.ToInt32(cboMail.SelectedValue)))
                 {
-                    MessageBox.Show("Empleado Insertado");
+                    MessageBox.Show("Empleado insertado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.None);
                 }
             }
         }
@@ -173,5 +174,7 @@ namespace CapaVista
             cboDistri.DisplayMember = "Nombre_Distrito";
             cboDistri.ValueMember = "ID_Distrito";
         }
+
+       
     }
 }

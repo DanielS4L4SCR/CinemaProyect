@@ -89,11 +89,17 @@
     <Compile Include="FrmPrincipall.Designer.cs">
       <DependentUpon>FrmPrincipall.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmProyecciones.cs">
+    <Compile Include="FrmPromocion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmProyecciones.Designer.cs">
-      <DependentUpon>FrmProyecciones.cs</DependentUpon>
+    <Compile Include="FrmPromocion.Designer.cs">
+      <DependentUpon>FrmPromocion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProyeccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProyeccion.Designer.cs">
+      <DependentUpon>FrmProyeccion.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -112,8 +118,11 @@
     <EmbeddedResource Include="FrmPrincipall.resx">
       <DependentUpon>FrmPrincipall.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmProyecciones.resx">
-      <DependentUpon>FrmProyecciones.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPromocion.resx">
+      <DependentUpon>FrmPromocion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProyeccion.resx">
+      <DependentUpon>FrmProyeccion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -215,6 +224,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\video-player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spotlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\percent-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Voucher-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Discount-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

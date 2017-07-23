@@ -393,7 +393,6 @@
             this.rbLimpiador.UseCustomForeColor = true;
             this.rbLimpiador.UseSelectable = true;
             this.rbLimpiador.UseStyleColors = true;
-           
             // 
             // rbCajero
             // 
@@ -718,7 +717,6 @@
             this.cboProv.UseCustomForeColor = true;
             this.cboProv.UseSelectable = true;
             this.cboProv.UseStyleColors = true;
-            
             // 
             // metroLabel5
             // 
@@ -849,6 +847,7 @@
             this.cboTel.UseCustomForeColor = true;
             this.cboTel.UseSelectable = true;
             this.cboTel.UseStyleColors = true;
+            
             // 
             // groupBox5
             // 

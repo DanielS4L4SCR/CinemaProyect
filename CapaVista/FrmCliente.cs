@@ -39,8 +39,9 @@ namespace CapaVista
             {
                 if(cliente.insertarNacional(txtID.Text,txtNom.Text,txtApe1.Text,txtApe2.Text,Genero(),TipoCliente()))
                 {
-                    MessageBox.Show("Cliente Nacional Agregado");
+                    MessageBox.Show("Cliente nacional agregado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.None);
                     limpiar();
+
                 }
             }
 
@@ -48,7 +49,7 @@ namespace CapaVista
             {
                 if (cliente.insertarExtranjero(txtID.Text, txtNom.Text, txtApe1.Text, txtApe2.Text, Genero(), TipoCliente()))
                 {
-                    MessageBox.Show("Cliente extranjero Agregado");
+                    MessageBox.Show("Cliente extrangero agregado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.None);
                     limpiar();
                 }
             }

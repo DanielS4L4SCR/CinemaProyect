@@ -41,6 +41,7 @@
             this.panelMenú = new System.Windows.Forms.Panel();
             this.BtnMenu = new System.Windows.Forms.Button();
             this.panelAgregar1 = new System.Windows.Forms.Panel();
+            this.btnProyeccion = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lbCancelar = new System.Windows.Forms.Label();
             this.btnPromo = new System.Windows.Forms.Button();
@@ -113,7 +114,6 @@
             this.btnPeliculas.Text = "Cartelera";
             this.btnPeliculas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPeliculas.UseVisualStyleBackColor = false;
-           
             // 
             // IconsList
             // 
@@ -137,6 +137,7 @@
             this.IconsList.Images.SetKeyName(15, "icons8-Coins-50.png");
             this.IconsList.Images.SetKeyName(16, "icons8-Movies Folder-50.png");
             this.IconsList.Images.SetKeyName(17, "icons8-Aircraft Seat Aisle-50.png");
+            this.IconsList.Images.SetKeyName(18, "spotlight.png");
             // 
             // btnVentas2
             // 
@@ -248,6 +249,7 @@
             // 
             this.panelAgregar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(162)))), ((int)(((byte)(187)))));
             this.panelAgregar1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelAgregar1.Controls.Add(this.btnProyeccion);
             this.panelAgregar1.Controls.Add(this.btnCancelar);
             this.panelAgregar1.Controls.Add(this.lbCancelar);
             this.panelAgregar1.Controls.Add(this.btnPromo);
@@ -259,6 +261,27 @@
             this.panelAgregar1.Size = new System.Drawing.Size(222, 1000);
             this.panelAgregar1.TabIndex = 7;
             this.panelAgregar1.Visible = false;
+            // 
+            // btnProyeccion
+            // 
+            this.btnProyeccion.BackColor = System.Drawing.Color.Transparent;
+            this.btnProyeccion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnProyeccion.FlatAppearance.BorderSize = 0;
+            this.btnProyeccion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
+            this.btnProyeccion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
+            this.btnProyeccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProyeccion.Font = new System.Drawing.Font("Segoe UI Emoji", 14F);
+            this.btnProyeccion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProyeccion.ImageIndex = 18;
+            this.btnProyeccion.ImageList = this.IconsList;
+            this.btnProyeccion.Location = new System.Drawing.Point(1, 269);
+            this.btnProyeccion.Name = "btnProyeccion";
+            this.btnProyeccion.Size = new System.Drawing.Size(211, 76);
+            this.btnProyeccion.TabIndex = 8;
+            this.btnProyeccion.Text = "Proyección";
+            this.btnProyeccion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnProyeccion.UseVisualStyleBackColor = false;
+            this.btnProyeccion.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnCancelar
             // 
@@ -299,13 +322,14 @@
             this.btnPromo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPromo.ImageIndex = 13;
             this.btnPromo.ImageList = this.IconsList;
-            this.btnPromo.Location = new System.Drawing.Point(5, 273);
+            this.btnPromo.Location = new System.Drawing.Point(2, 333);
             this.btnPromo.Name = "btnPromo";
             this.btnPromo.Size = new System.Drawing.Size(211, 76);
             this.btnPromo.TabIndex = 5;
             this.btnPromo.Text = "Promoción";
             this.btnPromo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPromo.UseVisualStyleBackColor = false;
+            this.btnPromo.Click += new System.EventHandler(this.btnPromo_Click);
             // 
             // btnNewMovie
             // 
@@ -559,6 +583,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2000, 1000);
             this.panel1.TabIndex = 10;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // lbCinemaPro
             // 
@@ -634,6 +659,7 @@
         private System.Windows.Forms.Label lbCinemaPro;
         private System.Windows.Forms.Button btnFondos;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnProyeccion;
     }
 }
 

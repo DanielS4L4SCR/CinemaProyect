@@ -48,7 +48,7 @@ namespace CapaVista
             result=MessageBox.Show("¿Deseea agregar esta pelicula a una proyección?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == System.Windows.Forms.DialogResult.Yes)
 		{
-                FrmProyecciones proyecciones = new FrmProyecciones();
+                FrmProyeccion proyecciones = new FrmProyeccion();
                 proyecciones.Show();
             }
         }
