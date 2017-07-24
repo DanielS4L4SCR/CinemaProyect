@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnAgregar = new MetroFramework.Controls.MetroButton();
             this.nudCantidad = new System.Windows.Forms.NumericUpDown();
@@ -48,17 +50,22 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.btnAceptar = new MetroFramework.Controls.MetroButton();
-            this.lbTipoCliente = new MetroFramework.Controls.MetroLabel();
             this.lbValor = new MetroFramework.Controls.MetroLabel();
             this.dgvVentas = new System.Windows.Forms.DataGridView();
-            this.IDProyeccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IDPelicula = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idSala = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoraInicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoraFinalización = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaEstreno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cboTipoCliente = new MetroFramework.Controls.MetroComboBox();
+            this.cboLastFac = new MetroFramework.Controls.MetroComboBox();
+            this.cboPromo = new MetroFramework.Controls.MetroComboBox();
+            this.cboDescuento = new MetroFramework.Controls.MetroComboBox();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaEstreno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoraFinalización = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoraInicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idSala = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IDPelicula = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IDProyeccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descuent = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -152,7 +159,7 @@
             this.groupBox2.Controls.Add(this.metroLabel2);
             this.groupBox2.Controls.Add(this.cboCliente);
             this.groupBox2.Controls.Add(this.metroLabel1);
-            this.groupBox2.Location = new System.Drawing.Point(496, 146);
+            this.groupBox2.Location = new System.Drawing.Point(496, 102);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(296, 136);
             this.groupBox2.TabIndex = 1;
@@ -227,6 +234,7 @@
             this.cboCliente.UseCustomForeColor = true;
             this.cboCliente.UseSelectable = true;
             this.cboCliente.UseStyleColors = true;
+            this.cboCliente.SelectedIndexChanged += new System.EventHandler(this.cboCliente_SelectedIndexChanged);
             // 
             // metroLabel1
             // 
@@ -285,28 +293,16 @@
             // 
             this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
             this.btnAceptar.ForeColor = System.Drawing.Color.White;
-            this.btnAceptar.Location = new System.Drawing.Point(752, 529);
+            this.btnAceptar.Location = new System.Drawing.Point(746, 529);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(125, 33);
+            this.btnAceptar.Size = new System.Drawing.Size(131, 33);
             this.btnAceptar.TabIndex = 65;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseCustomBackColor = true;
             this.btnAceptar.UseCustomForeColor = true;
             this.btnAceptar.UseSelectable = true;
             this.btnAceptar.UseStyleColors = true;
-            // 
-            // lbTipoCliente
-            // 
-            this.lbTipoCliente.AutoSize = true;
-            this.lbTipoCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.lbTipoCliente.Location = new System.Drawing.Point(798, 166);
-            this.lbTipoCliente.Name = "lbTipoCliente";
-            this.lbTipoCliente.Size = new System.Drawing.Size(79, 19);
-            this.lbTipoCliente.TabIndex = 67;
-            this.lbTipoCliente.Text = "Tipo cliente:";
-            this.lbTipoCliente.UseCustomBackColor = true;
-            this.lbTipoCliente.UseCustomForeColor = true;
-            this.lbTipoCliente.UseStyleColors = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // lbValor
             // 
@@ -326,20 +322,23 @@
             // 
             this.dgvVentas.AllowUserToAddRows = false;
             this.dgvVentas.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvVentas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvVentas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            this.dgvVentas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvVentas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvVentas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IDProyeccion,
@@ -349,63 +348,100 @@
             this.HoraFinalización,
             this.FechaEstreno,
             this.Precio,
-            this.Cantidad});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvVentas.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Cantidad,
+            this.Descuent});
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvVentas.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dgvVentas.EnableHeadersVisualStyles = false;
             this.dgvVentas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.dgvVentas.Location = new System.Drawing.Point(80, 299);
+            this.dgvVentas.Location = new System.Drawing.Point(90, 299);
             this.dgvVentas.Name = "dgvVentas";
             this.dgvVentas.ReadOnly = true;
-            this.dgvVentas.Size = new System.Drawing.Size(747, 209);
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVentas.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvVentas.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.dgvVentas.Size = new System.Drawing.Size(748, 224);
             this.dgvVentas.TabIndex = 88;
             // 
-            // IDProyeccion
+            // cboTipoCliente
             // 
-            this.IDProyeccion.HeaderText = "Proyección";
-            this.IDProyeccion.Name = "IDProyeccion";
-            this.IDProyeccion.ReadOnly = true;
+            this.cboTipoCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.cboTipoCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.cboTipoCliente.FormattingEnabled = true;
+            this.cboTipoCliente.ItemHeight = 23;
+            this.cboTipoCliente.Location = new System.Drawing.Point(809, 118);
+            this.cboTipoCliente.Name = "cboTipoCliente";
+            this.cboTipoCliente.Size = new System.Drawing.Size(56, 29);
+            this.cboTipoCliente.TabIndex = 89;
+            this.cboTipoCliente.UseCustomBackColor = true;
+            this.cboTipoCliente.UseCustomForeColor = true;
+            this.cboTipoCliente.UseSelectable = true;
+            this.cboTipoCliente.UseStyleColors = true;
+            this.cboTipoCliente.Visible = false;
             // 
-            // IDPelicula
+            // cboLastFac
             // 
-            this.IDPelicula.HeaderText = "Pelicula";
-            this.IDPelicula.Name = "IDPelicula";
-            this.IDPelicula.ReadOnly = true;
+            this.cboLastFac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.cboLastFac.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.cboLastFac.FormattingEnabled = true;
+            this.cboLastFac.ItemHeight = 23;
+            this.cboLastFac.Location = new System.Drawing.Point(809, 166);
+            this.cboLastFac.Name = "cboLastFac";
+            this.cboLastFac.Size = new System.Drawing.Size(56, 29);
+            this.cboLastFac.TabIndex = 90;
+            this.cboLastFac.UseCustomBackColor = true;
+            this.cboLastFac.UseCustomForeColor = true;
+            this.cboLastFac.UseSelectable = true;
+            this.cboLastFac.UseStyleColors = true;
+            this.cboLastFac.Visible = false;
             // 
-            // idSala
+            // cboPromo
             // 
-            this.idSala.HeaderText = "Sala";
-            this.idSala.Name = "idSala";
-            this.idSala.ReadOnly = true;
+            this.cboPromo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.cboPromo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.cboPromo.FormattingEnabled = true;
+            this.cboPromo.ItemHeight = 23;
+            this.cboPromo.Location = new System.Drawing.Point(809, 213);
+            this.cboPromo.Name = "cboPromo";
+            this.cboPromo.Size = new System.Drawing.Size(56, 29);
+            this.cboPromo.TabIndex = 92;
+            this.cboPromo.UseCustomBackColor = true;
+            this.cboPromo.UseCustomForeColor = true;
+            this.cboPromo.UseSelectable = true;
+            this.cboPromo.UseStyleColors = true;
+            this.cboPromo.Visible = false;
             // 
-            // HoraInicio
+            // cboDescuento
             // 
-            this.HoraInicio.HeaderText = "Hora Inicio";
-            this.HoraInicio.Name = "HoraInicio";
-            this.HoraInicio.ReadOnly = true;
-            // 
-            // HoraFinalización
-            // 
-            this.HoraFinalización.HeaderText = "HoraFinalización";
-            this.HoraFinalización.Name = "HoraFinalización";
-            this.HoraFinalización.ReadOnly = true;
-            // 
-            // FechaEstreno
-            // 
-            this.FechaEstreno.HeaderText = "FechaEstreno";
-            this.FechaEstreno.Name = "FechaEstreno";
-            this.FechaEstreno.ReadOnly = true;
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
+            this.cboDescuento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.cboDescuento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.cboDescuento.FormattingEnabled = true;
+            this.cboDescuento.ItemHeight = 23;
+            this.cboDescuento.Location = new System.Drawing.Point(809, 264);
+            this.cboDescuento.Name = "cboDescuento";
+            this.cboDescuento.Size = new System.Drawing.Size(56, 29);
+            this.cboDescuento.TabIndex = 93;
+            this.cboDescuento.UseCustomBackColor = true;
+            this.cboDescuento.UseCustomForeColor = true;
+            this.cboDescuento.UseSelectable = true;
+            this.cboDescuento.UseStyleColors = true;
+            this.cboDescuento.Visible = false;
             // 
             // Cantidad
             // 
@@ -413,15 +449,74 @@
             this.Cantidad.Name = "Cantidad";
             this.Cantidad.ReadOnly = true;
             // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
+            // 
+            // FechaEstreno
+            // 
+            this.FechaEstreno.HeaderText = "FechaEstreno";
+            this.FechaEstreno.Name = "FechaEstreno";
+            this.FechaEstreno.ReadOnly = true;
+            // 
+            // HoraFinalización
+            // 
+            this.HoraFinalización.HeaderText = "HoraFinalización";
+            this.HoraFinalización.Name = "HoraFinalización";
+            this.HoraFinalización.ReadOnly = true;
+            // 
+            // HoraInicio
+            // 
+            this.HoraInicio.HeaderText = "Hora Inicio";
+            this.HoraInicio.Name = "HoraInicio";
+            this.HoraInicio.ReadOnly = true;
+            // 
+            // idSala
+            // 
+            this.idSala.HeaderText = "Sala";
+            this.idSala.Name = "idSala";
+            this.idSala.ReadOnly = true;
+            // 
+            // IDPelicula
+            // 
+            this.IDPelicula.HeaderText = "Pelicula";
+            this.IDPelicula.Name = "IDPelicula";
+            this.IDPelicula.ReadOnly = true;
+            // 
+            // IDProyeccion
+            // 
+            this.IDProyeccion.HeaderText = "Proyección";
+            this.IDProyeccion.Name = "IDProyeccion";
+            this.IDProyeccion.ReadOnly = true;
+            // 
+            // Descuent
+            // 
+            this.Descuent.HeaderText = "Descuent";
+            this.Descuent.Name = "Descuent";
+            this.Descuent.ReadOnly = true;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(759, 299);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 224);
+            this.panel2.TabIndex = 94;
+            // 
             // FrmVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
             this.ClientSize = new System.Drawing.Size(890, 570);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.cboDescuento);
+            this.Controls.Add(this.cboPromo);
+            this.Controls.Add(this.cboLastFac);
+            this.Controls.Add(this.cboTipoCliente);
             this.Controls.Add(this.dgvVentas);
             this.Controls.Add(this.lbValor);
-            this.Controls.Add(this.lbTipoCliente);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.lbNuevoCliente);
@@ -461,9 +556,12 @@
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroButton btnAceptar;
         private MetroFramework.Controls.MetroButton btnAgregar;
-        private MetroFramework.Controls.MetroLabel lbTipoCliente;
         private MetroFramework.Controls.MetroLabel lbValor;
         private System.Windows.Forms.DataGridView dgvVentas;
+        private MetroFramework.Controls.MetroComboBox cboTipoCliente;
+        private MetroFramework.Controls.MetroComboBox cboLastFac;
+        private MetroFramework.Controls.MetroComboBox cboPromo;
+        private MetroFramework.Controls.MetroComboBox cboDescuento;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDProyeccion;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDPelicula;
         private System.Windows.Forms.DataGridViewTextBoxColumn idSala;
@@ -472,5 +570,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaEstreno;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descuent;
+        private System.Windows.Forms.Panel panel2;
     }
 }

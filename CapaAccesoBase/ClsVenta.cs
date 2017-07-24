@@ -36,16 +36,36 @@ namespace CapaDatos
             return dtEmpleado;
         }
 
-        public bool insertarFactura(int idFactura,int proyeccion, int idCliente, String nombCliente, String fecha, Double montoTotal, int idEmpleado, int idTipoCLiente, Double montoProyeccion, int cantidadBoletos)
+        public DataTable consultaTipoCliente(int cliente)
         {
-            bool creandoFact, creandoDetalle;
-            creandoFact = conecta.ejecutarInsert("insert into factura(Cliente_idCliente, Cliente_Persona_idPersona, FechaVenta, Monto, Empleado_id_Empleado, tipoPersona_idTipoPersona) values("+idFactura+", "+idCliente+", '"+fecha+"', "+montoTotal+", "+idEmpleado+", "+idTipoCLiente+")");
-            creandoDetalle = conecta.ejecutarInsert("insert into detalle(Factura_idFactura,Proyecciones_id_Proyeccion,Precio,Cantidad) values ("+idFactura+","+proyeccion+","+montoProyeccion+","+cantidadBoletos+")");
-            if (creandoFact && creandoDetalle)
-            {
-                return true;
-            }
-            return false;
+            DataTable dtTipoCliente;
+            dtTipoCliente = conecta.ejecutar("Select TipoCliente_idTipoCliente from cliente where idCliente=" + cliente + "");
+            return dtTipoCliente;
+        }
+        public DataTable consultaUltimaFactura()
+        {
+            DataTable dtTipoCliente;
+            dtTipoCliente = conecta.ejecutar("SELECT MAX(idCliente) FROM cliente;");
+            return dtTipoCliente;
+        }
+
+        public bool insertarFactura(int idCliente, String idPersona, String fecha, Double montoTotal, int idEmpleado, int idTipoCLiente)
+        {
+            CapaDatos.ClsConexion conecta = new CapaDatos.ClsConexion();
+            return conecta.ejecutarInsert("INSERT INTO factura(Cliente_idCliente, Cliente_Persona_idPersona, FechaVenta, Monto, Empleado_id_Empleado, idTipoCliente)VALUES(" + idCliente + ",'"+idPersona+"','" + fecha + "'," + montoTotal + ","+idEmpleado+","+idTipoCLiente+")");
+        }
+
+        public DataTable consultaPromoción(int tipoCliente,int proyeccion)
+        {
+            DataTable dtPromo;
+            dtPromo = conecta.ejecutar("Select idPromocion,Descripcion, PorcentajeDescuento from promocion where TipoCliente_idTipoCliente =" + tipoCliente+ " and Proyecciones_id_Proyeccion = " + proyeccion+"");
+            return dtPromo;
+        }
+
+        public bool insertarDetalle(int detalle, int factura,int proyeccion,Double precio,int cantidad)
+        {
+            CapaDatos.ClsConexion conecta = new CapaDatos.ClsConexion();
+            return conecta.ejecutarInsert("insert into detalle(idDetalle,Factura_idFactura, Proyecciones_id_Proyeccion, Precio, Cantidad)values("+detalle+"," + factura+"," + proyeccion+","+precio+","+cantidad+")");
         }
     }
 }

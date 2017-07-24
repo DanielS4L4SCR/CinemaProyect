@@ -29,9 +29,26 @@ namespace CapaNegocios
             return ventas.llenarEmpleado();
         }
 
-        public bool insertarFactura(int idFactura, int proyeccion, int idCliente, String nombCliente, String fecha, Double montoTotal, int idEmpleado, int idTipoCLiente, Double montoProyeccion, int cantidadBoletos)
+        public DataTable consultaTipoCliente(int cliente)
         {
-            return ventas.insertarFactura(idFactura,proyeccion,idCliente,nombCliente,fecha,montoTotal,idEmpleado,idTipoCLiente,montoProyeccion,cantidadBoletos);
+            return ventas.consultaTipoCliente(cliente);
+        }
+        public DataTable consultaUltimaFactura()
+        {
+            return ventas.consultaUltimaFactura();
+        }
+        public DataTable consultaPromo(int tipoCliente, int proyeccion)
+        {
+            return ventas.consultaPromoción(tipoCliente,proyeccion);
+        }
+            public bool insertarFactura(int idCliente, String idPersona, String fecha, Double montoTotal, int idEmpleado, int idTipoCliente)
+        {
+            return ventas.insertarFactura(idCliente, idPersona, fecha, montoTotal, idEmpleado, idTipoCliente);
+        }
+
+        public bool insertarDetalle(int detalle,int factura, int proyeccion, Double precio, int cantidad)
+        {
+            return ventas.insertarDetalle(detalle,factura, proyeccion, precio, cantidad);
         }
     }
 }
