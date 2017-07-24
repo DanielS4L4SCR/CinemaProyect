@@ -48,6 +48,7 @@
     <Compile Include="ClsPeliculas.cs" />
     <Compile Include="ClsPromocion.cs" />
     <Compile Include="ClsProyeccion.cs" />
+    <Compile Include="ClsVenta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

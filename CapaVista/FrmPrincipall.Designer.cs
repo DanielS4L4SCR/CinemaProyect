@@ -451,6 +451,7 @@
             this.btnFacturacion.Text = "Facturación";
             this.btnFacturacion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnFacturacion.UseVisualStyleBackColor = false;
+            this.btnFacturacion.Click += new System.EventHandler(this.btnFacturacion_Click);
             // 
             // panelReportes3
             // 
@@ -606,9 +607,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelSubMenu);
             this.Controls.Add(this.panelMenú);
-            this.Controls.Add(this.panelAgregar1);
             this.Controls.Add(this.panelVentas2);
             this.Controls.Add(this.panelReportes3);
+            this.Controls.Add(this.panelAgregar1);
             this.Name = "FrmPrincipall";
             this.Text = "Menú";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

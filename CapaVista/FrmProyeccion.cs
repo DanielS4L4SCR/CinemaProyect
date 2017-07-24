@@ -19,7 +19,19 @@ namespace CapaVista
 
         private void FrmProyeccion_Load(object sender, EventArgs e)
         {
+            DataTable oDT = new DataTable();
+            CapaNegocios.clsProyeccion proyeccion = new CapaNegocios.clsProyeccion();
+            oDT = proyeccion.LlenarSalas();
+            cboSala.DataSource = oDT;
+            cboSala.DisplayMember = "idSala";
+            cboSala.ValueMember = "idSala";
 
+            DataTable oDT2 = new DataTable();
+            CapaNegocios.clsProyeccion proyeccion1 = new CapaNegocios.clsProyeccion();
+            oDT2 = proyeccion1.LlenarPeliculas();
+            cboPelicula.DataSource = oDT2;
+            cboPelicula.DisplayMember = "Nombre";
+            cboPelicula.ValueMember = "idPelicula";
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -29,26 +41,6 @@ namespace CapaVista
             {
                 MessageBox.Show("Proyección agregada correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.None);
             }
-        }
-
-        private void cboSala_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            DataTable oDT = new DataTable();
-            CapaNegocios.clsProyeccion proyeccion = new CapaNegocios.clsProyeccion();
-            oDT = proyeccion.LlenarSalas();
-            cboSala.DataSource = oDT;
-            cboSala.DisplayMember = "idSala";
-            cboSala.ValueMember = "idSala";
-        }
-
-        private void cboPelicula_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            DataTable oDT = new DataTable();
-            CapaNegocios.clsProyeccion proyeccion = new CapaNegocios.clsProyeccion();
-            oDT = proyeccion.LlenarPeliculas();
-            cboPelicula.DataSource = oDT;
-            cboPelicula.DisplayMember = "Nombre";
-            cboPelicula.ValueMember = "idPelicula";
         }
 
        

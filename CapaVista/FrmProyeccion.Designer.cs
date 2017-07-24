@@ -97,8 +97,6 @@
             this.cboSala.UseCustomForeColor = true;
             this.cboSala.UseSelectable = true;
             this.cboSala.UseStyleColors = true;
-            this.cboSala.SelectedIndexChanged += new System.EventHandler(this.cboSala_SelectedIndexChanged);
-            this.cboSala.Click += new System.EventHandler(this.cboSala_SelectedIndexChanged);
             // 
             // lbPelicula
             // 
@@ -127,8 +125,6 @@
             this.cboPelicula.UseCustomForeColor = true;
             this.cboPelicula.UseSelectable = true;
             this.cboPelicula.UseStyleColors = true;
-            this.cboPelicula.SelectedIndexChanged += new System.EventHandler(this.cboPelicula_SelectedIndexChanged);
-            this.cboPelicula.Click += new System.EventHandler(this.cboPelicula_SelectedIndexChanged);
             // 
             // LbHoraIni
             // 

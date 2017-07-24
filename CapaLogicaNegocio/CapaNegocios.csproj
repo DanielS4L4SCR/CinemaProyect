@@ -48,6 +48,7 @@
     <Compile Include="clsPeliculas.cs" />
     <Compile Include="ClsPromocion.cs" />
     <Compile Include="clsProyeccion.cs" />
+    <Compile Include="clsVenta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

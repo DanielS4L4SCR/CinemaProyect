@@ -17,16 +17,6 @@ namespace CapaVista
             InitializeComponent();
         }
 
-        private void cboProyecciones_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void cboTipoCliente_SelectedIndexChanged(object sender, EventArgs e)
-        {
-          
-        }
-
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             CapaNegocios.ClsPromocion promocion = new CapaNegocios.ClsPromocion();
@@ -52,5 +42,6 @@ namespace CapaVista
             cboProyecciones.DisplayMember = "id_Proyeccion";
             cboProyecciones.ValueMember = "id_Proyeccion";
         }
+
     }
 }

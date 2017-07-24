@@ -55,8 +55,7 @@
             this.cboProyecciones.UseCustomForeColor = true;
             this.cboProyecciones.UseSelectable = true;
             this.cboProyecciones.UseStyleColors = true;
-            this.cboProyecciones.SelectedIndexChanged += new System.EventHandler(this.cboProyecciones_SelectedIndexChanged);
-            this.cboProyecciones.Click += new System.EventHandler(this.cboProyecciones_SelectedIndexChanged);
+            
             // 
             // lblProyecciones
             // 
@@ -123,8 +122,6 @@
             this.cboTipoCliente.UseCustomForeColor = true;
             this.cboTipoCliente.UseSelectable = true;
             this.cboTipoCliente.UseStyleColors = true;
-            this.cboTipoCliente.SelectedIndexChanged += new System.EventHandler(this.cboTipoCliente_SelectedIndexChanged);
-            this.cboTipoCliente.Click += new System.EventHandler(this.cboTipoCliente_SelectedIndexChanged);
             // 
             // lblTipoCliente
             // 

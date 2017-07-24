@@ -194,5 +194,11 @@ namespace CapaVista
         {
 
         }
+
+        private void btnFacturacion_Click(object sender, EventArgs e)
+        {
+            FrmVentas ventas = new FrmVentas();
+            ventas.Show();
+        }
     }
 }
