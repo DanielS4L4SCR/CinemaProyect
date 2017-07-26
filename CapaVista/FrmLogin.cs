@@ -29,7 +29,7 @@ namespace CapaVista
         {
             CapaNegocios.clsLogin login = new CapaNegocios.clsLogin();
             
-            if(login.login(txtUsuario.Text,txtContraseña.Text).Rows.Count>0)
+            if(login.login(txtUsuario.Text,txtContraseña.Text).Rows.Count>0 &&txtUsuario.Text!=""&&txtContraseña.Text!="")
             {
                 new FrmPrincipall().Show();
                 limpiar();
@@ -37,7 +37,7 @@ namespace CapaVista
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña invalidos, intente de nuevo.");
+                MessageBox.Show("Usuario o contraseña invalidos, intente de nuevo", "Error", MessageBoxButtons.RetryCancel,MessageBoxIcon.Error);
             }
         }
         public void limpiar()
@@ -64,7 +64,6 @@ namespace CapaVista
         private void txtUsuario_Click(object sender, EventArgs e)
         {
             txtUsuario.Text = "";
-
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
