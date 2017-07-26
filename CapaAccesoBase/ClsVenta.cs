@@ -48,7 +48,12 @@ namespace CapaDatos
             dtTipoCliente = conecta.ejecutar("SELECT MAX(idCliente) FROM cliente;");
             return dtTipoCliente;
         }
-
+        public DataTable cargaPrecios(int proyeccion)
+        {
+            DataTable dtPrecios;
+            dtPrecios = conecta.ejecutar("SELECT (Precio) FROM proyecciones where id_Proyeccion=" +proyeccion+"");
+            return dtPrecios;
+        }
         public bool insertarFactura(int idCliente, String idPersona, String fecha, Double montoTotal, int idEmpleado, int idTipoCLiente)
         {
             CapaDatos.ClsConexion conecta = new CapaDatos.ClsConexion();

@@ -45,14 +45,15 @@ namespace CapaVista
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             CapaNegocios.clsVenta venta = new CapaNegocios.clsVenta();
-
             cargaTipoCliente();
             cargaUltimaFactura();
             cargaPromo();
+            cargaPrecio();
             if (cboPromo.Items.Count > 0)
             {
                 MessageBox.Show("Existe una promoción: " + cboPromo.Text + " se aplicará descuento de: " + cboDescuento.Text + "%", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            
             if (cboProyeccion.SelectedValue != null)
             {
                 foreach (DataGridViewRow prod in dgvVentas.Rows)
@@ -65,10 +66,8 @@ namespace CapaVista
                     }
                 }
                 DataTable oDT = venta.llenarProducto(Convert.ToInt32(cboProyeccion.SelectedValue));
-
-
-                dgvVentas.Rows.Add(oDT.Rows[0]["id_Proyeccion"], oDT.Rows[0]["Peliculas_idPelicula"], oDT.Rows[0]["idSala"], oDT.Rows[0]["HoraInicio"], oDT.Rows[0]["HoraFinalizacion"], oDT.Rows[0]["FechaEstreno"], oDT.Rows[0]["Precio"], (int)nudCantidad.Value, descuento());
-
+                dgvVentas.Rows.Add(oDT.Rows[0]["id_Proyeccion"], oDT.Rows[0]["Peliculas_idPelicula"], oDT.Rows[0]["idSala"], oDT.Rows[0]["HoraInicio"], oDT.Rows[0]["HoraFinalizacion"], oDT.Rows[0]["FechaEstreno"], oDT.Rows[0]["Precio"], (int)nudCantidad.Value, precioDescuento(), descuento());
+                
             }
             lbValor.Text = "" + total();
         }
@@ -84,15 +83,32 @@ namespace CapaVista
                 Double descuento;
                 descuento = Double.Parse(cboDescuento.Text) / 100;
                 return descuento;
+
             }
         }
-
+        public Double precioDescuento()
+        {
+            Double Precio = 0;
+            Double Cantidad = 0;
+            Cantidad = Double.Parse(cboPrecios.Text) * descuento();
+            Precio = Double.Parse(cboPrecios.Text) - Cantidad;
+            if(cboDescuento.Text=="")
+            {
+                return Cantidad;
+            }
+            else
+            {
+                return Precio;
+            }
+            
+        }
+       
         public Double total()
         {
             Double acumTotal = 0;
             foreach (DataGridViewRow total in dgvVentas.Rows)
             {
-                acumTotal += Convert.ToInt32(total.Cells["Cantidad"].Value) * Convert.ToInt32(total.Cells["Precio"].Value) * Convert.ToDouble(total.Cells["Descuent"].Value);
+                acumTotal += Convert.ToInt32(total.Cells["Cantidad"].Value) * Convert.ToInt32(total.Cells["PrecioDesc"].Value);            
             }
             return acumTotal;
         }
@@ -129,7 +145,15 @@ namespace CapaVista
             cboLastFac.DisplayMember = "MAX(idCliente)";
             cboLastFac.ValueMember = "MAX(idCliente)";
         }
-
+        public void cargaPrecio()
+        {
+            CapaNegocios.clsVenta precios = new CapaNegocios.clsVenta();
+            DataTable dtPrecios;
+            dtPrecios = precios.cargaPrecios(Convert.ToInt32(cboProyeccion.SelectedValue));
+            cboPrecios.DataSource = dtPrecios;
+            cboPrecios.DisplayMember = "Precio";
+            cboPrecios.ValueMember = "Precio";
+        }
         public void cargaPromo()
         {
             CapaNegocios.clsVenta promo = new CapaNegocios.clsVenta();
@@ -171,6 +195,11 @@ namespace CapaVista
                     MessageBox.Show("Factura realizada correctamente","Exito",MessageBoxButtons.OK,MessageBoxIcon.None);
                 }
             }
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 

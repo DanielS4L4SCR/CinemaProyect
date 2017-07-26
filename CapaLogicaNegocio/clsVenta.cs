@@ -41,6 +41,10 @@ namespace CapaNegocios
         {
             return ventas.consultaPromoción(tipoCliente,proyeccion);
         }
+        public DataTable cargaPrecios(int proyeccion)
+        {
+            return ventas.cargaPrecios(proyeccion);
+        }
             public bool insertarFactura(int idCliente, String idPersona, String fecha, Double montoTotal, int idEmpleado, int idTipoCliente)
         {
             return ventas.insertarFactura(idCliente, idPersona, fecha, montoTotal, idEmpleado, idTipoCliente);

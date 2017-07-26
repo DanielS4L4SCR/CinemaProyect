@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnAgregar = new MetroFramework.Controls.MetroButton();
             this.nudCantidad = new System.Windows.Forms.NumericUpDown();
@@ -56,14 +56,16 @@
             this.cboLastFac = new MetroFramework.Controls.MetroComboBox();
             this.cboPromo = new MetroFramework.Controls.MetroComboBox();
             this.cboDescuento = new MetroFramework.Controls.MetroComboBox();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaEstreno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoraFinalización = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoraInicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idSala = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IDPelicula = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cboPrecios = new MetroFramework.Controls.MetroComboBox();
             this.IDProyeccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IDPelicula = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idSala = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoraInicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoraFinalización = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaEstreno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrecioDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descuent = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
@@ -322,23 +324,23 @@
             // 
             this.dgvVentas.AllowUserToAddRows = false;
             this.dgvVentas.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.dgvVentas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvVentas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
             this.dgvVentas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvVentas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IDProyeccion,
@@ -349,34 +351,35 @@
             this.FechaEstreno,
             this.Precio,
             this.Cantidad,
+            this.PrecioDesc,
             this.Descuent});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvVentas.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvVentas.DefaultCellStyle = dataGridViewCellStyle13;
             this.dgvVentas.EnableHeadersVisualStyles = false;
             this.dgvVentas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.dgvVentas.Location = new System.Drawing.Point(90, 299);
+            this.dgvVentas.Location = new System.Drawing.Point(12, 299);
             this.dgvVentas.Name = "dgvVentas";
             this.dgvVentas.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvVentas.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvVentas.RowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.dgvVentas.Size = new System.Drawing.Size(748, 224);
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVentas.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvVentas.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            this.dgvVentas.Size = new System.Drawing.Size(886, 224);
             this.dgvVentas.TabIndex = 88;
             // 
             // cboTipoCliente
@@ -385,7 +388,7 @@
             this.cboTipoCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.cboTipoCliente.FormattingEnabled = true;
             this.cboTipoCliente.ItemHeight = 23;
-            this.cboTipoCliente.Location = new System.Drawing.Point(809, 118);
+            this.cboTipoCliente.Location = new System.Drawing.Point(809, 59);
             this.cboTipoCliente.Name = "cboTipoCliente";
             this.cboTipoCliente.Size = new System.Drawing.Size(56, 29);
             this.cboTipoCliente.TabIndex = 89;
@@ -401,7 +404,7 @@
             this.cboLastFac.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.cboLastFac.FormattingEnabled = true;
             this.cboLastFac.ItemHeight = 23;
-            this.cboLastFac.Location = new System.Drawing.Point(809, 166);
+            this.cboLastFac.Location = new System.Drawing.Point(809, 107);
             this.cboLastFac.Name = "cboLastFac";
             this.cboLastFac.Size = new System.Drawing.Size(56, 29);
             this.cboLastFac.TabIndex = 90;
@@ -417,7 +420,7 @@
             this.cboPromo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.cboPromo.FormattingEnabled = true;
             this.cboPromo.ItemHeight = 23;
-            this.cboPromo.Location = new System.Drawing.Point(809, 213);
+            this.cboPromo.Location = new System.Drawing.Point(809, 154);
             this.cboPromo.Name = "cboPromo";
             this.cboPromo.Size = new System.Drawing.Size(56, 29);
             this.cboPromo.TabIndex = 92;
@@ -433,7 +436,7 @@
             this.cboDescuento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.cboDescuento.FormattingEnabled = true;
             this.cboDescuento.ItemHeight = 23;
-            this.cboDescuento.Location = new System.Drawing.Point(809, 264);
+            this.cboDescuento.Location = new System.Drawing.Point(809, 205);
             this.cboDescuento.Name = "cboDescuento";
             this.cboDescuento.Size = new System.Drawing.Size(56, 29);
             this.cboDescuento.TabIndex = 93;
@@ -443,47 +446,21 @@
             this.cboDescuento.UseStyleColors = true;
             this.cboDescuento.Visible = false;
             // 
-            // Cantidad
+            // cboPrecios
             // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.ReadOnly = true;
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            // 
-            // FechaEstreno
-            // 
-            this.FechaEstreno.HeaderText = "FechaEstreno";
-            this.FechaEstreno.Name = "FechaEstreno";
-            this.FechaEstreno.ReadOnly = true;
-            // 
-            // HoraFinalización
-            // 
-            this.HoraFinalización.HeaderText = "HoraFinalización";
-            this.HoraFinalización.Name = "HoraFinalización";
-            this.HoraFinalización.ReadOnly = true;
-            // 
-            // HoraInicio
-            // 
-            this.HoraInicio.HeaderText = "Hora Inicio";
-            this.HoraInicio.Name = "HoraInicio";
-            this.HoraInicio.ReadOnly = true;
-            // 
-            // idSala
-            // 
-            this.idSala.HeaderText = "Sala";
-            this.idSala.Name = "idSala";
-            this.idSala.ReadOnly = true;
-            // 
-            // IDPelicula
-            // 
-            this.IDPelicula.HeaderText = "Pelicula";
-            this.IDPelicula.Name = "IDPelicula";
-            this.IDPelicula.ReadOnly = true;
+            this.cboPrecios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.cboPrecios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.cboPrecios.FormattingEnabled = true;
+            this.cboPrecios.ItemHeight = 23;
+            this.cboPrecios.Location = new System.Drawing.Point(809, 247);
+            this.cboPrecios.Name = "cboPrecios";
+            this.cboPrecios.Size = new System.Drawing.Size(56, 29);
+            this.cboPrecios.TabIndex = 95;
+            this.cboPrecios.UseCustomBackColor = true;
+            this.cboPrecios.UseCustomForeColor = true;
+            this.cboPrecios.UseSelectable = true;
+            this.cboPrecios.UseStyleColors = true;
+            this.cboPrecios.Visible = false;
             // 
             // IDProyeccion
             // 
@@ -491,26 +468,75 @@
             this.IDProyeccion.Name = "IDProyeccion";
             this.IDProyeccion.ReadOnly = true;
             // 
+            // IDPelicula
+            // 
+            this.IDPelicula.HeaderText = "Pelicula";
+            this.IDPelicula.Name = "IDPelicula";
+            this.IDPelicula.ReadOnly = true;
+            // 
+            // idSala
+            // 
+            this.idSala.HeaderText = "Sala";
+            this.idSala.Name = "idSala";
+            this.idSala.ReadOnly = true;
+            // 
+            // HoraInicio
+            // 
+            this.HoraInicio.HeaderText = "Hora Inicio";
+            this.HoraInicio.Name = "HoraInicio";
+            this.HoraInicio.ReadOnly = true;
+            // 
+            // HoraFinalización
+            // 
+            this.HoraFinalización.HeaderText = "HoraFinalización";
+            this.HoraFinalización.Name = "HoraFinalización";
+            this.HoraFinalización.ReadOnly = true;
+            // 
+            // FechaEstreno
+            // 
+            this.FechaEstreno.HeaderText = "FechaEstreno";
+            this.FechaEstreno.Name = "FechaEstreno";
+            this.FechaEstreno.ReadOnly = true;
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
+            // 
+            // PrecioDesc
+            // 
+            this.PrecioDesc.HeaderText = "Precio Con Descuento";
+            this.PrecioDesc.Name = "PrecioDesc";
+            this.PrecioDesc.ReadOnly = true;
+            // 
             // Descuent
             // 
-            this.Descuent.HeaderText = "Descuent";
+            this.Descuent.HeaderText = "Descuento";
             this.Descuent.Name = "Descuent";
             this.Descuent.ReadOnly = true;
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(759, 299);
+            this.panel2.Location = new System.Drawing.Point(818, 295);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 224);
-            this.panel2.TabIndex = 94;
+            this.panel2.Size = new System.Drawing.Size(89, 224);
+            this.panel2.TabIndex = 96;
             // 
             // FrmVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            this.ClientSize = new System.Drawing.Size(890, 570);
+            this.ClientSize = new System.Drawing.Size(938, 570);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.cboPrecios);
             this.Controls.Add(this.cboDescuento);
             this.Controls.Add(this.cboPromo);
             this.Controls.Add(this.cboLastFac);
@@ -562,6 +588,7 @@
         private MetroFramework.Controls.MetroComboBox cboLastFac;
         private MetroFramework.Controls.MetroComboBox cboPromo;
         private MetroFramework.Controls.MetroComboBox cboDescuento;
+        private MetroFramework.Controls.MetroComboBox cboPrecios;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDProyeccion;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDPelicula;
         private System.Windows.Forms.DataGridViewTextBoxColumn idSala;
@@ -570,6 +597,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaEstreno;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PrecioDesc;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descuent;
         private System.Windows.Forms.Panel panel2;
     }
