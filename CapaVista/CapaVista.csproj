@@ -249,5 +249,8 @@
   <ItemGroup>
     <None Include="Resources\notepad-1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIA-Logo_323x177.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

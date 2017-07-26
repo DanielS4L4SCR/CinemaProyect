@@ -35,7 +35,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbCaps = new System.Windows.Forms.Label();
+            this.cboLimpiar = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -172,16 +172,20 @@
             this.panel1.Size = new System.Drawing.Size(109, 85);
             this.panel1.TabIndex = 8;
             // 
-            // lbCaps
+            // cboLimpiar
             // 
-            this.lbCaps.AutoSize = true;
-            this.lbCaps.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.lbCaps.Location = new System.Drawing.Point(314, 126);
-            this.lbCaps.Name = "lbCaps";
-            this.lbCaps.Size = new System.Drawing.Size(100, 13);
-            this.lbCaps.TabIndex = 11;
-            this.lbCaps.Text = "CapsLock Activado";
-            this.lbCaps.Visible = false;
+            this.cboLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
+            this.cboLimpiar.ForeColor = System.Drawing.Color.White;
+            this.cboLimpiar.Location = new System.Drawing.Point(314, 126);
+            this.cboLimpiar.Name = "cboLimpiar";
+            this.cboLimpiar.Size = new System.Drawing.Size(52, 13);
+            this.cboLimpiar.TabIndex = 11;
+            this.cboLimpiar.Text = "Limpiar";
+            this.cboLimpiar.UseCustomBackColor = true;
+            this.cboLimpiar.UseCustomForeColor = true;
+            this.cboLimpiar.UseSelectable = true;
+            this.cboLimpiar.UseStyleColors = true;
+            this.cboLimpiar.Click += new System.EventHandler(this.cboLimpiar_Click);
             // 
             // FrmLogin
             // 
@@ -189,7 +193,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
             this.ClientSize = new System.Drawing.Size(474, 262);
-            this.Controls.Add(this.lbCaps);
+            this.Controls.Add(this.cboLimpiar);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -215,6 +219,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label lbCaps;
+        private MetroFramework.Controls.MetroButton cboLimpiar;
     }
 }

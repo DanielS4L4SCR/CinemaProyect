@@ -52,11 +52,6 @@
             this.btnAceptar = new MetroFramework.Controls.MetroButton();
             this.lbValor = new MetroFramework.Controls.MetroLabel();
             this.dgvVentas = new System.Windows.Forms.DataGridView();
-            this.cboTipoCliente = new MetroFramework.Controls.MetroComboBox();
-            this.cboLastFac = new MetroFramework.Controls.MetroComboBox();
-            this.cboPromo = new MetroFramework.Controls.MetroComboBox();
-            this.cboDescuento = new MetroFramework.Controls.MetroComboBox();
-            this.cboPrecios = new MetroFramework.Controls.MetroComboBox();
             this.IDProyeccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IDPelicula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idSala = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,6 +62,11 @@
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrecioDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descuent = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cboTipoCliente = new MetroFramework.Controls.MetroComboBox();
+            this.cboLastFac = new MetroFramework.Controls.MetroComboBox();
+            this.cboPromo = new MetroFramework.Controls.MetroComboBox();
+            this.cboDescuento = new MetroFramework.Controls.MetroComboBox();
+            this.cboPrecios = new MetroFramework.Controls.MetroComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
@@ -382,6 +382,66 @@
             this.dgvVentas.Size = new System.Drawing.Size(886, 224);
             this.dgvVentas.TabIndex = 88;
             // 
+            // IDProyeccion
+            // 
+            this.IDProyeccion.HeaderText = "Proyección";
+            this.IDProyeccion.Name = "IDProyeccion";
+            this.IDProyeccion.ReadOnly = true;
+            // 
+            // IDPelicula
+            // 
+            this.IDPelicula.HeaderText = "Pelicula";
+            this.IDPelicula.Name = "IDPelicula";
+            this.IDPelicula.ReadOnly = true;
+            // 
+            // idSala
+            // 
+            this.idSala.HeaderText = "Sala";
+            this.idSala.Name = "idSala";
+            this.idSala.ReadOnly = true;
+            // 
+            // HoraInicio
+            // 
+            this.HoraInicio.HeaderText = "Hora Inicio";
+            this.HoraInicio.Name = "HoraInicio";
+            this.HoraInicio.ReadOnly = true;
+            // 
+            // HoraFinalización
+            // 
+            this.HoraFinalización.HeaderText = "HoraFinalización";
+            this.HoraFinalización.Name = "HoraFinalización";
+            this.HoraFinalización.ReadOnly = true;
+            // 
+            // FechaEstreno
+            // 
+            this.FechaEstreno.HeaderText = "FechaEstreno";
+            this.FechaEstreno.Name = "FechaEstreno";
+            this.FechaEstreno.ReadOnly = true;
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
+            // 
+            // PrecioDesc
+            // 
+            this.PrecioDesc.HeaderText = "Precio Con Descuento";
+            this.PrecioDesc.Name = "PrecioDesc";
+            this.PrecioDesc.ReadOnly = true;
+            // 
+            // Descuent
+            // 
+            this.Descuent.HeaderText = "Descuento";
+            this.Descuent.Name = "Descuent";
+            this.Descuent.ReadOnly = true;
+            // 
             // cboTipoCliente
             // 
             this.cboTipoCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
@@ -462,66 +522,6 @@
             this.cboPrecios.UseStyleColors = true;
             this.cboPrecios.Visible = false;
             // 
-            // IDProyeccion
-            // 
-            this.IDProyeccion.HeaderText = "Proyección";
-            this.IDProyeccion.Name = "IDProyeccion";
-            this.IDProyeccion.ReadOnly = true;
-            // 
-            // IDPelicula
-            // 
-            this.IDPelicula.HeaderText = "Pelicula";
-            this.IDPelicula.Name = "IDPelicula";
-            this.IDPelicula.ReadOnly = true;
-            // 
-            // idSala
-            // 
-            this.idSala.HeaderText = "Sala";
-            this.idSala.Name = "idSala";
-            this.idSala.ReadOnly = true;
-            // 
-            // HoraInicio
-            // 
-            this.HoraInicio.HeaderText = "Hora Inicio";
-            this.HoraInicio.Name = "HoraInicio";
-            this.HoraInicio.ReadOnly = true;
-            // 
-            // HoraFinalización
-            // 
-            this.HoraFinalización.HeaderText = "HoraFinalización";
-            this.HoraFinalización.Name = "HoraFinalización";
-            this.HoraFinalización.ReadOnly = true;
-            // 
-            // FechaEstreno
-            // 
-            this.FechaEstreno.HeaderText = "FechaEstreno";
-            this.FechaEstreno.Name = "FechaEstreno";
-            this.FechaEstreno.ReadOnly = true;
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.ReadOnly = true;
-            // 
-            // PrecioDesc
-            // 
-            this.PrecioDesc.HeaderText = "Precio Con Descuento";
-            this.PrecioDesc.Name = "PrecioDesc";
-            this.PrecioDesc.ReadOnly = true;
-            // 
-            // Descuent
-            // 
-            this.Descuent.HeaderText = "Descuento";
-            this.Descuent.Name = "Descuent";
-            this.Descuent.ReadOnly = true;
-            // 
             // panel2
             // 
             this.panel2.Location = new System.Drawing.Point(818, 295);
@@ -550,6 +550,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmVentas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmVentas";
             this.Load += new System.EventHandler(this.FrmVentas_Load);
             this.groupBox1.ResumeLayout(false);

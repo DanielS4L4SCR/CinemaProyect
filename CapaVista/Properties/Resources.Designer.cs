@@ -313,6 +313,16 @@ namespace CapaVista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap UIA_Logo_323x177 {
+            get {
+                object obj = ResourceManager.GetObject("UIA-Logo_323x177", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap user_3 {
             get {
                 object obj = ResourceManager.GetObject("user-3", resourceCulture);

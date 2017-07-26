@@ -22,7 +22,7 @@ namespace CapaVista
 
         private void txtContraseña_Click(object sender, EventArgs e)
         {
-            txtContraseña.Text = "";
+            
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
@@ -63,19 +63,18 @@ namespace CapaVista
 
         private void txtUsuario_Click(object sender, EventArgs e)
         {
-            txtUsuario.Text = "";
+            
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-            if (Control.IsKeyLocked(Keys.CapsLock))
-            {
-                lbCaps.Visible = true;
-            }
-            else
-            {
-                lbCaps.Visible = false;
-            }
+           
+        }
+
+        private void cboLimpiar_Click(object sender, EventArgs e)
+        {
+            txtUsuario.Text = "";
+            txtContraseña.Text = "";
         }
     }
 }
