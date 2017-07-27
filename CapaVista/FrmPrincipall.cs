@@ -197,13 +197,19 @@ namespace CapaVista
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
 
         private void btnFacturacion_Click(object sender, EventArgs e)
         {
             FrmVentas ventas = new FrmVentas();
             ventas.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmReporteVentas reportes = new FrmReporteVentas();
+            reportes.Show();
         }
     }
 }

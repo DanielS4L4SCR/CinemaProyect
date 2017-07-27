@@ -36,6 +36,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.btnAgregar = new MetroFramework.Controls.MetroButton();
+            this.cboAsiento = new MetroFramework.Controls.MetroComboBox();
             this.cboProyeccion = new MetroFramework.Controls.MetroComboBox();
             this.lbProyeccion = new MetroFramework.Controls.MetroLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -50,16 +51,6 @@
             this.btnAceptar = new MetroFramework.Controls.MetroButton();
             this.lbValor = new MetroFramework.Controls.MetroLabel();
             this.dgvVentas = new System.Windows.Forms.DataGridView();
-            this.cboTipoCliente = new MetroFramework.Controls.MetroComboBox();
-            this.cboLastFac = new MetroFramework.Controls.MetroComboBox();
-            this.cboPromo = new MetroFramework.Controls.MetroComboBox();
-            this.cboDescuento = new MetroFramework.Controls.MetroComboBox();
-            this.cboPrecios = new MetroFramework.Controls.MetroComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.cboSala = new MetroFramework.Controls.MetroComboBox();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.lbAsiento = new MetroFramework.Controls.MetroLabel();
-            this.cboAsiento = new MetroFramework.Controls.MetroComboBox();
             this.IDProyeccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IDPelicula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idSala = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,6 +61,15 @@
             this.PrecioDesc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Asiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descuent = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cboTipoCliente = new MetroFramework.Controls.MetroComboBox();
+            this.cboLastFac = new MetroFramework.Controls.MetroComboBox();
+            this.cboPromo = new MetroFramework.Controls.MetroComboBox();
+            this.cboDescuento = new MetroFramework.Controls.MetroComboBox();
+            this.cboPrecios = new MetroFramework.Controls.MetroComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.cboSala = new MetroFramework.Controls.MetroComboBox();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.lbAsiento = new MetroFramework.Controls.MetroLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -118,6 +118,21 @@
             this.btnAgregar.UseSelectable = true;
             this.btnAgregar.UseStyleColors = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // cboAsiento
+            // 
+            this.cboAsiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.cboAsiento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.cboAsiento.FormattingEnabled = true;
+            this.cboAsiento.ItemHeight = 23;
+            this.cboAsiento.Location = new System.Drawing.Point(100, 60);
+            this.cboAsiento.Name = "cboAsiento";
+            this.cboAsiento.Size = new System.Drawing.Size(149, 29);
+            this.cboAsiento.TabIndex = 179;
+            this.cboAsiento.UseCustomBackColor = true;
+            this.cboAsiento.UseCustomForeColor = true;
+            this.cboAsiento.UseSelectable = true;
+            this.cboAsiento.UseStyleColors = true;
             // 
             // cboProyeccion
             // 
@@ -368,6 +383,66 @@
             this.dgvVentas.TabIndex = 88;
             this.dgvVentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVentas_CellContentClick_1);
             // 
+            // IDProyeccion
+            // 
+            this.IDProyeccion.HeaderText = "Proyección";
+            this.IDProyeccion.Name = "IDProyeccion";
+            this.IDProyeccion.ReadOnly = true;
+            // 
+            // IDPelicula
+            // 
+            this.IDPelicula.HeaderText = "Pelicula";
+            this.IDPelicula.Name = "IDPelicula";
+            this.IDPelicula.ReadOnly = true;
+            // 
+            // idSala
+            // 
+            this.idSala.HeaderText = "Sala";
+            this.idSala.Name = "idSala";
+            this.idSala.ReadOnly = true;
+            // 
+            // HoraInicio
+            // 
+            this.HoraInicio.HeaderText = "Hora Inicio";
+            this.HoraInicio.Name = "HoraInicio";
+            this.HoraInicio.ReadOnly = true;
+            // 
+            // HoraFinalización
+            // 
+            this.HoraFinalización.HeaderText = "HoraFinalización";
+            this.HoraFinalización.Name = "HoraFinalización";
+            this.HoraFinalización.ReadOnly = true;
+            // 
+            // FechaEstreno
+            // 
+            this.FechaEstreno.HeaderText = "FechaEstreno";
+            this.FechaEstreno.Name = "FechaEstreno";
+            this.FechaEstreno.ReadOnly = true;
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
+            // 
+            // PrecioDesc
+            // 
+            this.PrecioDesc.HeaderText = "Precio Con Descuento";
+            this.PrecioDesc.Name = "PrecioDesc";
+            this.PrecioDesc.ReadOnly = true;
+            // 
+            // Asiento
+            // 
+            this.Asiento.HeaderText = "Asiento";
+            this.Asiento.Name = "Asiento";
+            this.Asiento.ReadOnly = true;
+            // 
+            // Descuent
+            // 
+            this.Descuent.HeaderText = "Descuento";
+            this.Descuent.Name = "Descuent";
+            this.Descuent.ReadOnly = true;
+            // 
             // cboTipoCliente
             // 
             this.cboTipoCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
@@ -502,81 +577,6 @@
             this.lbAsiento.UseCustomBackColor = true;
             this.lbAsiento.UseCustomForeColor = true;
             this.lbAsiento.UseStyleColors = true;
-            // 
-            // cboAsiento
-            // 
-            this.cboAsiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            this.cboAsiento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.cboAsiento.FormattingEnabled = true;
-            this.cboAsiento.ItemHeight = 23;
-            this.cboAsiento.Location = new System.Drawing.Point(100, 60);
-            this.cboAsiento.Name = "cboAsiento";
-            this.cboAsiento.Size = new System.Drawing.Size(149, 29);
-            this.cboAsiento.TabIndex = 179;
-            this.cboAsiento.UseCustomBackColor = true;
-            this.cboAsiento.UseCustomForeColor = true;
-            this.cboAsiento.UseSelectable = true;
-            this.cboAsiento.UseStyleColors = true;
-            // 
-            // IDProyeccion
-            // 
-            this.IDProyeccion.HeaderText = "Proyección";
-            this.IDProyeccion.Name = "IDProyeccion";
-            this.IDProyeccion.ReadOnly = true;
-            // 
-            // IDPelicula
-            // 
-            this.IDPelicula.HeaderText = "Pelicula";
-            this.IDPelicula.Name = "IDPelicula";
-            this.IDPelicula.ReadOnly = true;
-            // 
-            // idSala
-            // 
-            this.idSala.HeaderText = "Sala";
-            this.idSala.Name = "idSala";
-            this.idSala.ReadOnly = true;
-            // 
-            // HoraInicio
-            // 
-            this.HoraInicio.HeaderText = "Hora Inicio";
-            this.HoraInicio.Name = "HoraInicio";
-            this.HoraInicio.ReadOnly = true;
-            // 
-            // HoraFinalización
-            // 
-            this.HoraFinalización.HeaderText = "HoraFinalización";
-            this.HoraFinalización.Name = "HoraFinalización";
-            this.HoraFinalización.ReadOnly = true;
-            // 
-            // FechaEstreno
-            // 
-            this.FechaEstreno.HeaderText = "FechaEstreno";
-            this.FechaEstreno.Name = "FechaEstreno";
-            this.FechaEstreno.ReadOnly = true;
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            // 
-            // PrecioDesc
-            // 
-            this.PrecioDesc.HeaderText = "Precio Con Descuento";
-            this.PrecioDesc.Name = "PrecioDesc";
-            this.PrecioDesc.ReadOnly = true;
-            // 
-            // Asiento
-            // 
-            this.Asiento.HeaderText = "Asiento";
-            this.Asiento.Name = "Asiento";
-            this.Asiento.ReadOnly = true;
-            // 
-            // Descuent
-            // 
-            this.Descuent.HeaderText = "Descuento";
-            this.Descuent.Name = "Descuent";
-            this.Descuent.ReadOnly = true;
             // 
             // panel2
             // 
