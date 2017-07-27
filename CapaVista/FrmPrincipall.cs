@@ -19,6 +19,11 @@ namespace CapaVista
             InitializeComponent();
             
         }
+        public FrmPrincipall(String texto)
+        {
+            InitializeComponent();
+            lbUsuario.Text = texto;
+        }
         public static class Util {
             public enum Effect { Roll,Slide,Center, Blend }
 

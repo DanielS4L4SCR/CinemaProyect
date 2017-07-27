@@ -49,10 +49,17 @@ namespace CapaNegocios
         {
             return ventas.insertarFactura(idCliente, idPersona, fecha, montoTotal, idEmpleado, idTipoCliente);
         }
-
-        public bool insertarDetalle(int detalle,int factura, int proyeccion, Double precio, int cantidad)
+        public DataTable consultaAsientos(String sala)
         {
-            return ventas.insertarDetalle(detalle,factura, proyeccion, precio, cantidad);
+            return ventas.consultaAsientos(sala);
+        }
+            public DataTable consultaSalas(int proyeccion)
+        {
+            return ventas.consultaSalas(proyeccion);
+        }
+            public bool insertarDetalle(int factura, int proyeccion, Double precio, String asiento)
+        {
+            return ventas.insertarDetalle(factura, proyeccion, precio, asiento);
         }
     }
 }

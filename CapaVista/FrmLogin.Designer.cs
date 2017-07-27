@@ -74,7 +74,7 @@
             this.txtUsuario.UseStyleColors = true;
             this.txtUsuario.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtUsuario.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.txtUsuario.Click += new System.EventHandler(this.txtUsuario_Click);
+            
             // 
             // txtContraseña
             // 
@@ -203,8 +203,7 @@
             this.Controls.Add(this.txtUsuario);
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CinemaPRO Login";
-            this.Load += new System.EventHandler(this.FrmLogin_Load);
+            this.Text = "CinemaPRO Login"; 
             this.ResumeLayout(false);
             this.PerformLayout();
 

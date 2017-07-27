@@ -45,7 +45,7 @@ namespace CapaDatos
         public DataTable consultaUltimaFactura()
         {
             DataTable dtTipoCliente;
-            dtTipoCliente = conecta.ejecutar("SELECT MAX(idCliente) FROM cliente;");
+            dtTipoCliente = conecta.ejecutar("SELECT MAX(idFactura) FROM factura");
             return dtTipoCliente;
         }
         public DataTable cargaPrecios(int proyeccion)
@@ -66,11 +66,22 @@ namespace CapaDatos
             dtPromo = conecta.ejecutar("Select idPromocion,Descripcion, PorcentajeDescuento from promocion where TipoCliente_idTipoCliente =" + tipoCliente+ " and Proyecciones_id_Proyeccion = " + proyeccion+"");
             return dtPromo;
         }
-
-        public bool insertarDetalle(int detalle, int factura,int proyeccion,Double precio,int cantidad)
+        public DataTable consultaSalas(int proyeccion)
+        {
+            DataTable dtSala;
+            dtSala = conecta.ejecutar("Select idSala from proyecciones where id_Proyeccion =" + proyeccion +"");
+            return dtSala;
+        }
+        public DataTable consultaAsientos(String sala)
+        {
+            DataTable dtSala;
+            dtSala = conecta.ejecutar("Select idAsiento from asiento where id_Sala = '" + sala + "'");
+            return dtSala;
+        }
+        public bool insertarDetalle(int factura,int proyeccion,Double precio,String asiento)
         {
             CapaDatos.ClsConexion conecta = new CapaDatos.ClsConexion();
-            return conecta.ejecutarInsert("insert into detalle(idDetalle,Factura_idFactura, Proyecciones_id_Proyeccion, Precio, Cantidad)values("+detalle+"," + factura+"," + proyeccion+","+precio+","+cantidad+")");
+            return conecta.ejecutarInsert("insert into detalle(Factura_idFactura, Proyecciones_id_Proyeccion, Precio, idAsiento)values(" + factura+"," + proyeccion+","+precio+",'"+asiento+"')");
         }
     }
 }

@@ -24,14 +24,15 @@ namespace CapaVista
         {
             
         }
-
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             CapaNegocios.clsLogin login = new CapaNegocios.clsLogin();
-            
+            String text = txtUsuario.Text;
+            FrmPrincipall Principal = new FrmPrincipall(text);
+
             if(login.login(txtUsuario.Text,txtContraseña.Text).Rows.Count>0 &&txtUsuario.Text!=""&&txtContraseña.Text!="")
             {
-                new FrmPrincipall().Show();
+                Principal.Show();    
                 limpiar();
                 new FrmLogin().Close();
             }
@@ -60,17 +61,6 @@ namespace CapaVista
                 txtContraseña.UseSystemPasswordChar = true;
             }
         }
-
-        private void txtUsuario_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void FrmLogin_Load(object sender, EventArgs e)
-        {
-           
-        }
-
         private void cboLimpiar_Click(object sender, EventArgs e)
         {
             txtUsuario.Text = "";

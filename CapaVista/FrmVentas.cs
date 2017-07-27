@@ -12,9 +12,15 @@ namespace CapaVista
 {
     public partial class FrmVentas : Form
     {
+        
         public FrmVentas()
         {
             InitializeComponent();
+        }
+        public FrmVentas(String text)
+        {
+            InitializeComponent();
+            lbAsiento.Text = text;
         }
 
         private void FrmVentas_Load(object sender, EventArgs e)
@@ -39,9 +45,9 @@ namespace CapaVista
             cboEmpleado.DataSource = dtEmpleado;
             cboEmpleado.DisplayMember = "Usuario_Persona_idPersona";
             cboEmpleado.ValueMember = "id_Empleado";
-
-
         }
+
+        
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             CapaNegocios.clsVenta venta = new CapaNegocios.clsVenta();
@@ -49,24 +55,16 @@ namespace CapaVista
             cargaUltimaFactura();
             cargaPromo();
             cargaPrecio();
+            cargaSalas();
             if (cboPromo.Items.Count > 0)
             {
                 MessageBox.Show("Existe una promoción: " + cboPromo.Text + " se aplicará descuento de: " + cboDescuento.Text + "%", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             
-            if (cboProyeccion.SelectedValue != null)
+           if (cboProyeccion.SelectedValue != null)
             {
-                foreach (DataGridViewRow prod in dgvVentas.Rows)
-                {
-                    if (prod.Cells["IDProyeccion"].Value.ToString().Equals(cboProyeccion.SelectedValue.ToString()))
-                    {
-                        prod.Cells["Cantidad"].Value = (int)prod.Cells["Cantidad"].Value + (int)nudCantidad.Value;
-                        lbValor.Text = "" + total();
-                        return;
-                    }
-                }
                 DataTable oDT = venta.llenarProducto(Convert.ToInt32(cboProyeccion.SelectedValue));
-                dgvVentas.Rows.Add(oDT.Rows[0]["id_Proyeccion"], oDT.Rows[0]["Peliculas_idPelicula"], oDT.Rows[0]["idSala"], oDT.Rows[0]["HoraInicio"], oDT.Rows[0]["HoraFinalizacion"], oDT.Rows[0]["FechaEstreno"], oDT.Rows[0]["Precio"], (int)nudCantidad.Value, precioDescuento(), descuento());
+                dgvVentas.Rows.Add(oDT.Rows[0]["id_Proyeccion"], oDT.Rows[0]["Peliculas_idPelicula"], oDT.Rows[0]["idSala"], oDT.Rows[0]["HoraInicio"], oDT.Rows[0]["HoraFinalizacion"], oDT.Rows[0]["FechaEstreno"], oDT.Rows[0]["Precio"],precioDescuento(),cboAsiento.Text, descuento());
                 
             }
             lbValor.Text = "" + total();
@@ -108,7 +106,7 @@ namespace CapaVista
             Double acumTotal = 0;
             foreach (DataGridViewRow total in dgvVentas.Rows)
             {
-                acumTotal += Convert.ToInt32(total.Cells["Cantidad"].Value) * Convert.ToInt32(total.Cells["PrecioDesc"].Value);            
+                acumTotal += 1 * Convert.ToInt32(total.Cells["PrecioDesc"].Value);            
             }
             return acumTotal;
         }
@@ -142,8 +140,8 @@ namespace CapaVista
             DataTable dtUltimaFactura;
             dtUltimaFactura = ultimaFactura.consultaUltimaFactura();
             cboLastFac.DataSource = dtUltimaFactura;
-            cboLastFac.DisplayMember = "MAX(idCliente)";
-            cboLastFac.ValueMember = "MAX(idCliente)";
+            cboLastFac.DisplayMember = "MAX(idFactura)";
+            cboLastFac.ValueMember = "MAX(idFactura)";
         }
         public void cargaPrecio()
         {
@@ -168,6 +166,24 @@ namespace CapaVista
             cboDescuento.DisplayMember = "PorcentajeDescuento";
 
         }
+        public void cargaSalas()
+        {
+            CapaNegocios.clsVenta Salas = new CapaNegocios.clsVenta();
+            DataTable dtSalas;
+            dtSalas = Salas.consultaSalas(Convert.ToInt32(cboProyeccion.SelectedValue));
+            cboSala.DataSource = dtSalas;
+            cboSala.DisplayMember = "idSala";
+            cboSala.ValueMember = "idSala"; 
+        }
+        public void CargaAsiento()
+        {
+            CapaNegocios.clsVenta Asientos = new CapaNegocios.clsVenta();
+            DataTable dtAsientos;
+            dtAsientos = Asientos.consultaAsientos(cboSala.Text);
+            cboAsiento.DataSource = dtAsientos;
+            cboAsiento.DisplayMember = "idAsiento";
+            cboAsiento.ValueMember = "idAsiento";
+        }
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             cargaTipoCliente();
@@ -182,10 +198,10 @@ namespace CapaVista
                     for (int i = 0; i < dgvVentas.Rows.Count; i++)
                     {  
                         int proyeccion = Convert.ToInt16(dgvVentas["IDProyeccion", i].Value);
-                        Double precio = Convert.ToDouble((dgvVentas["Precio", i].Value));
-                        int cantidad = (int)dgvVentas["Cantidad", i].Value;
+                        Double precio = Convert.ToDouble(dgvVentas["Precio", i].Value);
+                        String asiento = Convert.ToString(dgvVentas["Asiento", i].Value);
                         cargaUltimaFactura();
-                        if (!factura.insertarDetalle(i, Convert.ToInt32(cboLastFac.SelectedValue), proyeccion, precio, cantidad))
+                        if (!factura.insertarDetalle(Convert.ToInt32(cboLastFac.SelectedValue), proyeccion, precio, asiento))
                         {
                             MessageBox.Show("Error al crear la factura","Error",MessageBoxButtons.RetryCancel,MessageBoxIcon.Error);
                             return;
@@ -199,6 +215,38 @@ namespace CapaVista
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void dgvVentas_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void metroButton1_Click_1(object sender, EventArgs e)
+        {
+            CapaVista.FrmCliente ACliente = new FrmCliente();
+            ACliente.Show();
+            CapaNegocios.clsVenta cliente = new CapaNegocios.clsVenta();
+            DataTable dtCliente;
+            dtCliente = cliente.llenarCliente();
+            cboCliente.DataSource = dtCliente;
+            cboCliente.DisplayMember = "Persona_idPersona";
+            cboCliente.ValueMember = "idCliente";
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            cargaTipoCliente();
+            cargaUltimaFactura();
+            cargaPromo();
+            cargaPrecio();
+            cargaSalas();
+            CargaAsiento();  
+            String text = cboSala.Text;
+            FrmAsientos A = new FrmAsientos(text); 
+            A.Show();
+            //this.Close();
             
         }
     }
