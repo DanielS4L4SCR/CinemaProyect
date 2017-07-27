@@ -66,11 +66,11 @@
             this.cboPromo = new MetroFramework.Controls.MetroComboBox();
             this.cboDescuento = new MetroFramework.Controls.MetroComboBox();
             this.cboPrecios = new MetroFramework.Controls.MetroComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.cboSala = new MetroFramework.Controls.MetroComboBox();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.lbAsiento = new MetroFramework.Controls.MetroLabel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).BeginInit();
@@ -523,16 +523,6 @@
             this.cboPrecios.UseStyleColors = true;
             this.cboPrecios.Visible = false;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            this.panel1.BackgroundImage = global::CapaVista.Properties.Resources.notepad_1;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(383, 35);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(110, 105);
-            this.panel1.TabIndex = 2;
-            // 
             // cboSala
             // 
             this.cboSala.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
@@ -584,6 +574,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 233);
             this.panel2.TabIndex = 100;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.panel1.BackgroundImage = global::CapaVista.Properties.Resources.notepad_1;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(383, 35);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(110, 105);
+            this.panel1.TabIndex = 2;
             // 
             // FrmVentas
             // 

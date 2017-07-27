@@ -52,7 +52,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::CapaVista.Properties.Resources.icons8_Coins_501;
+            this.panel1.BackgroundImage = global::CapaVista.Properties.Resources.icons8_Monedas_50;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Location = new System.Drawing.Point(119, 37);
             this.panel1.Name = "panel1";

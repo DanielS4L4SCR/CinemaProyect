@@ -37,9 +37,9 @@
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.cboResultado1 = new MetroFramework.Controls.MetroComboBox();
             this.cboResultado2 = new MetroFramework.Controls.MetroComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // cboSala
@@ -181,15 +181,6 @@
             this.metroLabel6.UseStyleColors = true;
             this.metroLabel6.WrapToLine = true;
             // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::CapaVista.Properties.Resources.folder_18;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(173, 75);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(74, 66);
-            this.panel1.TabIndex = 100;
-            // 
             // cboResultado1
             // 
             this.cboResultado1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
@@ -221,6 +212,15 @@
             this.cboResultado2.UseSelectable = true;
             this.cboResultado2.UseStyleColors = true;
             this.cboResultado2.Visible = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::CapaVista.Properties.Resources.icons8_Caja_registradora_50;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(173, 75);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(74, 66);
+            this.panel1.TabIndex = 100;
             // 
             // FrmReporteVentas
             // 

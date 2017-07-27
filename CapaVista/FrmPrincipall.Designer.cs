@@ -32,14 +32,33 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipall));
             this.panelSubMenu = new System.Windows.Forms.Panel();
             this.lbRegresar = new System.Windows.Forms.Label();
+            this.btnPeliculas = new System.Windows.Forms.Button();
             this.IconsList = new System.Windows.Forms.ImageList(this.components);
+            this.btnVentas2 = new System.Windows.Forms.Button();
+            this.btnReportes3 = new System.Windows.Forms.Button();
+            this.btnAgregar1 = new System.Windows.Forms.Button();
+            this.btnRegresar = new System.Windows.Forms.Button();
             this.panelMenú = new System.Windows.Forms.Panel();
+            this.BtnMenu = new System.Windows.Forms.Button();
             this.panelAgregar1 = new System.Windows.Forms.Panel();
+            this.btnProyeccion = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.lbCancelar = new System.Windows.Forms.Label();
+            this.btnPromo = new System.Windows.Forms.Button();
+            this.btnNewMovie = new System.Windows.Forms.Button();
+            this.btnAddEmpleado = new System.Windows.Forms.Button();
+            this.btnCliente = new System.Windows.Forms.Button();
             this.panelVentas2 = new System.Windows.Forms.Panel();
+            this.btnCancelar2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnFacturacion = new System.Windows.Forms.Button();
             this.panelReportes3 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btnFondos = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnCancelar3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbUsuario = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,25 +66,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lbCinemaPro = new System.Windows.Forms.Label();
-            this.btnPeliculas = new System.Windows.Forms.Button();
-            this.btnVentas2 = new System.Windows.Forms.Button();
-            this.btnReportes3 = new System.Windows.Forms.Button();
-            this.btnAgregar1 = new System.Windows.Forms.Button();
-            this.btnRegresar = new System.Windows.Forms.Button();
-            this.BtnMenu = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnFondos = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnCancelar3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnProyeccion = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnPromo = new System.Windows.Forms.Button();
-            this.btnNewMovie = new System.Windows.Forms.Button();
-            this.btnAddEmpleado = new System.Windows.Forms.Button();
-            this.btnCliente = new System.Windows.Forms.Button();
-            this.btnCancelar2 = new System.Windows.Forms.Button();
-            this.btnFacturacion = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.panelSubMenu.SuspendLayout();
             this.panelMenú.SuspendLayout();
             this.panelAgregar1.SuspendLayout();
@@ -100,6 +101,26 @@
             this.lbRegresar.TabIndex = 6;
             this.lbRegresar.Text = "Regresar";
             // 
+            // btnPeliculas
+            // 
+            this.btnPeliculas.BackColor = System.Drawing.Color.Transparent;
+            this.btnPeliculas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPeliculas.FlatAppearance.BorderSize = 0;
+            this.btnPeliculas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
+            this.btnPeliculas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
+            this.btnPeliculas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPeliculas.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnPeliculas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPeliculas.ImageIndex = 8;
+            this.btnPeliculas.ImageList = this.IconsList;
+            this.btnPeliculas.Location = new System.Drawing.Point(8, 310);
+            this.btnPeliculas.Name = "btnPeliculas";
+            this.btnPeliculas.Size = new System.Drawing.Size(211, 76);
+            this.btnPeliculas.TabIndex = 5;
+            this.btnPeliculas.Text = "Cartelera";
+            this.btnPeliculas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPeliculas.UseVisualStyleBackColor = false;
+            // 
             // IconsList
             // 
             this.IconsList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("IconsList.ImageStream")));
@@ -124,6 +145,85 @@
             this.IconsList.Images.SetKeyName(17, "icons8-Aircraft Seat Aisle-50.png");
             this.IconsList.Images.SetKeyName(18, "spotlight.png");
             // 
+            // btnVentas2
+            // 
+            this.btnVentas2.BackColor = System.Drawing.Color.Transparent;
+            this.btnVentas2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnVentas2.FlatAppearance.BorderSize = 0;
+            this.btnVentas2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
+            this.btnVentas2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
+            this.btnVentas2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVentas2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnVentas2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVentas2.ImageIndex = 10;
+            this.btnVentas2.ImageList = this.IconsList;
+            this.btnVentas2.Location = new System.Drawing.Point(1, 146);
+            this.btnVentas2.Name = "btnVentas2";
+            this.btnVentas2.Size = new System.Drawing.Size(211, 76);
+            this.btnVentas2.TabIndex = 3;
+            this.btnVentas2.Text = "Ventas";
+            this.btnVentas2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVentas2.UseVisualStyleBackColor = false;
+            this.btnVentas2.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // btnReportes3
+            // 
+            this.btnReportes3.BackColor = System.Drawing.Color.Transparent;
+            this.btnReportes3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnReportes3.FlatAppearance.BorderSize = 0;
+            this.btnReportes3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
+            this.btnReportes3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
+            this.btnReportes3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportes3.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnReportes3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReportes3.ImageIndex = 6;
+            this.btnReportes3.ImageList = this.IconsList;
+            this.btnReportes3.Location = new System.Drawing.Point(8, 228);
+            this.btnReportes3.Name = "btnReportes3";
+            this.btnReportes3.Size = new System.Drawing.Size(211, 76);
+            this.btnReportes3.TabIndex = 2;
+            this.btnReportes3.Text = "Reportes";
+            this.btnReportes3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReportes3.UseVisualStyleBackColor = false;
+            this.btnReportes3.Click += new System.EventHandler(this.btnReport_Click);
+            // 
+            // btnAgregar1
+            // 
+            this.btnAgregar1.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAgregar1.FlatAppearance.BorderSize = 0;
+            this.btnAgregar1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
+            this.btnAgregar1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
+            this.btnAgregar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregar1.ImageIndex = 0;
+            this.btnAgregar1.ImageList = this.IconsList;
+            this.btnAgregar1.Location = new System.Drawing.Point(4, 64);
+            this.btnAgregar1.Name = "btnAgregar1";
+            this.btnAgregar1.Size = new System.Drawing.Size(211, 76);
+            this.btnAgregar1.TabIndex = 1;
+            this.btnAgregar1.Text = "Agregar";
+            this.btnAgregar1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregar1.UseVisualStyleBackColor = false;
+            this.btnAgregar1.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegresar.BackgroundImage = global::CapaVista.Properties.Resources.restart;
+            this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRegresar.FlatAppearance.BorderSize = 0;
+            this.btnRegresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(212)))), ((int)(((byte)(227)))));
+            this.btnRegresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(212)))), ((int)(((byte)(227)))));
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Location = new System.Drawing.Point(9, 4);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(57, 54);
+            this.btnRegresar.TabIndex = 0;
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
             // panelMenú
             // 
             this.panelMenú.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(161)))));
@@ -134,6 +234,22 @@
             this.panelMenú.Size = new System.Drawing.Size(222, 1000);
             this.panelMenú.TabIndex = 4;
             this.panelMenú.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenú_Paint);
+            // 
+            // BtnMenu
+            // 
+            this.BtnMenu.BackColor = System.Drawing.Color.Transparent;
+            this.BtnMenu.BackgroundImage = global::CapaVista.Properties.Resources.menu_1;
+            this.BtnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnMenu.FlatAppearance.BorderSize = 0;
+            this.BtnMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(161)))));
+            this.BtnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(161)))));
+            this.BtnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMenu.Location = new System.Drawing.Point(8, 4);
+            this.BtnMenu.Name = "BtnMenu";
+            this.BtnMenu.Size = new System.Drawing.Size(57, 54);
+            this.BtnMenu.TabIndex = 0;
+            this.BtnMenu.UseVisualStyleBackColor = false;
+            this.BtnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
             // 
             // panelAgregar1
             // 
@@ -152,6 +268,43 @@
             this.panelAgregar1.TabIndex = 7;
             this.panelAgregar1.Visible = false;
             // 
+            // btnProyeccion
+            // 
+            this.btnProyeccion.BackColor = System.Drawing.Color.Transparent;
+            this.btnProyeccion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnProyeccion.FlatAppearance.BorderSize = 0;
+            this.btnProyeccion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
+            this.btnProyeccion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
+            this.btnProyeccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProyeccion.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnProyeccion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProyeccion.ImageIndex = 18;
+            this.btnProyeccion.ImageList = this.IconsList;
+            this.btnProyeccion.Location = new System.Drawing.Point(1, 269);
+            this.btnProyeccion.Name = "btnProyeccion";
+            this.btnProyeccion.Size = new System.Drawing.Size(211, 76);
+            this.btnProyeccion.TabIndex = 8;
+            this.btnProyeccion.Text = "Proyección";
+            this.btnProyeccion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnProyeccion.UseVisualStyleBackColor = false;
+            this.btnProyeccion.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelar.BackgroundImage = global::CapaVista.Properties.Resources.icons8_Delete_50;
+            this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(162)))), ((int)(((byte)(187)))));
+            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(162)))), ((int)(((byte)(187)))));
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Location = new System.Drawing.Point(4, 6);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(57, 54);
+            this.btnCancelar.TabIndex = 7;
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.button5_Click_1);
+            // 
             // lbCancelar
             // 
             this.lbCancelar.AutoSize = true;
@@ -162,6 +315,90 @@
             this.lbCancelar.TabIndex = 6;
             this.lbCancelar.Text = "Cancelar";
             this.lbCancelar.Click += new System.EventHandler(this.lbCancelar_Click);
+            // 
+            // btnPromo
+            // 
+            this.btnPromo.BackColor = System.Drawing.Color.Transparent;
+            this.btnPromo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPromo.FlatAppearance.BorderSize = 0;
+            this.btnPromo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
+            this.btnPromo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
+            this.btnPromo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPromo.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnPromo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPromo.ImageIndex = 13;
+            this.btnPromo.ImageList = this.IconsList;
+            this.btnPromo.Location = new System.Drawing.Point(2, 334);
+            this.btnPromo.Name = "btnPromo";
+            this.btnPromo.Size = new System.Drawing.Size(211, 76);
+            this.btnPromo.TabIndex = 5;
+            this.btnPromo.Text = "Promoción";
+            this.btnPromo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPromo.UseVisualStyleBackColor = false;
+            this.btnPromo.Click += new System.EventHandler(this.btnPromo_Click);
+            // 
+            // btnNewMovie
+            // 
+            this.btnNewMovie.BackColor = System.Drawing.Color.Transparent;
+            this.btnNewMovie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNewMovie.FlatAppearance.BorderSize = 0;
+            this.btnNewMovie.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
+            this.btnNewMovie.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
+            this.btnNewMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewMovie.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnNewMovie.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNewMovie.ImageIndex = 9;
+            this.btnNewMovie.ImageList = this.IconsList;
+            this.btnNewMovie.Location = new System.Drawing.Point(3, 205);
+            this.btnNewMovie.Name = "btnNewMovie";
+            this.btnNewMovie.Size = new System.Drawing.Size(211, 76);
+            this.btnNewMovie.TabIndex = 3;
+            this.btnNewMovie.Text = "Película";
+            this.btnNewMovie.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNewMovie.UseVisualStyleBackColor = false;
+            this.btnNewMovie.Click += new System.EventHandler(this.btnNewMovie_Click);
+            // 
+            // btnAddEmpleado
+            // 
+            this.btnAddEmpleado.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddEmpleado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddEmpleado.FlatAppearance.BorderSize = 0;
+            this.btnAddEmpleado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
+            this.btnAddEmpleado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
+            this.btnAddEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddEmpleado.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnAddEmpleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddEmpleado.ImageIndex = 14;
+            this.btnAddEmpleado.ImageList = this.IconsList;
+            this.btnAddEmpleado.Location = new System.Drawing.Point(2, 137);
+            this.btnAddEmpleado.Name = "btnAddEmpleado";
+            this.btnAddEmpleado.Size = new System.Drawing.Size(211, 76);
+            this.btnAddEmpleado.TabIndex = 2;
+            this.btnAddEmpleado.Text = "Empleado";
+            this.btnAddEmpleado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAddEmpleado.UseVisualStyleBackColor = false;
+            this.btnAddEmpleado.Click += new System.EventHandler(this.btnAddEmpleado_Click);
+            // 
+            // btnCliente
+            // 
+            this.btnCliente.BackColor = System.Drawing.Color.Transparent;
+            this.btnCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCliente.FlatAppearance.BorderSize = 0;
+            this.btnCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
+            this.btnCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
+            this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCliente.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCliente.ImageIndex = 12;
+            this.btnCliente.ImageList = this.IconsList;
+            this.btnCliente.Location = new System.Drawing.Point(3, 64);
+            this.btnCliente.Name = "btnCliente";
+            this.btnCliente.Size = new System.Drawing.Size(211, 76);
+            this.btnCliente.TabIndex = 1;
+            this.btnCliente.Text = "Cliente";
+            this.btnCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCliente.UseVisualStyleBackColor = false;
+            this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
             // 
             // panelVentas2
             // 
@@ -175,6 +412,22 @@
             this.panelVentas2.TabIndex = 8;
             this.panelVentas2.Visible = false;
             // 
+            // btnCancelar2
+            // 
+            this.btnCancelar2.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelar2.BackgroundImage = global::CapaVista.Properties.Resources.icons8_Delete_50;
+            this.btnCancelar2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancelar2.FlatAppearance.BorderSize = 0;
+            this.btnCancelar2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(236)))), ((int)(((byte)(237)))));
+            this.btnCancelar2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(236)))), ((int)(((byte)(237)))));
+            this.btnCancelar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar2.Location = new System.Drawing.Point(3, 15);
+            this.btnCancelar2.Name = "btnCancelar2";
+            this.btnCancelar2.Size = new System.Drawing.Size(57, 54);
+            this.btnCancelar2.TabIndex = 7;
+            this.btnCancelar2.UseVisualStyleBackColor = false;
+            this.btnCancelar2.Click += new System.EventHandler(this.button1_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -185,9 +438,31 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Cancelar";
             // 
+            // btnFacturacion
+            // 
+            this.btnFacturacion.BackColor = System.Drawing.Color.Transparent;
+            this.btnFacturacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFacturacion.FlatAppearance.BorderSize = 0;
+            this.btnFacturacion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnFacturacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnFacturacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFacturacion.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnFacturacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFacturacion.ImageIndex = 15;
+            this.btnFacturacion.ImageList = this.IconsList;
+            this.btnFacturacion.Location = new System.Drawing.Point(3, 70);
+            this.btnFacturacion.Name = "btnFacturacion";
+            this.btnFacturacion.Size = new System.Drawing.Size(211, 76);
+            this.btnFacturacion.TabIndex = 1;
+            this.btnFacturacion.Text = "Facturación";
+            this.btnFacturacion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFacturacion.UseVisualStyleBackColor = false;
+            this.btnFacturacion.Click += new System.EventHandler(this.btnFacturacion_Click);
+            // 
             // panelReportes3
             // 
             this.panelReportes3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(161)))));
+            this.panelReportes3.Controls.Add(this.button4);
             this.panelReportes3.Controls.Add(this.button3);
             this.panelReportes3.Controls.Add(this.btnFondos);
             this.panelReportes3.Controls.Add(this.button1);
@@ -200,6 +475,83 @@
             this.panelReportes3.TabIndex = 9;
             this.panelReportes3.Visible = false;
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.ImageIndex = 17;
+            this.button3.ImageList = this.IconsList;
+            this.button3.Location = new System.Drawing.Point(4, 348);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(227, 76);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "Reservaciones";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // btnFondos
+            // 
+            this.btnFondos.BackColor = System.Drawing.Color.Transparent;
+            this.btnFondos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFondos.FlatAppearance.BorderSize = 0;
+            this.btnFondos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
+            this.btnFondos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
+            this.btnFondos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFondos.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnFondos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFondos.ImageIndex = 7;
+            this.btnFondos.ImageList = this.IconsList;
+            this.btnFondos.Location = new System.Drawing.Point(3, 207);
+            this.btnFondos.Name = "btnFondos";
+            this.btnFondos.Size = new System.Drawing.Size(227, 76);
+            this.btnFondos.TabIndex = 9;
+            this.btnFondos.Text = "Reporte Fondos";
+            this.btnFondos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFondos.UseVisualStyleBackColor = false;
+            this.btnFondos.Click += new System.EventHandler(this.btnFondos_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.ImageIndex = 16;
+            this.button1.ImageList = this.IconsList;
+            this.button1.Location = new System.Drawing.Point(3, 137);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(227, 76);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Reporte Peliculas";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btnCancelar3
+            // 
+            this.btnCancelar3.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelar3.BackgroundImage = global::CapaVista.Properties.Resources.icons8_Delete_50;
+            this.btnCancelar3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancelar3.FlatAppearance.BorderSize = 0;
+            this.btnCancelar3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(161)))));
+            this.btnCancelar3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(161)))));
+            this.btnCancelar3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar3.Location = new System.Drawing.Point(4, 6);
+            this.btnCancelar3.Name = "btnCancelar3";
+            this.btnCancelar3.Size = new System.Drawing.Size(57, 54);
+            this.btnCancelar3.TabIndex = 7;
+            this.btnCancelar3.UseVisualStyleBackColor = false;
+            this.btnCancelar3.Click += new System.EventHandler(this.btnCancelar3_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -209,6 +561,27 @@
             this.label2.Size = new System.Drawing.Size(113, 32);
             this.label2.TabIndex = 6;
             this.label2.Text = "Cancelar";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.ImageIndex = 5;
+            this.button2.ImageList = this.IconsList;
+            this.button2.Location = new System.Drawing.Point(2, 64);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(227, 76);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Ventas por sala";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
             // 
@@ -232,7 +605,7 @@
             this.lbUsuario.AutoSize = true;
             this.lbUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(206)))));
             this.lbUsuario.Font = new System.Drawing.Font("Tekton Pro Ext", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUsuario.Location = new System.Drawing.Point(1158, 48);
+            this.lbUsuario.Location = new System.Drawing.Point(1316, 12);
             this.lbUsuario.Name = "lbUsuario";
             this.lbUsuario.Size = new System.Drawing.Size(52, 15);
             this.lbUsuario.TabIndex = 5;
@@ -243,7 +616,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(206)))));
             this.label6.Font = new System.Drawing.Font("Tekton Pro Ext", 8.999999F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(1105, 49);
+            this.label6.Location = new System.Drawing.Point(1263, 13);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(59, 15);
             this.label6.TabIndex = 4;
@@ -293,376 +666,26 @@
             this.lbCinemaPro.TabIndex = 0;
             this.lbCinemaPro.Text = "CinemaPro";
             // 
-            // btnPeliculas
+            // button4
             // 
-            this.btnPeliculas.BackColor = System.Drawing.Color.Transparent;
-            this.btnPeliculas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPeliculas.FlatAppearance.BorderSize = 0;
-            this.btnPeliculas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
-            this.btnPeliculas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
-            this.btnPeliculas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPeliculas.Font = new System.Drawing.Font("Segoe UI Emoji", 14F);
-            this.btnPeliculas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPeliculas.ImageIndex = 8;
-            this.btnPeliculas.ImageList = this.IconsList;
-            this.btnPeliculas.Location = new System.Drawing.Point(8, 310);
-            this.btnPeliculas.Name = "btnPeliculas";
-            this.btnPeliculas.Size = new System.Drawing.Size(211, 76);
-            this.btnPeliculas.TabIndex = 5;
-            this.btnPeliculas.Text = "Cartelera";
-            this.btnPeliculas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPeliculas.UseVisualStyleBackColor = false;
-            // 
-            // btnVentas2
-            // 
-            this.btnVentas2.BackColor = System.Drawing.Color.Transparent;
-            this.btnVentas2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnVentas2.FlatAppearance.BorderSize = 0;
-            this.btnVentas2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
-            this.btnVentas2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
-            this.btnVentas2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVentas2.Font = new System.Drawing.Font("Segoe UI Emoji", 14F);
-            this.btnVentas2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVentas2.ImageIndex = 10;
-            this.btnVentas2.ImageList = this.IconsList;
-            this.btnVentas2.Location = new System.Drawing.Point(1, 146);
-            this.btnVentas2.Name = "btnVentas2";
-            this.btnVentas2.Size = new System.Drawing.Size(211, 76);
-            this.btnVentas2.TabIndex = 3;
-            this.btnVentas2.Text = "Ventas";
-            this.btnVentas2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVentas2.UseVisualStyleBackColor = false;
-            this.btnVentas2.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // btnReportes3
-            // 
-            this.btnReportes3.BackColor = System.Drawing.Color.Transparent;
-            this.btnReportes3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnReportes3.FlatAppearance.BorderSize = 0;
-            this.btnReportes3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
-            this.btnReportes3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
-            this.btnReportes3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReportes3.Font = new System.Drawing.Font("Segoe UI Emoji", 14F);
-            this.btnReportes3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes3.ImageIndex = 6;
-            this.btnReportes3.ImageList = this.IconsList;
-            this.btnReportes3.Location = new System.Drawing.Point(8, 228);
-            this.btnReportes3.Name = "btnReportes3";
-            this.btnReportes3.Size = new System.Drawing.Size(211, 76);
-            this.btnReportes3.TabIndex = 2;
-            this.btnReportes3.Text = "Reportes";
-            this.btnReportes3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReportes3.UseVisualStyleBackColor = false;
-            this.btnReportes3.Click += new System.EventHandler(this.btnReport_Click);
-            // 
-            // btnAgregar1
-            // 
-            this.btnAgregar1.BackColor = System.Drawing.Color.Transparent;
-            this.btnAgregar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAgregar1.FlatAppearance.BorderSize = 0;
-            this.btnAgregar1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
-            this.btnAgregar1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
-            this.btnAgregar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar1.ImageIndex = 0;
-            this.btnAgregar1.ImageList = this.IconsList;
-            this.btnAgregar1.Location = new System.Drawing.Point(4, 64);
-            this.btnAgregar1.Name = "btnAgregar1";
-            this.btnAgregar1.Size = new System.Drawing.Size(211, 76);
-            this.btnAgregar1.TabIndex = 1;
-            this.btnAgregar1.Text = "Agregar";
-            this.btnAgregar1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAgregar1.UseVisualStyleBackColor = false;
-            this.btnAgregar1.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
-            // btnRegresar
-            // 
-            this.btnRegresar.BackColor = System.Drawing.Color.Transparent;
-            this.btnRegresar.BackgroundImage = global::CapaVista.Properties.Resources.restart;
-            this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(212)))), ((int)(((byte)(227)))));
-            this.btnRegresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(212)))), ((int)(((byte)(227)))));
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Location = new System.Drawing.Point(9, 4);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(57, 54);
-            this.btnRegresar.TabIndex = 0;
-            this.btnRegresar.UseVisualStyleBackColor = false;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
-            // 
-            // BtnMenu
-            // 
-            this.BtnMenu.BackColor = System.Drawing.Color.Transparent;
-            this.BtnMenu.BackgroundImage = global::CapaVista.Properties.Resources.menu_1;
-            this.BtnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnMenu.FlatAppearance.BorderSize = 0;
-            this.BtnMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(161)))));
-            this.BtnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(161)))));
-            this.BtnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMenu.Location = new System.Drawing.Point(8, 4);
-            this.BtnMenu.Name = "BtnMenu";
-            this.BtnMenu.Size = new System.Drawing.Size(57, 54);
-            this.BtnMenu.TabIndex = 0;
-            this.BtnMenu.UseVisualStyleBackColor = false;
-            this.BtnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Emoji", 14F);
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.ImageIndex = 17;
-            this.button3.ImageList = this.IconsList;
-            this.button3.Location = new System.Drawing.Point(3, 271);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(227, 76);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Reservaciones";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // btnFondos
-            // 
-            this.btnFondos.BackColor = System.Drawing.Color.Transparent;
-            this.btnFondos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFondos.FlatAppearance.BorderSize = 0;
-            this.btnFondos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
-            this.btnFondos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
-            this.btnFondos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFondos.Font = new System.Drawing.Font("Segoe UI Emoji", 14F);
-            this.btnFondos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFondos.ImageIndex = 7;
-            this.btnFondos.ImageList = this.IconsList;
-            this.btnFondos.Location = new System.Drawing.Point(3, 207);
-            this.btnFondos.Name = "btnFondos";
-            this.btnFondos.Size = new System.Drawing.Size(227, 76);
-            this.btnFondos.TabIndex = 9;
-            this.btnFondos.Text = "Reporte Fondos";
-            this.btnFondos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnFondos.UseVisualStyleBackColor = false;
-            this.btnFondos.Click += new System.EventHandler(this.btnFondos_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Emoji", 14F);
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.ImageIndex = 16;
-            this.button1.ImageList = this.IconsList;
-            this.button1.Location = new System.Drawing.Point(3, 137);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(227, 76);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Reporte Peliculas";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // btnCancelar3
-            // 
-            this.btnCancelar3.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancelar3.BackgroundImage = global::CapaVista.Properties.Resources.icons8_Delete_50;
-            this.btnCancelar3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCancelar3.FlatAppearance.BorderSize = 0;
-            this.btnCancelar3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(161)))));
-            this.btnCancelar3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(161)))));
-            this.btnCancelar3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar3.Location = new System.Drawing.Point(4, 6);
-            this.btnCancelar3.Name = "btnCancelar3";
-            this.btnCancelar3.Size = new System.Drawing.Size(57, 54);
-            this.btnCancelar3.TabIndex = 7;
-            this.btnCancelar3.UseVisualStyleBackColor = false;
-            this.btnCancelar3.Click += new System.EventHandler(this.btnCancelar3_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Emoji", 14F);
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.ImageIndex = 5;
-            this.button2.ImageList = this.IconsList;
-            this.button2.Location = new System.Drawing.Point(2, 64);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(227, 76);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Ventas por sala";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnProyeccion
-            // 
-            this.btnProyeccion.BackColor = System.Drawing.Color.Transparent;
-            this.btnProyeccion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnProyeccion.FlatAppearance.BorderSize = 0;
-            this.btnProyeccion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
-            this.btnProyeccion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
-            this.btnProyeccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProyeccion.Font = new System.Drawing.Font("Segoe UI Emoji", 14F);
-            this.btnProyeccion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProyeccion.ImageIndex = 18;
-            this.btnProyeccion.ImageList = this.IconsList;
-            this.btnProyeccion.Location = new System.Drawing.Point(1, 269);
-            this.btnProyeccion.Name = "btnProyeccion";
-            this.btnProyeccion.Size = new System.Drawing.Size(211, 76);
-            this.btnProyeccion.TabIndex = 8;
-            this.btnProyeccion.Text = "Proyección";
-            this.btnProyeccion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnProyeccion.UseVisualStyleBackColor = false;
-            this.btnProyeccion.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancelar.BackgroundImage = global::CapaVista.Properties.Resources.icons8_Delete_50;
-            this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCancelar.FlatAppearance.BorderSize = 0;
-            this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(162)))), ((int)(((byte)(187)))));
-            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(162)))), ((int)(((byte)(187)))));
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Location = new System.Drawing.Point(4, 6);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(57, 54);
-            this.btnCancelar.TabIndex = 7;
-            this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.button5_Click_1);
-            // 
-            // btnPromo
-            // 
-            this.btnPromo.BackColor = System.Drawing.Color.Transparent;
-            this.btnPromo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPromo.FlatAppearance.BorderSize = 0;
-            this.btnPromo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
-            this.btnPromo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
-            this.btnPromo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPromo.Font = new System.Drawing.Font("Segoe UI Emoji", 14F);
-            this.btnPromo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPromo.ImageIndex = 13;
-            this.btnPromo.ImageList = this.IconsList;
-            this.btnPromo.Location = new System.Drawing.Point(2, 334);
-            this.btnPromo.Name = "btnPromo";
-            this.btnPromo.Size = new System.Drawing.Size(211, 76);
-            this.btnPromo.TabIndex = 5;
-            this.btnPromo.Text = "Promoción";
-            this.btnPromo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPromo.UseVisualStyleBackColor = false;
-            this.btnPromo.Click += new System.EventHandler(this.btnPromo_Click);
-            // 
-            // btnNewMovie
-            // 
-            this.btnNewMovie.BackColor = System.Drawing.Color.Transparent;
-            this.btnNewMovie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNewMovie.FlatAppearance.BorderSize = 0;
-            this.btnNewMovie.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
-            this.btnNewMovie.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
-            this.btnNewMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewMovie.Font = new System.Drawing.Font("Segoe UI Emoji", 14F);
-            this.btnNewMovie.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNewMovie.ImageIndex = 9;
-            this.btnNewMovie.ImageList = this.IconsList;
-            this.btnNewMovie.Location = new System.Drawing.Point(3, 205);
-            this.btnNewMovie.Name = "btnNewMovie";
-            this.btnNewMovie.Size = new System.Drawing.Size(211, 76);
-            this.btnNewMovie.TabIndex = 3;
-            this.btnNewMovie.Text = "Película";
-            this.btnNewMovie.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNewMovie.UseVisualStyleBackColor = false;
-            this.btnNewMovie.Click += new System.EventHandler(this.btnNewMovie_Click);
-            // 
-            // btnAddEmpleado
-            // 
-            this.btnAddEmpleado.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddEmpleado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAddEmpleado.FlatAppearance.BorderSize = 0;
-            this.btnAddEmpleado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
-            this.btnAddEmpleado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
-            this.btnAddEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddEmpleado.Font = new System.Drawing.Font("Segoe UI Emoji", 14F);
-            this.btnAddEmpleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddEmpleado.ImageIndex = 14;
-            this.btnAddEmpleado.ImageList = this.IconsList;
-            this.btnAddEmpleado.Location = new System.Drawing.Point(2, 137);
-            this.btnAddEmpleado.Name = "btnAddEmpleado";
-            this.btnAddEmpleado.Size = new System.Drawing.Size(211, 76);
-            this.btnAddEmpleado.TabIndex = 2;
-            this.btnAddEmpleado.Text = "Empleado";
-            this.btnAddEmpleado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAddEmpleado.UseVisualStyleBackColor = false;
-            this.btnAddEmpleado.Click += new System.EventHandler(this.btnAddEmpleado_Click);
-            // 
-            // btnCliente
-            // 
-            this.btnCliente.BackColor = System.Drawing.Color.Transparent;
-            this.btnCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCliente.FlatAppearance.BorderSize = 0;
-            this.btnCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
-            this.btnCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(195)))), ((int)(((byte)(224)))));
-            this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCliente.Font = new System.Drawing.Font("Segoe UI Emoji", 14F);
-            this.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCliente.ImageIndex = 12;
-            this.btnCliente.ImageList = this.IconsList;
-            this.btnCliente.Location = new System.Drawing.Point(3, 64);
-            this.btnCliente.Name = "btnCliente";
-            this.btnCliente.Size = new System.Drawing.Size(211, 76);
-            this.btnCliente.TabIndex = 1;
-            this.btnCliente.Text = "Cliente";
-            this.btnCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCliente.UseVisualStyleBackColor = false;
-            this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
-            // 
-            // btnCancelar2
-            // 
-            this.btnCancelar2.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancelar2.BackgroundImage = global::CapaVista.Properties.Resources.icons8_Delete_50;
-            this.btnCancelar2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCancelar2.FlatAppearance.BorderSize = 0;
-            this.btnCancelar2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(236)))), ((int)(((byte)(237)))));
-            this.btnCancelar2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(236)))), ((int)(((byte)(237)))));
-            this.btnCancelar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar2.Location = new System.Drawing.Point(3, 15);
-            this.btnCancelar2.Name = "btnCancelar2";
-            this.btnCancelar2.Size = new System.Drawing.Size(57, 54);
-            this.btnCancelar2.TabIndex = 7;
-            this.btnCancelar2.UseVisualStyleBackColor = false;
-            this.btnCancelar2.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnFacturacion
-            // 
-            this.btnFacturacion.BackColor = System.Drawing.Color.Transparent;
-            this.btnFacturacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFacturacion.FlatAppearance.BorderSize = 0;
-            this.btnFacturacion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.btnFacturacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnFacturacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFacturacion.Font = new System.Drawing.Font("Segoe UI Emoji", 14F);
-            this.btnFacturacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFacturacion.ImageIndex = 15;
-            this.btnFacturacion.ImageList = this.IconsList;
-            this.btnFacturacion.Location = new System.Drawing.Point(3, 70);
-            this.btnFacturacion.Name = "btnFacturacion";
-            this.btnFacturacion.Size = new System.Drawing.Size(211, 76);
-            this.btnFacturacion.TabIndex = 1;
-            this.btnFacturacion.Text = "Facturación";
-            this.btnFacturacion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnFacturacion.UseVisualStyleBackColor = false;
-            this.btnFacturacion.Click += new System.EventHandler(this.btnFacturacion_Click);
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.ImageIndex = 12;
+            this.button4.ImageList = this.IconsList;
+            this.button4.Location = new System.Drawing.Point(2, 276);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(227, 76);
+            this.button4.TabIndex = 11;
+            this.button4.Text = "Reporte Clientes";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // FrmPrincipall
             // 
@@ -733,6 +756,7 @@
         private System.Windows.Forms.Label label5;
         public System.Windows.Forms.Label lbUsuario;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button4;
     }
 }
 

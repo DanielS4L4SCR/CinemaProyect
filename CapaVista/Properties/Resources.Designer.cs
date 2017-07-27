@@ -103,6 +103,16 @@ namespace CapaVista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cinme_roll {
+            get {
+                object obj = ResourceManager.GetObject("cinme roll", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap click_click {
             get {
                 object obj = ResourceManager.GetObject("click-click", resourceCulture);
@@ -146,6 +156,16 @@ namespace CapaVista.Properties {
         internal static System.Drawing.Bitmap folder_18 {
             get {
                 object obj = ResourceManager.GetObject("folder-18", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Caja_registradora_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-Caja registradora-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +236,16 @@ namespace CapaVista.Properties {
         internal static System.Drawing.Bitmap icons8_Discount_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-Discount-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Monedas_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-Monedas-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
