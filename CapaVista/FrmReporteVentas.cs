@@ -42,6 +42,8 @@ namespace CapaVista
             dtReportes = Reportes.ReportePorSala(cboSala.Text);
             cboResultado1.DataSource = dtReportes;
             cboResultado1.DisplayMember = "count(*)";
+
+            MessageBox.Show("La Cantidad de ventas para la: " + cboSala.Text + " es de " + cboResultado1.Text, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
             
         }
 
@@ -52,6 +54,8 @@ namespace CapaVista
             dtReportes = Reportes.ReportePorProyeccion(Convert.ToInt32(cboProyeccion.SelectedValue));
             cboResultado2.DataSource = dtReportes;
             cboResultado2.DisplayMember = "count(*)";
+
+            MessageBox.Show("La Cantidad de ventas para la proyección: " + cboProyeccion.Text + " es de " + cboResultado2.Text, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

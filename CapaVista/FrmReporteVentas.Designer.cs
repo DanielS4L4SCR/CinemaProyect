@@ -48,7 +48,7 @@
             this.cboSala.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.cboSala.FormattingEnabled = true;
             this.cboSala.ItemHeight = 23;
-            this.cboSala.Location = new System.Drawing.Point(107, 164);
+            this.cboSala.Location = new System.Drawing.Point(202, 155);
             this.cboSala.Name = "cboSala";
             this.cboSala.Size = new System.Drawing.Size(111, 29);
             this.cboSala.TabIndex = 58;
@@ -61,7 +61,7 @@
             // 
             this.metroButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
             this.metroButton1.ForeColor = System.Drawing.Color.White;
-            this.metroButton1.Location = new System.Drawing.Point(224, 164);
+            this.metroButton1.Location = new System.Drawing.Point(319, 155);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(62, 29);
             this.metroButton1.TabIndex = 99;
@@ -125,7 +125,7 @@
             this.cboProyeccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.cboProyeccion.FormattingEnabled = true;
             this.cboProyeccion.ItemHeight = 23;
-            this.cboProyeccion.Location = new System.Drawing.Point(107, 219);
+            this.cboProyeccion.Location = new System.Drawing.Point(202, 210);
             this.cboProyeccion.Name = "cboProyeccion";
             this.cboProyeccion.Size = new System.Drawing.Size(111, 29);
             this.cboProyeccion.TabIndex = 105;
@@ -138,7 +138,7 @@
             // 
             this.metroButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
             this.metroButton2.ForeColor = System.Drawing.Color.White;
-            this.metroButton2.Location = new System.Drawing.Point(224, 219);
+            this.metroButton2.Location = new System.Drawing.Point(319, 210);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(62, 29);
             this.metroButton2.TabIndex = 106;
@@ -155,7 +155,7 @@
             this.metroLabel5.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel5.FontSize = MetroFramework.MetroLabelSize.Small;
             this.metroLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.metroLabel5.Location = new System.Drawing.Point(51, 178);
+            this.metroLabel5.Location = new System.Drawing.Point(146, 169);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(50, 15);
             this.metroLabel5.TabIndex = 108;
@@ -171,7 +171,7 @@
             this.metroLabel6.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel6.FontSize = MetroFramework.MetroLabelSize.Small;
             this.metroLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.metroLabel6.Location = new System.Drawing.Point(17, 233);
+            this.metroLabel6.Location = new System.Drawing.Point(112, 224);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(84, 15);
             this.metroLabel6.TabIndex = 109;
@@ -196,7 +196,7 @@
             this.cboResultado1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.cboResultado1.FormattingEnabled = true;
             this.cboResultado1.ItemHeight = 23;
-            this.cboResultado1.Location = new System.Drawing.Point(305, 164);
+            this.cboResultado1.Location = new System.Drawing.Point(305, 75);
             this.cboResultado1.Name = "cboResultado1";
             this.cboResultado1.Size = new System.Drawing.Size(100, 29);
             this.cboResultado1.TabIndex = 110;
@@ -204,6 +204,7 @@
             this.cboResultado1.UseCustomForeColor = true;
             this.cboResultado1.UseSelectable = true;
             this.cboResultado1.UseStyleColors = true;
+            this.cboResultado1.Visible = false;
             // 
             // cboResultado2
             // 
@@ -211,7 +212,7 @@
             this.cboResultado2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.cboResultado2.FormattingEnabled = true;
             this.cboResultado2.ItemHeight = 23;
-            this.cboResultado2.Location = new System.Drawing.Point(305, 219);
+            this.cboResultado2.Location = new System.Drawing.Point(305, 112);
             this.cboResultado2.Name = "cboResultado2";
             this.cboResultado2.Size = new System.Drawing.Size(100, 29);
             this.cboResultado2.TabIndex = 111;
@@ -219,13 +220,14 @@
             this.cboResultado2.UseCustomForeColor = true;
             this.cboResultado2.UseSelectable = true;
             this.cboResultado2.UseStyleColors = true;
+            this.cboResultado2.Visible = false;
             // 
             // FrmReporteVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            this.ClientSize = new System.Drawing.Size(385, 292);
+            this.ClientSize = new System.Drawing.Size(385, 248);
             this.Controls.Add(this.cboResultado2);
             this.Controls.Add(this.cboResultado1);
             this.Controls.Add(this.metroLabel6);
@@ -240,7 +242,7 @@
             this.Controls.Add(this.cboSala);
             this.Name = "FrmReporteVentas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmReporteVentas";
+            this.Text = "Reporte Ventas";
             this.Load += new System.EventHandler(this.FrmReporteVentas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

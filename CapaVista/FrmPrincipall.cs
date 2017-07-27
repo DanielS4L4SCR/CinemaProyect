@@ -211,5 +211,11 @@ namespace CapaVista
             FrmReporteVentas reportes = new FrmReporteVentas();
             reportes.Show();
         }
+
+        private void btnFondos_Click(object sender, EventArgs e)
+        {
+            FrmReporteFondos reportes = new FrmReporteFondos();
+            reportes.Show();
+        }
     }
 }

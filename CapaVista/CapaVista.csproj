@@ -107,6 +107,12 @@
     <Compile Include="FrmProyeccion.Designer.cs">
       <DependentUpon>FrmProyeccion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmReporteFondos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporteFondos.Designer.cs">
+      <DependentUpon>FrmReporteFondos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmReporteVentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProyeccion.resx">
       <DependentUpon>FrmProyeccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporteFondos.resx">
+      <DependentUpon>FrmReporteFondos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReporteVentas.resx">
       <DependentUpon>FrmReporteVentas.cs</DependentUpon>
@@ -272,6 +281,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\folder-18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Coins-501.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

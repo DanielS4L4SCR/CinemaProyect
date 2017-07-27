@@ -447,6 +447,7 @@
             this.btnFondos.Text = "Reporte Fondos";
             this.btnFondos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnFondos.UseVisualStyleBackColor = false;
+            this.btnFondos.Click += new System.EventHandler(this.btnFondos_Click);
             // 
             // button1
             // 
