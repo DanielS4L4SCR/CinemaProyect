@@ -41,7 +41,6 @@
             this.cboTipoPel = new MetroFramework.Controls.MetroComboBox();
             this.btnAceptar = new MetroFramework.Controls.MetroButton();
             this.cboGenPeli = new MetroFramework.Controls.MetroComboBox();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
@@ -114,7 +113,7 @@
             this.txtDuracion.Lines = new string[] {
         "HH:MM:SS"};
             this.txtDuracion.Location = new System.Drawing.Point(140, 274);
-            this.txtDuracion.MaxLength = 32767;
+            this.txtDuracion.MaxLength = 8;
             this.txtDuracion.Name = "txtDuracion";
             this.txtDuracion.PasswordChar = '\0';
             this.txtDuracion.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -131,7 +130,6 @@
             this.txtDuracion.UseStyleColors = true;
             this.txtDuracion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtDuracion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.txtDuracion.Click += new System.EventHandler(this.txtDuracion_Click);
             // 
             // metroLabel3
             // 
@@ -163,7 +161,7 @@
             this.txtNom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtNom.Lines = new string[0];
             this.txtNom.Location = new System.Drawing.Point(140, 229);
-            this.txtNom.MaxLength = 32767;
+            this.txtNom.MaxLength = 45;
             this.txtNom.Name = "txtNom";
             this.txtNom.PasswordChar = '\0';
             this.txtNom.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -210,7 +208,7 @@
             this.txtidPelicula.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtidPelicula.Lines = new string[0];
             this.txtidPelicula.Location = new System.Drawing.Point(140, 172);
-            this.txtidPelicula.MaxLength = 32767;
+            this.txtidPelicula.MaxLength = 11;
             this.txtidPelicula.Name = "txtidPelicula";
             this.txtidPelicula.PasswordChar = '\0';
             this.txtidPelicula.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -246,7 +244,7 @@
             this.cboTipoPel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.cboTipoPel.FormattingEnabled = true;
             this.cboTipoPel.ItemHeight = 23;
-            this.cboTipoPel.Location = new System.Drawing.Point(140, 329);
+            this.cboTipoPel.Location = new System.Drawing.Point(140, 326);
             this.cboTipoPel.Name = "cboTipoPel";
             this.cboTipoPel.Size = new System.Drawing.Size(149, 29);
             this.cboTipoPel.TabIndex = 54;
@@ -254,14 +252,12 @@
             this.cboTipoPel.UseCustomForeColor = true;
             this.cboTipoPel.UseSelectable = true;
             this.cboTipoPel.UseStyleColors = true;
-            this.cboTipoPel.SelectedIndexChanged += new System.EventHandler(this.cboTipoPel_SelectedIndexChanged);
-            this.cboTipoPel.Click += new System.EventHandler(this.cboTipoPel_SelectedIndexChanged);
             // 
             // btnAceptar
             // 
             this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
             this.btnAceptar.ForeColor = System.Drawing.Color.White;
-            this.btnAceptar.Location = new System.Drawing.Point(138, 436);
+            this.btnAceptar.Location = new System.Drawing.Point(138, 468);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(151, 33);
             this.btnAceptar.TabIndex = 55;
@@ -278,7 +274,7 @@
             this.cboGenPeli.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.cboGenPeli.FormattingEnabled = true;
             this.cboGenPeli.ItemHeight = 23;
-            this.cboGenPeli.Location = new System.Drawing.Point(140, 384);
+            this.cboGenPeli.Location = new System.Drawing.Point(140, 391);
             this.cboGenPeli.Name = "cboGenPeli";
             this.cboGenPeli.Size = new System.Drawing.Size(149, 29);
             this.cboGenPeli.TabIndex = 56;
@@ -286,23 +282,6 @@
             this.cboGenPeli.UseCustomForeColor = true;
             this.cboGenPeli.UseSelectable = true;
             this.cboGenPeli.UseStyleColors = true;
-            this.cboGenPeli.SelectedIndexChanged += new System.EventHandler(this.cboGenPeli_SelectedIndexChanged);
-            this.cboGenPeli.Click += new System.EventHandler(this.cboGenPeli_SelectedIndexChanged);
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
-            this.metroButton1.ForeColor = System.Drawing.Color.White;
-            this.metroButton1.Location = new System.Drawing.Point(35, 436);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(90, 33);
-            this.metroButton1.TabIndex = 57;
-            this.metroButton1.Text = "insertar Imagen";
-            this.metroButton1.UseCustomBackColor = true;
-            this.metroButton1.UseCustomForeColor = true;
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.UseStyleColors = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // openFileDialog1
             // 
@@ -314,7 +293,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
             this.ClientSize = new System.Drawing.Size(314, 513);
-            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.cboGenPeli);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.cboTipoPel);
@@ -353,7 +331,6 @@
         private MetroFramework.Controls.MetroComboBox cboTipoPel;
         private MetroFramework.Controls.MetroButton btnAceptar;
         private MetroFramework.Controls.MetroComboBox cboGenPeli;
-        private MetroFramework.Controls.MetroButton metroButton1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

@@ -37,7 +37,11 @@ namespace CapaVista
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             CapaNegocios.clsProyeccion proyeccion = new CapaNegocios.clsProyeccion();
-            if(proyeccion.insertarProyeccion(cboSala.Text, Convert.ToInt32(cboPelicula.SelectedValue),txtHoraIni.Text,txtHoraFin.Text,DtFecha.Text,int.Parse(txtPrecio.Text)))
+            if (String.IsNullOrEmpty(txtPrecio.Text)|| String.IsNullOrEmpty(txtHoraIni.Text)|| String.IsNullOrEmpty(txtHoraFin.Text))
+            {
+                MessageBox.Show("Debe completar toda la información", "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+            } 
+            else if(proyeccion.insertarProyeccion(cboSala.Text, Convert.ToInt32(cboPelicula.SelectedValue),txtHoraIni.Text,txtHoraFin.Text,DtFecha.Text,int.Parse(txtPrecio.Text)))
             {
                 MessageBox.Show("Proyección agregada correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.None);
             }

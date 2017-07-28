@@ -193,7 +193,11 @@ namespace CapaVista
             var result = MessageBox.Show("¿Seguro que deseea realizar la factura?", "Confirmación", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (result == DialogResult.OK)
             {
-                if (factura.insertarFactura(Convert.ToInt32(cboCliente.SelectedValue), cboCliente.Text, DtFecha.Text, total(), Convert.ToInt32(cboEmpleado.SelectedValue), Convert.ToInt32(cboTipoCliente.SelectedValue)))
+                if (cboAsiento.Text=="")
+                {
+                    MessageBox.Show("Debe seleccionar los asientos, puede visualizarlos en el botón: ''ver asientos''", "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                }
+                else if (factura.insertarFactura(Convert.ToInt32(cboCliente.SelectedValue), cboCliente.Text, DtFecha.Text, total(), Convert.ToInt32(cboEmpleado.SelectedValue), Convert.ToInt32(cboTipoCliente.SelectedValue)))
                 {
                     for (int i = 0; i < dgvVentas.Rows.Count; i++)
                     {  

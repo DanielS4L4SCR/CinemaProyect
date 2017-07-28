@@ -51,8 +51,8 @@
             this.rbAdultM = new MetroFramework.Controls.MetroRadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.rbAdolescente = new MetroFramework.Controls.MetroRadioButton();
             this.rbAdult = new MetroFramework.Controls.MetroRadioButton();
+            this.rbAdolescente = new MetroFramework.Controls.MetroRadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -211,7 +211,7 @@
             this.txtID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtID.Lines = new string[0];
             this.txtID.Location = new System.Drawing.Point(105, 229);
-            this.txtID.MaxLength = 32767;
+            this.txtID.MaxLength = 20;
             this.txtID.Name = "txtID";
             this.txtID.PasswordChar = '\0';
             this.txtID.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -245,7 +245,7 @@
             this.txtNom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtNom.Lines = new string[0];
             this.txtNom.Location = new System.Drawing.Point(105, 271);
-            this.txtNom.MaxLength = 32767;
+            this.txtNom.MaxLength = 36;
             this.txtNom.Name = "txtNom";
             this.txtNom.PasswordChar = '\0';
             this.txtNom.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -279,7 +279,7 @@
             this.txtApe1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtApe1.Lines = new string[0];
             this.txtApe1.Location = new System.Drawing.Point(105, 312);
-            this.txtApe1.MaxLength = 32767;
+            this.txtApe1.MaxLength = 45;
             this.txtApe1.Name = "txtApe1";
             this.txtApe1.PasswordChar = '\0';
             this.txtApe1.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -313,7 +313,7 @@
             this.txtApe2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtApe2.Lines = new string[0];
             this.txtApe2.Location = new System.Drawing.Point(105, 350);
-            this.txtApe2.MaxLength = 32767;
+            this.txtApe2.MaxLength = 45;
             this.txtApe2.Name = "txtApe2";
             this.txtApe2.PasswordChar = '\0';
             this.txtApe2.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -453,21 +453,6 @@
             this.groupBox3.TabIndex = 22;
             this.groupBox3.TabStop = false;
             // 
-            // rbAdolescente
-            // 
-            this.rbAdolescente.AutoSize = true;
-            this.rbAdolescente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            this.rbAdolescente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.rbAdolescente.Location = new System.Drawing.Point(11, 47);
-            this.rbAdolescente.Name = "rbAdolescente";
-            this.rbAdolescente.Size = new System.Drawing.Size(83, 15);
-            this.rbAdolescente.TabIndex = 21;
-            this.rbAdolescente.Text = "Adolecente";
-            this.rbAdolescente.UseCustomBackColor = true;
-            this.rbAdolescente.UseCustomForeColor = true;
-            this.rbAdolescente.UseSelectable = true;
-            this.rbAdolescente.UseStyleColors = true;
-            // 
             // rbAdult
             // 
             this.rbAdult.AutoSize = true;
@@ -482,6 +467,21 @@
             this.rbAdult.UseCustomForeColor = true;
             this.rbAdult.UseSelectable = true;
             this.rbAdult.UseStyleColors = true;
+            // 
+            // rbAdolescente
+            // 
+            this.rbAdolescente.AutoSize = true;
+            this.rbAdolescente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.rbAdolescente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.rbAdolescente.Location = new System.Drawing.Point(11, 47);
+            this.rbAdolescente.Name = "rbAdolescente";
+            this.rbAdolescente.Size = new System.Drawing.Size(83, 15);
+            this.rbAdolescente.TabIndex = 21;
+            this.rbAdolescente.Text = "Adolecente";
+            this.rbAdolescente.UseCustomBackColor = true;
+            this.rbAdolescente.UseCustomForeColor = true;
+            this.rbAdolescente.UseSelectable = true;
+            this.rbAdolescente.UseStyleColors = true;
             // 
             // FrmCliente
             // 

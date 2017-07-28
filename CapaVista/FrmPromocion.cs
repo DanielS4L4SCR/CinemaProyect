@@ -20,7 +20,11 @@ namespace CapaVista
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             CapaNegocios.ClsPromocion promocion = new CapaNegocios.ClsPromocion();
-            if (promocion.insertarPromocion(Convert.ToInt32(cboProyecciones.SelectedValue), double.Parse(txtDescuento.Text), txtDescripcion.Text, Convert.ToInt32(cboTipoCliente.SelectedValue)))
+            if (String.IsNullOrEmpty(txtDescripcion.Text) || String.IsNullOrEmpty(txtDescuento.Text))
+            {
+                MessageBox.Show("Debe completar toda la información", "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+            }
+            else if (promocion.insertarPromocion(Convert.ToInt32(cboProyecciones.SelectedValue), double.Parse(txtDescuento.Text), txtDescripcion.Text, Convert.ToInt32(cboTipoCliente.SelectedValue)))
             {
                 MessageBox.Show("Promocion agregada correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.None);
             }

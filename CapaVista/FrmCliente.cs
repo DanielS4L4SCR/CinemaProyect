@@ -34,10 +34,17 @@ namespace CapaVista
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             CapaNegocios.clsCliente cliente = new CapaNegocios.clsCliente();
-            
-            if(rbNacional.Checked)
+            if (String.IsNullOrEmpty(txtID.Text)|| String.IsNullOrEmpty(txtNom.Text)||String.IsNullOrEmpty(txtApe1.Text)||String.IsNullOrEmpty(txtApe2.Text))
             {
-                if(cliente.insertarNacional(txtID.Text,txtNom.Text,txtApe1.Text,txtApe2.Text,Genero(),TipoCliente()))
+                MessageBox.Show("Debe completar toda la información", "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+            }
+            if (rbNacional.Checked)
+            {
+                if (String.IsNullOrEmpty(txtID.Text) || String.IsNullOrEmpty(txtNom.Text) || String.IsNullOrEmpty(txtApe1.Text) || String.IsNullOrEmpty(txtApe2.Text))
+                {
+                    //MessageBox.Show("Debe completar toda la información", "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                }
+                else if (cliente.insertarNacional(txtID.Text,txtNom.Text,txtApe1.Text,txtApe2.Text,Genero(),TipoCliente()))
                 {
                     MessageBox.Show("Cliente nacional agregado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.None);
                     limpiar();
@@ -47,7 +54,11 @@ namespace CapaVista
 
             if (rbExtranjero.Checked)
             {
-                if (cliente.insertarExtranjero(txtID.Text, txtNom.Text, txtApe1.Text, txtApe2.Text, Genero(), TipoCliente()))
+                if (String.IsNullOrEmpty(txtID.Text) || String.IsNullOrEmpty(txtNom.Text) || String.IsNullOrEmpty(txtApe1.Text) || String.IsNullOrEmpty(txtApe2.Text))
+                {
+                    //MessageBox.Show("Debe completar toda la información", "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                }
+                else if (cliente.insertarExtranjero(txtID.Text, txtNom.Text, txtApe1.Text, txtApe2.Text, Genero(), TipoCliente()))
                 {
                     MessageBox.Show("Cliente extrangero agregado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.None);
                     limpiar();

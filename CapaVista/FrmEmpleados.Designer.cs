@@ -73,7 +73,7 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.rbFemale = new MetroFramework.Controls.MetroRadioButton();
             this.rbMale = new MetroFramework.Controls.MetroRadioButton();
-            this.txtGenero = new MetroFramework.Controls.MetroLabel();
+            this.lbGenero = new MetroFramework.Controls.MetroLabel();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -128,7 +128,7 @@
             this.txtApe2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtApe2.Lines = new string[0];
             this.txtApe2.Location = new System.Drawing.Point(181, 420);
-            this.txtApe2.MaxLength = 32767;
+            this.txtApe2.MaxLength = 45;
             this.txtApe2.Name = "txtApe2";
             this.txtApe2.PasswordChar = '\0';
             this.txtApe2.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -162,7 +162,7 @@
             this.txtApe1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtApe1.Lines = new string[0];
             this.txtApe1.Location = new System.Drawing.Point(181, 382);
-            this.txtApe1.MaxLength = 32767;
+            this.txtApe1.MaxLength = 45;
             this.txtApe1.Name = "txtApe1";
             this.txtApe1.PasswordChar = '\0';
             this.txtApe1.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -196,7 +196,7 @@
             this.txtNom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtNom.Lines = new string[0];
             this.txtNom.Location = new System.Drawing.Point(181, 341);
-            this.txtNom.MaxLength = 32767;
+            this.txtNom.MaxLength = 36;
             this.txtNom.Name = "txtNom";
             this.txtNom.PasswordChar = '\0';
             this.txtNom.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -230,7 +230,7 @@
             this.txtID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtID.Lines = new string[0];
             this.txtID.Location = new System.Drawing.Point(181, 299);
-            this.txtID.MaxLength = 32767;
+            this.txtID.MaxLength = 20;
             this.txtID.Name = "txtID";
             this.txtID.PasswordChar = '\0';
             this.txtID.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -442,7 +442,7 @@
             this.txtUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtUser.Lines = new string[0];
             this.txtUser.Location = new System.Drawing.Point(148, 716);
-            this.txtUser.MaxLength = 32767;
+            this.txtUser.MaxLength = 20;
             this.txtUser.Name = "txtUser";
             this.txtUser.PasswordChar = '\0';
             this.txtUser.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -490,7 +490,7 @@
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtPassword.Lines = new string[0];
             this.txtPassword.Location = new System.Drawing.Point(150, 764);
-            this.txtPassword.MaxLength = 32767;
+            this.txtPassword.MaxLength = 20;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '\0';
             this.txtPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -552,7 +552,7 @@
             this.txtTel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtTel.Lines = new string[0];
             this.txtTel.Location = new System.Drawing.Point(181, 463);
-            this.txtTel.MaxLength = 32767;
+            this.txtTel.MaxLength = 11;
             this.txtTel.Name = "txtTel";
             this.txtTel.PasswordChar = '\0';
             this.txtTel.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -599,7 +599,7 @@
             this.txtMail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtMail.Lines = new string[0];
             this.txtMail.Location = new System.Drawing.Point(181, 498);
-            this.txtMail.MaxLength = 32767;
+            this.txtMail.MaxLength = 50;
             this.txtMail.Name = "txtMail";
             this.txtMail.PasswordChar = '\0';
             this.txtMail.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -847,7 +847,6 @@
             this.cboTel.UseCustomForeColor = true;
             this.cboTel.UseSelectable = true;
             this.cboTel.UseStyleColors = true;
-            
             // 
             // groupBox5
             // 
@@ -891,18 +890,18 @@
             this.rbMale.UseSelectable = true;
             this.rbMale.UseStyleColors = true;
             // 
-            // txtGenero
+            // lbGenero
             // 
-            this.txtGenero.AutoSize = true;
-            this.txtGenero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.txtGenero.Location = new System.Drawing.Point(113, 242);
-            this.txtGenero.Name = "txtGenero";
-            this.txtGenero.Size = new System.Drawing.Size(55, 19);
-            this.txtGenero.TabIndex = 56;
-            this.txtGenero.Text = "Género:";
-            this.txtGenero.UseCustomBackColor = true;
-            this.txtGenero.UseCustomForeColor = true;
-            this.txtGenero.UseStyleColors = true;
+            this.lbGenero.AutoSize = true;
+            this.lbGenero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.lbGenero.Location = new System.Drawing.Point(113, 242);
+            this.lbGenero.Name = "lbGenero";
+            this.lbGenero.Size = new System.Drawing.Size(55, 19);
+            this.lbGenero.TabIndex = 56;
+            this.lbGenero.Text = "Género:";
+            this.lbGenero.UseCustomBackColor = true;
+            this.lbGenero.UseCustomForeColor = true;
+            this.lbGenero.UseStyleColors = true;
             // 
             // FrmEmpleados
             // 
@@ -910,7 +909,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
             this.ClientSize = new System.Drawing.Size(468, 938);
-            this.Controls.Add(this.txtGenero);
+            this.Controls.Add(this.lbGenero);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.cboMail);
@@ -1003,7 +1002,7 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private MetroFramework.Controls.MetroRadioButton rbFemale;
         private MetroFramework.Controls.MetroRadioButton rbMale;
-        private MetroFramework.Controls.MetroLabel txtGenero;
+        private MetroFramework.Controls.MetroLabel lbGenero;
         private MetroFramework.Controls.MetroRadioButton rbLimpiador;
     }
 }

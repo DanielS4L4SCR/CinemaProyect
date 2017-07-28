@@ -55,7 +55,6 @@
             this.cboProyecciones.UseCustomForeColor = true;
             this.cboProyecciones.UseSelectable = true;
             this.cboProyecciones.UseStyleColors = true;
-            
             // 
             // lblProyecciones
             // 
@@ -215,7 +214,7 @@
             this.txtDescripcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtDescripcion.Lines = new string[0];
             this.txtDescripcion.Location = new System.Drawing.Point(150, 223);
-            this.txtDescripcion.MaxLength = 32767;
+            this.txtDescripcion.MaxLength = 45;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.PasswordChar = '\0';
             this.txtDescripcion.ScrollBars = System.Windows.Forms.ScrollBars.None;

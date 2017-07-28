@@ -86,18 +86,19 @@ namespace CapaVista
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             CapaNegocios.clsEmpleado empleado = new CapaNegocios.clsEmpleado();
-           /* if (txtID.Text == "" || txtNom.Text == "" || txtApe1.Text == "" || txtUser.Text == "" || txtPassword.Text == "" || cboProv.Text == "" || cboCanton.Text == "" || cboDistri.Text == "" || txtDireccion.Text == "" || txtTel.Text == "" || cboTel.Text == "" || txtMail.Text == "" || cboMail.Text == "")
+            if (String.IsNullOrEmpty(txtID.Text)|| String.IsNullOrEmpty(txtNom.Text)|| String.IsNullOrEmpty(txtApe1.Text)|| String.IsNullOrEmpty(txtApe2.Text)|| String.IsNullOrEmpty(txtTel.Text)|| String.IsNullOrEmpty(txtMail.Text)||
+                String.IsNullOrEmpty(txtDireccion.Text))   
             {
-                DialogResult result;
-                result = MessageBox.Show("Faltan campos por completar", "Error#001", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
-                if(result == System.Windows.Forms.DialogResult.Cancel)
-                {
-                    this.Close();
-                }
-            }*/
+                MessageBox.Show("Debe completar toda la información", "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+            }
             if (rbNacional.Checked == true)
             {
-               if (empleado.insertarNacional(txtID.Text, txtNom.Text, txtApe1.Text, txtApe2.Text, Genero(), txtUser.Text, txtPassword.Text, TipoEmpleado(), Convert.ToInt32(cboProv.SelectedValue), Convert.ToInt32(cboCanton.SelectedValue), Convert.ToInt32(cboDistri.SelectedValue),txtDireccion.Text,activo(),int.Parse(txtTel.Text),Convert.ToInt32(cboTel.SelectedValue),txtMail.Text, Convert.ToInt32(cboMail.SelectedValue)))
+                if (String.IsNullOrEmpty(txtID.Text) || String.IsNullOrEmpty(txtNom.Text) || String.IsNullOrEmpty(txtApe1.Text) || String.IsNullOrEmpty(txtApe2.Text) || String.IsNullOrEmpty(txtTel.Text) || String.IsNullOrEmpty(txtMail.Text) ||
+                String.IsNullOrEmpty(txtDireccion.Text))
+                {
+                    //MessageBox.Show("Debe completar toda la información", "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                }
+                else if (empleado.insertarNacional(txtID.Text, txtNom.Text, txtApe1.Text, txtApe2.Text, Genero(), txtUser.Text, txtPassword.Text, TipoEmpleado(), Convert.ToInt32(cboProv.SelectedValue), Convert.ToInt32(cboCanton.SelectedValue), Convert.ToInt32(cboDistri.SelectedValue),txtDireccion.Text,activo(),int.Parse(txtTel.Text),Convert.ToInt32(cboTel.SelectedValue),txtMail.Text, Convert.ToInt32(cboMail.SelectedValue)))
                 {
                    
                     MessageBox.Show("Empleado insertado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.None);
@@ -105,7 +106,12 @@ namespace CapaVista
             }
             if(rbExtranjero.Checked==true)
             {
-                if (empleado.insertarExtranjero(txtID.Text, txtNom.Text, txtApe1.Text, txtApe2.Text, Genero(), txtUser.Text, txtPassword.Text, TipoEmpleado(), Convert.ToInt32(cboProv.SelectedValue), Convert.ToInt32(cboCanton.SelectedValue), Convert.ToInt32(cboDistri.SelectedValue), txtDireccion.Text, activo(), int.Parse(txtTel.Text), Convert.ToInt32(cboTel.SelectedValue), txtMail.Text, Convert.ToInt32(cboMail.SelectedValue)))
+                if (String.IsNullOrEmpty(txtID.Text) || String.IsNullOrEmpty(txtNom.Text) || String.IsNullOrEmpty(txtApe1.Text) || String.IsNullOrEmpty(txtApe2.Text) || String.IsNullOrEmpty(txtTel.Text) || String.IsNullOrEmpty(txtMail.Text) ||
+                String.IsNullOrEmpty(txtDireccion.Text))
+                {
+                    //MessageBox.Show("Debe completar toda la información", "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                }
+                else if (empleado.insertarExtranjero(txtID.Text, txtNom.Text, txtApe1.Text, txtApe2.Text, Genero(), txtUser.Text, txtPassword.Text, TipoEmpleado(), Convert.ToInt32(cboProv.SelectedValue), Convert.ToInt32(cboCanton.SelectedValue), Convert.ToInt32(cboDistri.SelectedValue), txtDireccion.Text, activo(), int.Parse(txtTel.Text), Convert.ToInt32(cboTel.SelectedValue), txtMail.Text, Convert.ToInt32(cboMail.SelectedValue)))
                 {
                     MessageBox.Show("Empleado insertado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.None);
                 }

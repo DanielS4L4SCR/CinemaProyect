@@ -91,7 +91,7 @@
             this.cboSala.ItemHeight = 23;
             this.cboSala.Location = new System.Drawing.Point(137, 203);
             this.cboSala.Name = "cboSala";
-            this.cboSala.Size = new System.Drawing.Size(149, 29);
+            this.cboSala.Size = new System.Drawing.Size(152, 29);
             this.cboSala.TabIndex = 57;
             this.cboSala.UseCustomBackColor = true;
             this.cboSala.UseCustomForeColor = true;
@@ -119,7 +119,7 @@
             this.cboPelicula.ItemHeight = 23;
             this.cboPelicula.Location = new System.Drawing.Point(137, 256);
             this.cboPelicula.Name = "cboPelicula";
-            this.cboPelicula.Size = new System.Drawing.Size(149, 29);
+            this.cboPelicula.Size = new System.Drawing.Size(152, 29);
             this.cboPelicula.TabIndex = 59;
             this.cboPelicula.UseCustomBackColor = true;
             this.cboPelicula.UseCustomForeColor = true;
@@ -145,7 +145,7 @@
             // 
             // 
             this.txtHoraIni.CustomButton.Image = null;
-            this.txtHoraIni.CustomButton.Location = new System.Drawing.Point(127, 1);
+            this.txtHoraIni.CustomButton.Location = new System.Drawing.Point(130, 1);
             this.txtHoraIni.CustomButton.Name = "";
             this.txtHoraIni.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtHoraIni.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -157,7 +157,7 @@
             this.txtHoraIni.Lines = new string[] {
         "HH:MM:SS"};
             this.txtHoraIni.Location = new System.Drawing.Point(137, 315);
-            this.txtHoraIni.MaxLength = 32767;
+            this.txtHoraIni.MaxLength = 8;
             this.txtHoraIni.Name = "txtHoraIni";
             this.txtHoraIni.PasswordChar = '\0';
             this.txtHoraIni.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -165,7 +165,7 @@
             this.txtHoraIni.SelectionLength = 0;
             this.txtHoraIni.SelectionStart = 0;
             this.txtHoraIni.ShortcutsEnabled = true;
-            this.txtHoraIni.Size = new System.Drawing.Size(149, 23);
+            this.txtHoraIni.Size = new System.Drawing.Size(152, 23);
             this.txtHoraIni.TabIndex = 61;
             this.txtHoraIni.Text = "HH:MM:SS";
             this.txtHoraIni.UseCustomBackColor = true;
@@ -181,7 +181,7 @@
             // 
             // 
             this.txtHoraFin.CustomButton.Image = null;
-            this.txtHoraFin.CustomButton.Location = new System.Drawing.Point(127, 1);
+            this.txtHoraFin.CustomButton.Location = new System.Drawing.Point(130, 1);
             this.txtHoraFin.CustomButton.Name = "";
             this.txtHoraFin.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtHoraFin.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -193,7 +193,7 @@
             this.txtHoraFin.Lines = new string[] {
         "HH:MM:SS"};
             this.txtHoraFin.Location = new System.Drawing.Point(137, 366);
-            this.txtHoraFin.MaxLength = 32767;
+            this.txtHoraFin.MaxLength = 8;
             this.txtHoraFin.Name = "txtHoraFin";
             this.txtHoraFin.PasswordChar = '\0';
             this.txtHoraFin.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -201,7 +201,7 @@
             this.txtHoraFin.SelectionLength = 0;
             this.txtHoraFin.SelectionStart = 0;
             this.txtHoraFin.ShortcutsEnabled = true;
-            this.txtHoraFin.Size = new System.Drawing.Size(149, 23);
+            this.txtHoraFin.Size = new System.Drawing.Size(152, 23);
             this.txtHoraFin.TabIndex = 63;
             this.txtHoraFin.Text = "HH:MM:SS";
             this.txtHoraFin.UseCustomBackColor = true;
@@ -242,7 +242,7 @@
             this.DtFecha.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
             this.DtFecha.CustomFormat = "yyyMMdd";
             this.DtFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DtFecha.Location = new System.Drawing.Point(137, 426);
+            this.DtFecha.Location = new System.Drawing.Point(137, 428);
             this.DtFecha.MinimumSize = new System.Drawing.Size(0, 29);
             this.DtFecha.Name = "DtFecha";
             this.DtFecha.Size = new System.Drawing.Size(152, 29);
@@ -257,7 +257,7 @@
             // 
             // 
             this.txtPrecio.CustomButton.Image = null;
-            this.txtPrecio.CustomButton.Location = new System.Drawing.Point(127, 1);
+            this.txtPrecio.CustomButton.Location = new System.Drawing.Point(130, 1);
             this.txtPrecio.CustomButton.Name = "";
             this.txtPrecio.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtPrecio.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -268,7 +268,7 @@
             this.txtPrecio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.txtPrecio.Lines = new string[0];
             this.txtPrecio.Location = new System.Drawing.Point(137, 479);
-            this.txtPrecio.MaxLength = 32767;
+            this.txtPrecio.MaxLength = 5;
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.PasswordChar = '\0';
             this.txtPrecio.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -276,7 +276,7 @@
             this.txtPrecio.SelectionLength = 0;
             this.txtPrecio.SelectionStart = 0;
             this.txtPrecio.ShortcutsEnabled = true;
-            this.txtPrecio.Size = new System.Drawing.Size(149, 23);
+            this.txtPrecio.Size = new System.Drawing.Size(152, 23);
             this.txtPrecio.TabIndex = 67;
             this.txtPrecio.UseCustomBackColor = true;
             this.txtPrecio.UseCustomForeColor = true;
