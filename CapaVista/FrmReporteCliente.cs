@@ -40,6 +40,9 @@ namespace CapaVista
             if(result == System.Windows.Forms.DialogResult.Yes)
             {
                 //acá se va a mostrar un form con un dgv que muestre todos los clientes.
+                FrmTotalClientes clientes = new FrmTotalClientes();
+                clientes.Show();
+
             }
         }
     }

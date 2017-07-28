@@ -209,6 +209,13 @@ namespace CapaVista
                         
                     }
                     MessageBox.Show("Factura realizada correctamente","Exito",MessageBoxButtons.OK,MessageBoxIcon.None);
+                    DialogResult result1;
+                    result1 = MessageBox.Show("Debe insertar el tipo de pago", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (result == System.Windows.Forms.DialogResult.OK)
+                    {
+                        FrmPago pago = new FrmPago();
+                        pago.Show();
+                    }
                 }
             }
         }

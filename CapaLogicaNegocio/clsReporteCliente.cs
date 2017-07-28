@@ -17,5 +17,9 @@ namespace CapaNegocios
         {
             return Reportes.CantidadPorTipo(tipo);
         }
+        public DataTable consultaClientes()
+        {
+            return Reportes.cargarClientes();
+        }
     }
 }

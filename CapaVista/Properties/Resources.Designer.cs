@@ -173,6 +173,16 @@ namespace CapaVista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_Caja_registradora_501 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-Caja registradora-501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_Cancel_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-Cancel-64", resourceCulture);
@@ -253,6 +263,16 @@ namespace CapaVista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_Monedas_501 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-Monedas-501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_Voucher_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-Voucher-50", resourceCulture);
@@ -276,6 +296,16 @@ namespace CapaVista.Properties {
         internal static System.Drawing.Bitmap id_card_4 {
             get {
                 object obj = ResourceManager.GetObject("id-card-4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap id_card_41 {
+            get {
+                object obj = ResourceManager.GetObject("id-card-41", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

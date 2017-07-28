@@ -21,5 +21,12 @@ namespace CapaDatos
             dtCliente = conecta.ejecutar("Select count(*) from Cliente where TipoCliente_idTipoCliente = "+tipo+"");
             return dtCliente;
         }
+        public DataTable cargarClientes()
+        {
+            CapaDatos.ClsConexion conecta = new CapaDatos.ClsConexion();
+            DataTable dtCliente;
+            dtCliente = conecta.ejecutar("Select idCliente, Activo, Persona_idPersona, TipoCliente_idTipoCliente From Cliente ");
+            return dtCliente;
+        }
     }
 }

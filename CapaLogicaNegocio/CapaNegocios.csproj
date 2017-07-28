@@ -45,11 +45,13 @@
     <Compile Include="clsCliente.cs" />
     <Compile Include="clsEmpleado.cs" />
     <Compile Include="clsLogin.cs" />
+    <Compile Include="clsPago.cs" />
     <Compile Include="clsPeliculas.cs" />
     <Compile Include="ClsPromocion.cs" />
     <Compile Include="clsProyeccion.cs" />
     <Compile Include="clsReporteCliente.cs" />
     <Compile Include="clsReporteFondos.cs" />
+    <Compile Include="clsReporteVentasPeli.cs" />
     <Compile Include="clsReporteVentasPorSala.cs" />
     <Compile Include="clsVenta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
