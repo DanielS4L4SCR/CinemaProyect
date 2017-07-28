@@ -32,8 +32,8 @@ namespace CapaVista
             cboPelicula.DataSource = oDT2;
             cboPelicula.DisplayMember = "Nombre";
             cboPelicula.ValueMember = "idPelicula";
-        }
 
+        }
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             CapaNegocios.clsProyeccion proyeccion = new CapaNegocios.clsProyeccion();
@@ -47,6 +47,26 @@ namespace CapaVista
             }
         }
 
-       
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            DataTable oDT3 = new DataTable();
+            CapaNegocios.clsProyeccion Duracion = new CapaNegocios.clsProyeccion();
+            oDT3 = Duracion.cargarDuracion(Convert.ToInt32(cboPelicula.SelectedValue));
+            cboDuracion.DataSource = oDT3;
+            cboDuracion.DisplayMember = "Duracion";
+            cboDuracion.ValueMember = "Duracion";
+            txtDuracion.Text = cboDuracion.Text;
+            
+            if(txtDuracion.Visible==false)
+            {
+                txtDuracion.Visible = true;
+                btnDuracion.Text = "ocultar duración";
+            }
+            else if (txtDuracion.Visible == true)
+            {
+                txtDuracion.Visible = false;
+                btnDuracion.Text = "ver duración";
+            }
+        }
     }
 }

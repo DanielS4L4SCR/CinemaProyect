@@ -43,6 +43,9 @@
             this.txtPrecio = new MetroFramework.Controls.MetroTextBox();
             this.lbPrecio = new MetroFramework.Controls.MetroLabel();
             this.btnAceptar = new MetroFramework.Controls.MetroButton();
+            this.cboDuracion = new MetroFramework.Controls.MetroComboBox();
+            this.btnDuracion = new MetroFramework.Controls.MetroButton();
+            this.txtDuracion = new MetroFramework.Controls.MetroTextBox();
             this.SuspendLayout();
             // 
             // lbNuevoEmp
@@ -125,6 +128,7 @@
             this.cboPelicula.UseCustomForeColor = true;
             this.cboPelicula.UseSelectable = true;
             this.cboPelicula.UseStyleColors = true;
+            this.cboPelicula.Click += new System.EventHandler(this.FrmProyeccion_Load);
             // 
             // LbHoraIni
             // 
@@ -313,12 +317,83 @@
             this.btnAceptar.UseStyleColors = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
+            // cboDuracion
+            // 
+            this.cboDuracion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.cboDuracion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.cboDuracion.FormattingEnabled = true;
+            this.cboDuracion.ItemHeight = 23;
+            this.cboDuracion.Location = new System.Drawing.Point(373, 203);
+            this.cboDuracion.Name = "cboDuracion";
+            this.cboDuracion.Size = new System.Drawing.Size(132, 29);
+            this.cboDuracion.TabIndex = 69;
+            this.cboDuracion.UseCustomBackColor = true;
+            this.cboDuracion.UseCustomForeColor = true;
+            this.cboDuracion.UseSelectable = true;
+            this.cboDuracion.UseStyleColors = true;
+            this.cboDuracion.Visible = false;
+            // 
+            // btnDuracion
+            // 
+            this.btnDuracion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(188)))));
+            this.btnDuracion.ForeColor = System.Drawing.Color.White;
+            this.btnDuracion.Location = new System.Drawing.Point(295, 260);
+            this.btnDuracion.Name = "btnDuracion";
+            this.btnDuracion.Size = new System.Drawing.Size(96, 25);
+            this.btnDuracion.TabIndex = 70;
+            this.btnDuracion.Text = "ver duración";
+            this.btnDuracion.UseCustomBackColor = true;
+            this.btnDuracion.UseCustomForeColor = true;
+            this.btnDuracion.UseSelectable = true;
+            this.btnDuracion.UseStyleColors = true;
+            this.btnDuracion.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
+            // txtDuracion
+            // 
+            // 
+            // 
+            // 
+            this.txtDuracion.CustomButton.Image = null;
+            this.txtDuracion.CustomButton.Location = new System.Drawing.Point(130, 1);
+            this.txtDuracion.CustomButton.Name = "";
+            this.txtDuracion.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtDuracion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtDuracion.CustomButton.TabIndex = 1;
+            this.txtDuracion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtDuracion.CustomButton.UseSelectable = true;
+            this.txtDuracion.CustomButton.Visible = false;
+            this.txtDuracion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.txtDuracion.Lines = new string[] {
+        "HH:MM:SS"};
+            this.txtDuracion.Location = new System.Drawing.Point(295, 291);
+            this.txtDuracion.MaxLength = 8;
+            this.txtDuracion.Name = "txtDuracion";
+            this.txtDuracion.PasswordChar = '\0';
+            this.txtDuracion.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtDuracion.SelectedText = "";
+            this.txtDuracion.SelectionLength = 0;
+            this.txtDuracion.SelectionStart = 0;
+            this.txtDuracion.ShortcutsEnabled = true;
+            this.txtDuracion.Size = new System.Drawing.Size(152, 23);
+            this.txtDuracion.TabIndex = 71;
+            this.txtDuracion.Text = "HH:MM:SS";
+            this.txtDuracion.UseCustomBackColor = true;
+            this.txtDuracion.UseCustomForeColor = true;
+            this.txtDuracion.UseSelectable = true;
+            this.txtDuracion.UseStyleColors = true;
+            this.txtDuracion.Visible = false;
+            this.txtDuracion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtDuracion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
             // FrmProyeccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            this.ClientSize = new System.Drawing.Size(379, 570);
+            this.ClientSize = new System.Drawing.Size(398, 570);
+            this.Controls.Add(this.txtDuracion);
+            this.Controls.Add(this.btnDuracion);
+            this.Controls.Add(this.cboDuracion);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.lbPrecio);
@@ -360,5 +435,8 @@
         private MetroFramework.Controls.MetroTextBox txtPrecio;
         private MetroFramework.Controls.MetroLabel lbPrecio;
         private MetroFramework.Controls.MetroButton btnAceptar;
+        private MetroFramework.Controls.MetroComboBox cboDuracion;
+        private MetroFramework.Controls.MetroButton btnDuracion;
+        private MetroFramework.Controls.MetroTextBox txtDuracion;
     }
 }

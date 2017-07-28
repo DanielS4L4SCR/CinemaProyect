@@ -21,6 +21,13 @@ namespace CapaDatos
             dtSalas = conect.ejecutar("Select idSala from sala");
             return dtSalas;
         }
+        public DataTable cargarDuracion(int pelicula)
+        {
+            ClsConexion conect = new ClsConexion();
+            DataTable dtPeli;
+            dtPeli = conect.ejecutar("Select Duracion from peliculas where idPelicula="+pelicula+"");
+            return dtPeli;
+        }
         public DataTable cargarPeli()
         {
             ClsConexion conect = new ClsConexion();

@@ -24,5 +24,10 @@ namespace CapaNegocios
             CapaDatos.ClsProyeccion Peliculas = new CapaDatos.ClsProyeccion();
             return Peliculas.cargarPeli();
         }
+        public DataTable cargarDuracion(int pelicula)
+        {
+            CapaDatos.ClsProyeccion Peliculas = new CapaDatos.ClsProyeccion();
+            return Peliculas.cargarDuracion(pelicula);
+        }
     }
 }

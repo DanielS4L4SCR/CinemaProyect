@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipall));
             this.panelSubMenu = new System.Windows.Forms.Panel();
             this.lbRegresar = new System.Windows.Forms.Label();
-            this.btnPeliculas = new System.Windows.Forms.Button();
             this.IconsList = new System.Windows.Forms.ImageList(this.components);
             this.btnVentas2 = new System.Windows.Forms.Button();
             this.btnReportes3 = new System.Windows.Forms.Button();
@@ -79,7 +78,6 @@
             this.panelSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(212)))), ((int)(((byte)(227)))));
             this.panelSubMenu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelSubMenu.Controls.Add(this.lbRegresar);
-            this.panelSubMenu.Controls.Add(this.btnPeliculas);
             this.panelSubMenu.Controls.Add(this.btnVentas2);
             this.panelSubMenu.Controls.Add(this.btnReportes3);
             this.panelSubMenu.Controls.Add(this.btnAgregar1);
@@ -99,26 +97,6 @@
             this.lbRegresar.Size = new System.Drawing.Size(115, 32);
             this.lbRegresar.TabIndex = 6;
             this.lbRegresar.Text = "Regresar";
-            // 
-            // btnPeliculas
-            // 
-            this.btnPeliculas.BackColor = System.Drawing.Color.Transparent;
-            this.btnPeliculas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPeliculas.FlatAppearance.BorderSize = 0;
-            this.btnPeliculas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
-            this.btnPeliculas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
-            this.btnPeliculas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPeliculas.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.btnPeliculas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPeliculas.ImageIndex = 8;
-            this.btnPeliculas.ImageList = this.IconsList;
-            this.btnPeliculas.Location = new System.Drawing.Point(8, 310);
-            this.btnPeliculas.Name = "btnPeliculas";
-            this.btnPeliculas.Size = new System.Drawing.Size(211, 76);
-            this.btnPeliculas.TabIndex = 5;
-            this.btnPeliculas.Text = "Cartelera";
-            this.btnPeliculas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPeliculas.UseVisualStyleBackColor = false;
             // 
             // IconsList
             // 
@@ -705,7 +683,6 @@
         private System.Windows.Forms.Button btnVentas2;
         private System.Windows.Forms.ImageList IconsList;
         private System.Windows.Forms.Button btnReportes3;
-        private System.Windows.Forms.Button btnPeliculas;
         private System.Windows.Forms.Button BtnMenu;
         private System.Windows.Forms.Panel panelMenú;
         private System.Windows.Forms.Label lbRegresar;
