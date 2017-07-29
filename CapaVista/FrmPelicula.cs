@@ -23,7 +23,7 @@ namespace CapaVista
             {
                 MessageBox.Show("Debe completar toda la información", "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
             }
-            else if (peli.insertarPelicula(int.Parse(txtidPelicula.Text), txtNom.Text, txtDuracion.Text, Convert.ToInt32(cboTipoPel.SelectedValue), Convert.ToInt32(cboGenPeli.SelectedValue)))
+            else if (peli.insertarPelicula(int.Parse(txtidPelicula.Text), txtNom.Text, txtDuracion.Text,DtFecha.Text,Convert.ToInt32(cboTipoPel.SelectedValue), Convert.ToInt32(cboGenPeli.SelectedValue)))
             {
                 MessageBox.Show("Pelicula Agregada al sistema");
                 DialogResult result;

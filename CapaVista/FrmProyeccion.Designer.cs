@@ -232,11 +232,11 @@
             // 
             this.LbFecha.AutoSize = true;
             this.LbFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.LbFecha.Location = new System.Drawing.Point(19, 428);
+            this.LbFecha.Location = new System.Drawing.Point(-2, 438);
             this.LbFecha.Name = "LbFecha";
-            this.LbFecha.Size = new System.Drawing.Size(112, 19);
+            this.LbFecha.Size = new System.Drawing.Size(133, 19);
             this.LbFecha.TabIndex = 64;
-            this.LbFecha.Text = "Fecha de estreno:";
+            this.LbFecha.Text = "Fecha de proyección:";
             this.LbFecha.UseCustomBackColor = true;
             this.LbFecha.UseCustomForeColor = true;
             this.LbFecha.UseStyleColors = true;

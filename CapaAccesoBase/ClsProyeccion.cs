@@ -12,7 +12,7 @@ namespace CapaDatos
         public bool insertarProyeccion(String Sala, int Pelicula, String horaIni, String horaFin, String Fecha, Double precio)
         {
             ClsConexion conectar = new ClsConexion();
-            return conectar.ejecutarInsert("insert into proyecciones (Peliculas_idPelicula, idSala, HoraInicio, HoraFinalizacion, FechaEstreno, Precio) values (" + Pelicula + ",'" + Sala + "','" + horaIni + "','" + horaFin + "','" + Fecha + "'," + precio + ")");
+            return conectar.ejecutarInsert("insert into proyecciones (Peliculas_idPelicula, idSala, HoraInicio, HoraFinalizacion, FechaProyeccion, Precio) values (" + Pelicula + ",'" + Sala + "','" + horaIni + "','" + horaFin + "','" + Fecha + "'," + precio + ")");
         }
         public DataTable cargarSala()
         {

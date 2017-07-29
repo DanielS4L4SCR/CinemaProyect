@@ -610,7 +610,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmVentas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmVentas";
+            this.Text = "Ventas";
             this.Load += new System.EventHandler(this.FrmVentas_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

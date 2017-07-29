@@ -126,7 +126,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvClientes);
             this.Name = "FrmTotalClientes";
-            this.Text = "FrmTotalClientes";
+            this.Text = "TotalClientes";
             this.Load += new System.EventHandler(this.FrmTotalClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.ResumeLayout(false);

@@ -250,7 +250,7 @@
             this.Controls.Add(this.lblProyecciones);
             this.Name = "FrmPromocion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmPromocion";
+            this.Text = "Promocion";
             this.Load += new System.EventHandler(this.FrmPromocion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

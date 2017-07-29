@@ -126,7 +126,7 @@
             this.Controls.Add(this.lbNuevoEmp);
             this.Name = "FrmReporteCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmReporteCliente";
+            this.Text = "ReporteCliente";
             this.Load += new System.EventHandler(this.FrmReporteCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

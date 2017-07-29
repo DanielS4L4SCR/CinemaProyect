@@ -9,10 +9,10 @@ namespace CapaDatos
     public class ClsPeliculas
     {
         
-        public bool insertarPelicula(int idpelicula, String nombre, String duracion, int tipoPeli, int genPeli)
+        public bool insertarPelicula(int idpelicula, String nombre, String duracion,String FechaEstreno ,int tipoPeli, int genPeli)
         {
             ClsConexion conectar = new ClsConexion();
-            return conectar.ejecutarInsert("insert into peliculas (idPelicula,Nombre,Duracion,TipoPelicula_idTipoPelicula,Género_idGenero) values (" + idpelicula + ",'" + nombre + "','" + duracion + "'," + tipoPeli + "," + genPeli + ")"); 
+            return conectar.ejecutarInsert("insert into peliculas (idPelicula,Nombre,Duracion,FechaEstreno,TipoPelicula_idTipoPelicula,Género_idGenero) values (" + idpelicula + ",'" + nombre + "','" + duracion + "','"+FechaEstreno+"'," + tipoPeli + "," + genPeli + ")"); 
 
         }    
         public DataTable cargarTipoPelicula()

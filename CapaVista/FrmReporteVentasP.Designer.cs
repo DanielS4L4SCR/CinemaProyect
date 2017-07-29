@@ -153,7 +153,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FrmReporteVentasP";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmReportePeliculas";
+            this.Text = "ReportePeliculas";
             this.Load += new System.EventHandler(this.FrmReporteVentasP_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

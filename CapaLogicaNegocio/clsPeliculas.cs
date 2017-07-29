@@ -9,9 +9,9 @@ namespace CapaNegocios
   
     public class clsPeliculas
     {
-        public bool insertarPelicula(int idpelicula, String nombre, String duracion, int tipoPeli, int genPeli)
+        public bool insertarPelicula(int idpelicula, String nombre, String duracion, String FechaEstreno,int tipoPeli, int genPeli)
         {
-            return new CapaDatos.ClsPeliculas().insertarPelicula(idpelicula, nombre, duracion, tipoPeli, genPeli);
+            return new CapaDatos.ClsPeliculas().insertarPelicula(idpelicula, nombre, duracion,FechaEstreno,tipoPeli,genPeli);
         }
         public DataTable LlenarTipoPeli()
         {

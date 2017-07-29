@@ -1042,7 +1042,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FrmAsientos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "FrmAsientos";
+            this.Text = "Asientos";
             this.Load += new System.EventHandler(this.FrmAsientos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -103,7 +103,7 @@
             this.Controls.Add(this.lbNuevoEmp);
             this.Name = "FrmReporteFondos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmReporteFondos";
+            this.Text = "ReporteFondos";
             this.Load += new System.EventHandler(this.FrmReporteFondos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

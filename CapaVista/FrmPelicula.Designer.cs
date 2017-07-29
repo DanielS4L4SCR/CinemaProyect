@@ -42,6 +42,8 @@
             this.btnAceptar = new MetroFramework.Controls.MetroButton();
             this.cboGenPeli = new MetroFramework.Controls.MetroComboBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.DtFecha = new MetroFramework.Controls.MetroDateTime();
+            this.LbFecha = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
             // lbNuevoEmp
@@ -73,7 +75,7 @@
             // 
             this.lbIdentificacion.AutoSize = true;
             this.lbIdentificacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.lbIdentificacion.Location = new System.Drawing.Point(12, 394);
+            this.lbIdentificacion.Location = new System.Drawing.Point(12, 427);
             this.lbIdentificacion.Name = "lbIdentificacion";
             this.lbIdentificacion.Size = new System.Drawing.Size(122, 19);
             this.lbIdentificacion.TabIndex = 30;
@@ -86,7 +88,7 @@
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.metroLabel2.Location = new System.Drawing.Point(44, 329);
+            this.metroLabel2.Location = new System.Drawing.Point(44, 368);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(85, 19);
             this.metroLabel2.TabIndex = 34;
@@ -244,7 +246,7 @@
             this.cboTipoPel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.cboTipoPel.FormattingEnabled = true;
             this.cboTipoPel.ItemHeight = 23;
-            this.cboTipoPel.Location = new System.Drawing.Point(140, 326);
+            this.cboTipoPel.Location = new System.Drawing.Point(140, 365);
             this.cboTipoPel.Name = "cboTipoPel";
             this.cboTipoPel.Size = new System.Drawing.Size(149, 29);
             this.cboTipoPel.TabIndex = 54;
@@ -274,7 +276,7 @@
             this.cboGenPeli.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
             this.cboGenPeli.FormattingEnabled = true;
             this.cboGenPeli.ItemHeight = 23;
-            this.cboGenPeli.Location = new System.Drawing.Point(140, 391);
+            this.cboGenPeli.Location = new System.Drawing.Point(140, 424);
             this.cboGenPeli.Name = "cboGenPeli";
             this.cboGenPeli.Size = new System.Drawing.Size(149, 29);
             this.cboGenPeli.TabIndex = 56;
@@ -287,12 +289,41 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // DtFecha
+            // 
+            this.DtFecha.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.DtFecha.CustomFormat = "yyyMMdd";
+            this.DtFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DtFecha.Location = new System.Drawing.Point(140, 312);
+            this.DtFecha.MinimumSize = new System.Drawing.Size(0, 29);
+            this.DtFecha.Name = "DtFecha";
+            this.DtFecha.Size = new System.Drawing.Size(152, 29);
+            this.DtFecha.TabIndex = 67;
+            this.DtFecha.UseCustomBackColor = true;
+            this.DtFecha.UseCustomForeColor = true;
+            this.DtFecha.UseStyleColors = true;
+            // 
+            // LbFecha
+            // 
+            this.LbFecha.AutoSize = true;
+            this.LbFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.LbFecha.Location = new System.Drawing.Point(11, 322);
+            this.LbFecha.Name = "LbFecha";
+            this.LbFecha.Size = new System.Drawing.Size(112, 19);
+            this.LbFecha.TabIndex = 66;
+            this.LbFecha.Text = "Fecha de estreno:";
+            this.LbFecha.UseCustomBackColor = true;
+            this.LbFecha.UseCustomForeColor = true;
+            this.LbFecha.UseStyleColors = true;
+            // 
             // FrmPelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
             this.ClientSize = new System.Drawing.Size(314, 513);
+            this.Controls.Add(this.DtFecha);
+            this.Controls.Add(this.LbFecha);
             this.Controls.Add(this.cboGenPeli);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.cboTipoPel);
@@ -332,5 +363,7 @@
         private MetroFramework.Controls.MetroButton btnAceptar;
         private MetroFramework.Controls.MetroComboBox cboGenPeli;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private MetroFramework.Controls.MetroDateTime DtFecha;
+        private MetroFramework.Controls.MetroLabel LbFecha;
     }
 }
