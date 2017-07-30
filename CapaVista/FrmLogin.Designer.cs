@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.txtUsuario = new MetroFramework.Controls.MetroTextBox();
             this.txtContraseña = new MetroFramework.Controls.MetroTextBox();
             this.btnIngresar = new MetroFramework.Controls.MetroButton();
@@ -74,7 +75,6 @@
             this.txtUsuario.UseStyleColors = true;
             this.txtUsuario.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtUsuario.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            
             // 
             // txtContraseña
             // 
@@ -201,9 +201,10 @@
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtUsuario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CinemaPRO Login"; 
+            this.Text = "CinemaPRO Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 

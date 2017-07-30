@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCliente));
             this.lbNuevoCliente = new MetroFramework.Controls.MetroLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbExtranjero = new MetroFramework.Controls.MetroRadioButton();
@@ -53,20 +53,11 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.rbAdult = new MetroFramework.Controls.MetroRadioButton();
             this.rbAdolescente = new MetroFramework.Controls.MetroRadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            this.panel1.BackgroundImage = global::CapaVista.Properties.Resources.id_card_4;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(121, 35);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(110, 105);
-            this.panel1.TabIndex = 0;
             // 
             // lbNuevoCliente
             // 
@@ -483,6 +474,16 @@
             this.rbAdolescente.UseSelectable = true;
             this.rbAdolescente.UseStyleColors = true;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.panel1.BackgroundImage = global::CapaVista.Properties.Resources.id_card_4;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(121, 35);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(110, 105);
+            this.panel1.TabIndex = 0;
+            // 
             // FrmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -506,6 +507,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lbNuevoCliente);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";

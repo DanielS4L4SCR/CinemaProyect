@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPago));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbEfectivo = new MetroFramework.Controls.MetroRadioButton();
             this.rbTarjeta = new MetroFramework.Controls.MetroRadioButton();
+            this.rbEfectivo = new MetroFramework.Controls.MetroRadioButton();
             this.lbNuevoCliente = new MetroFramework.Controls.MetroLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cboFactura = new MetroFramework.Controls.MetroComboBox();
@@ -53,21 +54,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // rbEfectivo
-            // 
-            this.rbEfectivo.AutoSize = true;
-            this.rbEfectivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            this.rbEfectivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.rbEfectivo.Location = new System.Drawing.Point(30, 15);
-            this.rbEfectivo.Name = "rbEfectivo";
-            this.rbEfectivo.Size = new System.Drawing.Size(65, 15);
-            this.rbEfectivo.TabIndex = 1;
-            this.rbEfectivo.Text = "Efectivo";
-            this.rbEfectivo.UseCustomBackColor = true;
-            this.rbEfectivo.UseCustomForeColor = true;
-            this.rbEfectivo.UseSelectable = true;
-            this.rbEfectivo.UseStyleColors = true;
-            // 
             // rbTarjeta
             // 
             this.rbTarjeta.AutoSize = true;
@@ -82,6 +68,21 @@
             this.rbTarjeta.UseCustomForeColor = true;
             this.rbTarjeta.UseSelectable = true;
             this.rbTarjeta.UseStyleColors = true;
+            // 
+            // rbEfectivo
+            // 
+            this.rbEfectivo.AutoSize = true;
+            this.rbEfectivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.rbEfectivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.rbEfectivo.Location = new System.Drawing.Point(30, 15);
+            this.rbEfectivo.Name = "rbEfectivo";
+            this.rbEfectivo.Size = new System.Drawing.Size(65, 15);
+            this.rbEfectivo.TabIndex = 1;
+            this.rbEfectivo.Text = "Efectivo";
+            this.rbEfectivo.UseCustomBackColor = true;
+            this.rbEfectivo.UseCustomForeColor = true;
+            this.rbEfectivo.UseSelectable = true;
+            this.rbEfectivo.UseStyleColors = true;
             // 
             // lbNuevoCliente
             // 
@@ -266,6 +267,7 @@
             this.Controls.Add(this.lbNuevoCliente);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPago";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pago";

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAsientos));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbSala = new MetroFramework.Controls.MetroLabel();
             this.lbCantidad = new MetroFramework.Controls.MetroLabel();
@@ -1040,6 +1041,7 @@
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroButton13);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAsientos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Asientos";

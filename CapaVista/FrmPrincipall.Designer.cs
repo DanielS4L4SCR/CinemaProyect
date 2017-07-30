@@ -672,6 +672,7 @@
             this.Controls.Add(this.panelMenú);
             this.Controls.Add(this.panelReportes3);
             this.Controls.Add(this.panelAgregar1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPrincipall";
             this.Text = "Menú";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

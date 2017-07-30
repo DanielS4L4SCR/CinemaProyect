@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReporteCliente));
             this.lbNuevoEmp = new MetroFramework.Controls.MetroLabel();
             this.cboClientes = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
@@ -124,6 +125,7 @@
             this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.cboClientes);
             this.Controls.Add(this.lbNuevoEmp);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmReporteCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReporteCliente";

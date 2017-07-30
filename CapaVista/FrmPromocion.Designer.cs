@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPromocion));
             this.cboProyecciones = new MetroFramework.Controls.MetroComboBox();
             this.lblProyecciones = new MetroFramework.Controls.MetroLabel();
             this.lbNuevoEmp = new MetroFramework.Controls.MetroLabel();
@@ -248,6 +249,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.cboProyecciones);
             this.Controls.Add(this.lblProyecciones);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPromocion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Promocion";

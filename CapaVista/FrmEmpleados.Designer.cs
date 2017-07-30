@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEmpleados));
             this.lbNuevoEmp = new MetroFramework.Controls.MetroLabel();
             this.btnAceptar = new MetroFramework.Controls.MetroButton();
             this.txtApe2 = new MetroFramework.Controls.MetroTextBox();
@@ -939,6 +940,7 @@
             this.Controls.Add(this.lbNuevoEmp);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmEmpleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Empleados";

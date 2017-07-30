@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInabilitador));
             this.cboCliente = new MetroFramework.Controls.MetroComboBox();
             this.cboEmpleado = new MetroFramework.Controls.MetroComboBox();
             this.lblClienetes = new MetroFramework.Controls.MetroLabel();
@@ -1355,6 +1356,7 @@
             this.Controls.Add(this.lblClienetes);
             this.Controls.Add(this.cboEmpleado);
             this.Controls.Add(this.cboCliente);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmInabilitador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inhabilitador";
