@@ -44,7 +44,7 @@ namespace CapaDatos
         public DataTable buscar(int identificacion)
         {
             DataTable dtClientes;
-            dtClientes = conect.ejecutar("select Persona_idPersona from cliente where Persona_idPersona=('" + identificacion + "')");
+            dtClientes = conect.ejecutar("select Persona_idPersona from cliente where Persona_idPersona=('" + identificacion + "') and Activo=1");
             return dtClientes;
         }
     }

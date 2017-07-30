@@ -19,14 +19,14 @@ namespace CapaDatos
         {
             ClsConexion conect = new ClsConexion();
             DataTable dtTipoPeli;
-            dtTipoPeli = conect.ejecutar("Select idTipoPelicula,Descripcion from tipopelicula");
+            dtTipoPeli = conect.ejecutar("Select idTipoPelicula,Descripcion from tipopelicula where Activo=1");
             return dtTipoPeli;
         }
         public DataTable cargarGenPelicula()
         {
             ClsConexion conect = new ClsConexion();
             DataTable dtGenPeli;
-            dtGenPeli = conect.ejecutar("Select idGenero,Descripcion from generopelicula");
+            dtGenPeli = conect.ejecutar("Select idGenero,Descripcion from generopelicula where Activo=1");
             return dtGenPeli;
         }
 

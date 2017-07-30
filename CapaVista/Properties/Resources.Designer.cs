@@ -63,6 +63,16 @@ namespace CapaVista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1486506266_off_on_light_disable_disabled_switch_81467 {
+            get {
+                object obj = ResourceManager.GetObject("1486506266-off-on-light-disable-disabled-switch_81467", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add_1 {
             get {
                 object obj = ResourceManager.GetObject("add-1", resourceCulture);
@@ -306,6 +316,16 @@ namespace CapaVista.Properties {
         internal static System.Drawing.Bitmap id_card_41 {
             get {
                 object obj = ResourceManager.GetObject("id-card-41", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap info {
+            get {
+                object obj = ResourceManager.GetObject("info", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

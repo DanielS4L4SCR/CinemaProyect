@@ -64,7 +64,7 @@ namespace CapaVista
            if (cboProyeccion.SelectedValue != null)
             {
                 DataTable oDT = venta.llenarProducto(Convert.ToInt32(cboProyeccion.SelectedValue));
-                dgvVentas.Rows.Add(oDT.Rows[0]["id_Proyeccion"], oDT.Rows[0]["Peliculas_idPelicula"], oDT.Rows[0]["idSala"], oDT.Rows[0]["HoraInicio"], oDT.Rows[0]["HoraFinalizacion"], oDT.Rows[0]["FechaEstreno"], oDT.Rows[0]["Precio"],precioDescuento(),cboAsiento.Text, descuento());
+                dgvVentas.Rows.Add(oDT.Rows[0]["id_Proyeccion"], oDT.Rows[0]["Peliculas_idPelicula"], oDT.Rows[0]["idSala"], oDT.Rows[0]["HoraInicio"], oDT.Rows[0]["HoraFinalizacion"], oDT.Rows[0]["FechaProyeccion"], oDT.Rows[0]["Precio"],precioDescuento(),cboAsiento.Text, descuento());
                 
             }
             lbValor.Text = "" + total();

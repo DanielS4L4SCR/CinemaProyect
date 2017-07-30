@@ -44,6 +44,7 @@
     <Compile Include="ClsCliente.cs" />
     <Compile Include="ClsConexion.cs" />
     <Compile Include="ClsEmpleado.cs" />
+    <Compile Include="ClsInhabilitador.cs" />
     <Compile Include="ClsLogin.cs" />
     <Compile Include="ClsPago.cs" />
     <Compile Include="ClsPeliculas.cs" />

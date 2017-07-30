@@ -44,6 +44,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="clsCliente.cs" />
     <Compile Include="clsEmpleado.cs" />
+    <Compile Include="clsInhabilitador.cs" />
     <Compile Include="clsLogin.cs" />
     <Compile Include="clsPago.cs" />
     <Compile Include="clsPeliculas.cs" />

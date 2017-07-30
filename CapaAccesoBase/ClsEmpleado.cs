@@ -59,7 +59,7 @@ namespace CapaDatos
         public DataTable cargarTel()
         {
             DataTable dtTipoTelefonos;
-            dtTipoTelefonos = conect.ejecutar("Select idTipoTelefonio,Descripcion from tipotelefonio");
+            dtTipoTelefonos = conect.ejecutar("Select idTipoTelefonio,Descripcion from tipotelefonio ");
             return dtTipoTelefonos;
         }
 

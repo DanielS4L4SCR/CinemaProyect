@@ -229,5 +229,11 @@ namespace CapaVista
             FrmReporteVentasP reportes = new FrmReporteVentasP();
             reportes.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmInabilitador inabilitador = new FrmInabilitador();
+            inabilitador.Show();
+        }
     }
 }

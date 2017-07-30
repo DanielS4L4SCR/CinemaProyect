@@ -19,7 +19,7 @@ namespace CapaDatos
         {
             ClsConexion conect = new ClsConexion();
             DataTable dtPromocion;
-            dtPromocion = conect.ejecutar("Select id_Proyeccion,Precio from proyecciones");
+            dtPromocion = conect.ejecutar("Select id_Proyeccion,Precio from proyecciones where Activo=1");
             return dtPromocion;
         }
 

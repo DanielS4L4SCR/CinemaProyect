@@ -18,28 +18,28 @@ namespace CapaDatos
         public DataTable llenarProduct(int identificacion)
         {
             DataTable dtProd;
-            dtProd = conecta.ejecutar("Select id_Proyeccion, Peliculas_idPelicula, idSala, HoraInicio, HoraFinalizacion, FechaEstreno, Precio from proyecciones where id_Proyeccion=" + identificacion + ";");
+            dtProd = conecta.ejecutar("Select id_Proyeccion, Peliculas_idPelicula, idSala, HoraInicio, HoraFinalizacion,FechaProyeccion,Precio from proyecciones where id_Proyeccion=" + identificacion + " and Activo=1;");
             return dtProd;
         }
 
         public DataTable llenarCliente()
         {
             DataTable dtTipoCliente;
-            dtTipoCliente = conecta.ejecutar("Select idCliente,Persona_idPersona,TipoCliente_idTipoCliente from cliente");
+            dtTipoCliente = conecta.ejecutar("Select idCliente,Persona_idPersona,TipoCliente_idTipoCliente from cliente where Activo=1");
             return dtTipoCliente;
         }
 
         public DataTable llenarEmpleado()
         {
             DataTable dtEmpleado;
-            dtEmpleado = conecta.ejecutar("Select id_Empleado,Usuario_NombreUsuario,Usuario_Persona_idPersona from empleado");
+            dtEmpleado = conecta.ejecutar("Select id_Empleado,Usuario_NombreUsuario,Usuario_Persona_idPersona from empleado where Activo=1");
             return dtEmpleado;
         }
 
         public DataTable consultaTipoCliente(int cliente)
         {
             DataTable dtTipoCliente;
-            dtTipoCliente = conecta.ejecutar("Select TipoCliente_idTipoCliente from cliente where idCliente=" + cliente + "");
+            dtTipoCliente = conecta.ejecutar("Select TipoCliente_idTipoCliente from cliente where idCliente=" + cliente + " and Activo=1");
             return dtTipoCliente;
         }
         public DataTable consultaUltimaFactura()
@@ -51,7 +51,7 @@ namespace CapaDatos
         public DataTable cargaPrecios(int proyeccion)
         {
             DataTable dtPrecios;
-            dtPrecios = conecta.ejecutar("SELECT (Precio) FROM proyecciones where id_Proyeccion=" +proyeccion+"");
+            dtPrecios = conecta.ejecutar("SELECT (Precio) FROM proyecciones where id_Proyeccion=" +proyeccion+ " and Activo=1");
             return dtPrecios;
         }
         public bool insertarFactura(int idCliente, String idPersona, String fecha, Double montoTotal, int idEmpleado, int idTipoCLiente)
@@ -63,19 +63,19 @@ namespace CapaDatos
         public DataTable consultaPromoción(int tipoCliente,int proyeccion)
         {
             DataTable dtPromo;
-            dtPromo = conecta.ejecutar("Select idPromocion,Descripcion, PorcentajeDescuento from promocion where TipoCliente_idTipoCliente =" + tipoCliente+ " and Proyecciones_id_Proyeccion = " + proyeccion+"");
+            dtPromo = conecta.ejecutar("Select idPromocion,Descripcion, PorcentajeDescuento from promocion where TipoCliente_idTipoCliente =" + tipoCliente+ " and Proyecciones_id_Proyeccion = " + proyeccion+ " and Activo=1");
             return dtPromo;
         }
         public DataTable consultaSalas(int proyeccion)
         {
             DataTable dtSala;
-            dtSala = conecta.ejecutar("Select idSala from proyecciones where id_Proyeccion =" + proyeccion +"");
+            dtSala = conecta.ejecutar("Select idSala from proyecciones where id_Proyeccion =" + proyeccion + " and Activo=1");
             return dtSala;
         }
         public DataTable consultaAsientos(String sala)
         {
             DataTable dtSala;
-            dtSala = conecta.ejecutar("Select idAsiento from asiento where id_Sala = '" + sala + "'");
+            dtSala = conecta.ejecutar("Select idAsiento from asiento where id_Sala = '" + sala + "' and Activo=1");
             return dtSala;
         }
         public bool insertarDetalle(int factura,int proyeccion,Double precio,String asiento)

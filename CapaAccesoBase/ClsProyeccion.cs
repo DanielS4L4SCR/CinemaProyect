@@ -35,5 +35,7 @@ namespace CapaDatos
             dtPeli = conect.ejecutar("Select idPelicula,Nombre from peliculas");
             return dtPeli;
         }
+
+        
     }
 }
