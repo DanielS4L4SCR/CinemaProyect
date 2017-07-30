@@ -213,6 +213,16 @@ namespace CapaVista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_Carrito_de_compras_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-Carrito de compras-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_Close_Window_40 {
             get {
                 object obj = ResourceManager.GetObject("icons8-Close Window-40", resourceCulture);

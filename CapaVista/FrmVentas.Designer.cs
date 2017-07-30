@@ -579,7 +579,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
-            this.panel1.BackgroundImage = global::CapaVista.Properties.Resources.notepad_1;
+            this.panel1.BackgroundImage = global::CapaVista.Properties.Resources.icons8_Carrito_de_compras_64;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Location = new System.Drawing.Point(383, 35);
             this.panel1.Name = "panel1";
