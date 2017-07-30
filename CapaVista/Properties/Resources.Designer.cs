@@ -253,6 +253,16 @@ namespace CapaVista.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_Credenciales_de_usuario_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-Credenciales de usuario-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_Delete_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-Delete-50", resourceCulture);

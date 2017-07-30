@@ -40,7 +40,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panelReportes3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnCancelar2 = new System.Windows.Forms.Button();
+            this.btnFacturacion = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.lbUsuario = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -64,8 +67,6 @@
             this.btnNewMovie = new System.Windows.Forms.Button();
             this.btnAddEmpleado = new System.Windows.Forms.Button();
             this.btnCliente = new System.Windows.Forms.Button();
-            this.btnCancelar2 = new System.Windows.Forms.Button();
-            this.btnFacturacion = new System.Windows.Forms.Button();
             this.panelSubMenu.SuspendLayout();
             this.panelMenú.SuspendLayout();
             this.panelAgregar1.SuspendLayout();
@@ -203,11 +204,49 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Cancelar";
             // 
+            // btnCancelar2
+            // 
+            this.btnCancelar2.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelar2.BackgroundImage = global::CapaVista.Properties.Resources.icons8_Delete_50;
+            this.btnCancelar2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCancelar2.FlatAppearance.BorderSize = 0;
+            this.btnCancelar2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(236)))), ((int)(((byte)(237)))));
+            this.btnCancelar2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(236)))), ((int)(((byte)(237)))));
+            this.btnCancelar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar2.Location = new System.Drawing.Point(3, 15);
+            this.btnCancelar2.Name = "btnCancelar2";
+            this.btnCancelar2.Size = new System.Drawing.Size(57, 54);
+            this.btnCancelar2.TabIndex = 7;
+            this.btnCancelar2.UseVisualStyleBackColor = false;
+            this.btnCancelar2.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnFacturacion
+            // 
+            this.btnFacturacion.BackColor = System.Drawing.Color.Transparent;
+            this.btnFacturacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFacturacion.FlatAppearance.BorderSize = 0;
+            this.btnFacturacion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnFacturacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnFacturacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFacturacion.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnFacturacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFacturacion.ImageIndex = 9;
+            this.btnFacturacion.ImageList = this.IconsList;
+            this.btnFacturacion.Location = new System.Drawing.Point(3, 70);
+            this.btnFacturacion.Name = "btnFacturacion";
+            this.btnFacturacion.Size = new System.Drawing.Size(211, 76);
+            this.btnFacturacion.TabIndex = 1;
+            this.btnFacturacion.Text = "Facturación";
+            this.btnFacturacion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFacturacion.UseVisualStyleBackColor = false;
+            this.btnFacturacion.Click += new System.EventHandler(this.btnFacturacion_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.BackgroundImage = global::CapaVista.Properties.Resources.click_click1;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.lbUsuario);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
@@ -220,12 +259,22 @@
             this.panel1.TabIndex = 10;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(206)))));
+            this.panel2.BackgroundImage = global::CapaVista.Properties.Resources.icons8_Credenciales_de_usuario_64;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel2.Location = new System.Drawing.Point(1260, 6);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(45, 25);
+            this.panel2.TabIndex = 11;
+            // 
             // lbUsuario
             // 
             this.lbUsuario.AutoSize = true;
             this.lbUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(206)))));
             this.lbUsuario.Font = new System.Drawing.Font("Tekton Pro Ext", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUsuario.Location = new System.Drawing.Point(1316, 12);
+            this.lbUsuario.Location = new System.Drawing.Point(1355, 14);
             this.lbUsuario.Name = "lbUsuario";
             this.lbUsuario.Size = new System.Drawing.Size(52, 15);
             this.lbUsuario.TabIndex = 5;
@@ -236,7 +285,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(206)))));
             this.label6.Font = new System.Drawing.Font("Tekton Pro Ext", 8.999999F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(1263, 13);
+            this.label6.Location = new System.Drawing.Point(1302, 15);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(59, 15);
             this.label6.TabIndex = 4;
@@ -622,43 +671,6 @@
             this.btnCliente.UseVisualStyleBackColor = false;
             this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
             // 
-            // btnCancelar2
-            // 
-            this.btnCancelar2.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancelar2.BackgroundImage = global::CapaVista.Properties.Resources.icons8_Delete_50;
-            this.btnCancelar2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCancelar2.FlatAppearance.BorderSize = 0;
-            this.btnCancelar2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(236)))), ((int)(((byte)(237)))));
-            this.btnCancelar2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(236)))), ((int)(((byte)(237)))));
-            this.btnCancelar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar2.Location = new System.Drawing.Point(3, 15);
-            this.btnCancelar2.Name = "btnCancelar2";
-            this.btnCancelar2.Size = new System.Drawing.Size(57, 54);
-            this.btnCancelar2.TabIndex = 7;
-            this.btnCancelar2.UseVisualStyleBackColor = false;
-            this.btnCancelar2.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnFacturacion
-            // 
-            this.btnFacturacion.BackColor = System.Drawing.Color.Transparent;
-            this.btnFacturacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFacturacion.FlatAppearance.BorderSize = 0;
-            this.btnFacturacion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.btnFacturacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnFacturacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFacturacion.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.btnFacturacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFacturacion.ImageIndex = 9;
-            this.btnFacturacion.ImageList = this.IconsList;
-            this.btnFacturacion.Location = new System.Drawing.Point(3, 70);
-            this.btnFacturacion.Name = "btnFacturacion";
-            this.btnFacturacion.Size = new System.Drawing.Size(211, 76);
-            this.btnFacturacion.TabIndex = 1;
-            this.btnFacturacion.Text = "Facturación";
-            this.btnFacturacion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnFacturacion.UseVisualStyleBackColor = false;
-            this.btnFacturacion.Click += new System.EventHandler(this.btnFacturacion_Click);
-            // 
             // FrmPrincipall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -729,6 +741,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 
