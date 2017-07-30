@@ -93,10 +93,10 @@
             // lbRegresar
             // 
             this.lbRegresar.AutoSize = true;
-            this.lbRegresar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRegresar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbRegresar.Location = new System.Drawing.Point(72, 0);
             this.lbRegresar.Name = "lbRegresar";
-            this.lbRegresar.Size = new System.Drawing.Size(115, 32);
+            this.lbRegresar.Size = new System.Drawing.Size(90, 25);
             this.lbRegresar.TabIndex = 6;
             this.lbRegresar.Text = "Regresar";
             // 
@@ -104,27 +104,18 @@
             // 
             this.IconsList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("IconsList.ImageStream")));
             this.IconsList.TransparentColor = System.Drawing.Color.Transparent;
-            this.IconsList.Images.SetKeyName(0, "051-add.png");
-            this.IconsList.Images.SetKeyName(1, "add-1.png");
-            this.IconsList.Images.SetKeyName(2, "add-2.png");
-            this.IconsList.Images.SetKeyName(3, "archive-1.png");
-            this.IconsList.Images.SetKeyName(4, "icons8-Badge-50.png");
-            this.IconsList.Images.SetKeyName(5, "icons8-Blog-50.png");
-            this.IconsList.Images.SetKeyName(6, "icons8-Decrease-50.png");
-            this.IconsList.Images.SetKeyName(7, "icons8-Money-50.png");
-            this.IconsList.Images.SetKeyName(8, "icons8-Movie Projector-50.png");
-            this.IconsList.Images.SetKeyName(9, "icons8-Movie-64.png");
-            this.IconsList.Images.SetKeyName(10, "icons8-Shopping Cart-50.png");
-            this.IconsList.Images.SetKeyName(11, "multiply-1.png");
-            this.IconsList.Images.SetKeyName(12, "icons8-Guest Male Filled-50.png");
-            this.IconsList.Images.SetKeyName(13, "icons8-Voucher-50.png");
-            this.IconsList.Images.SetKeyName(14, "icons8-School Director Male Skin Type 4-40.png");
-            this.IconsList.Images.SetKeyName(15, "icons8-Coins-50.png");
-            this.IconsList.Images.SetKeyName(16, "icons8-Movies Folder-50.png");
-            this.IconsList.Images.SetKeyName(17, "icons8-Aircraft Seat Aisle-50.png");
-            this.IconsList.Images.SetKeyName(18, "spotlight.png");
-            this.IconsList.Images.SetKeyName(19, "multiply-1.png");
-            this.IconsList.Images.SetKeyName(20, "1486506266-off-on-light-disable-disabled-switch_81467.png");
+            this.IconsList.Images.SetKeyName(0, "icons8-Más-40.png");
+            this.IconsList.Images.SetKeyName(1, "icons8-Carrito de compras-64.png");
+            this.IconsList.Images.SetKeyName(2, "icons8-Gráfico combinado-40.png");
+            this.IconsList.Images.SetKeyName(3, "icons8-Xbox X-50.png");
+            this.IconsList.Images.SetKeyName(4, "icons8-Agregar administrador Filled-50.png");
+            this.IconsList.Images.SetKeyName(5, "icons8-School Director Male Skin Type 4-40.png");
+            this.IconsList.Images.SetKeyName(6, "icons8-Película-40.png");
+            this.IconsList.Images.SetKeyName(7, "icons8-Proyector de películas-40.png");
+            this.IconsList.Images.SetKeyName(8, "icons8-Voucher-50.png");
+            this.IconsList.Images.SetKeyName(9, "icons8-Caja registradora-50.png");
+            this.IconsList.Images.SetKeyName(10, "icons8-Monedas-50.png");
+            this.IconsList.Images.SetKeyName(11, "icons8-Usuario de género neutro-40.png");
             // 
             // panelMenú
             // 
@@ -157,10 +148,10 @@
             // lbCancelar
             // 
             this.lbCancelar.AutoSize = true;
-            this.lbCancelar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCancelar.Location = new System.Drawing.Point(67, 28);
+            this.lbCancelar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCancelar.Location = new System.Drawing.Point(67, 4);
             this.lbCancelar.Name = "lbCancelar";
-            this.lbCancelar.Size = new System.Drawing.Size(113, 32);
+            this.lbCancelar.Size = new System.Drawing.Size(88, 25);
             this.lbCancelar.TabIndex = 6;
             this.lbCancelar.Text = "Cancelar";
             this.lbCancelar.Click += new System.EventHandler(this.lbCancelar_Click);
@@ -180,10 +171,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(67, 26);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(66, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 32);
+            this.label1.Size = new System.Drawing.Size(88, 25);
             this.label1.TabIndex = 6;
             this.label1.Text = "Cancelar";
             // 
@@ -205,10 +196,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(67, 26);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(67, 8);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 32);
+            this.label2.Size = new System.Drawing.Size(88, 25);
             this.label2.TabIndex = 6;
             this.label2.Text = "Cancelar";
             // 
@@ -325,7 +316,7 @@
             this.btnVentas2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVentas2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnVentas2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVentas2.ImageIndex = 10;
+            this.btnVentas2.ImageIndex = 1;
             this.btnVentas2.ImageList = this.IconsList;
             this.btnVentas2.Location = new System.Drawing.Point(1, 146);
             this.btnVentas2.Name = "btnVentas2";
@@ -346,7 +337,7 @@
             this.btnReportes3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReportes3.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnReportes3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes3.ImageIndex = 6;
+            this.btnReportes3.ImageIndex = 2;
             this.btnReportes3.ImageList = this.IconsList;
             this.btnReportes3.Location = new System.Drawing.Point(8, 228);
             this.btnReportes3.Name = "btnReportes3";
@@ -420,7 +411,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.ImageIndex = 12;
+            this.button4.ImageIndex = 11;
             this.button4.ImageList = this.IconsList;
             this.button4.Location = new System.Drawing.Point(2, 276);
             this.button4.Name = "button4";
@@ -441,7 +432,7 @@
             this.btnFondos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFondos.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnFondos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFondos.ImageIndex = 7;
+            this.btnFondos.ImageIndex = 10;
             this.btnFondos.ImageList = this.IconsList;
             this.btnFondos.Location = new System.Drawing.Point(3, 207);
             this.btnFondos.Name = "btnFondos";
@@ -462,7 +453,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.ImageIndex = 16;
+            this.button1.ImageIndex = 7;
             this.button1.ImageList = this.IconsList;
             this.button1.Location = new System.Drawing.Point(3, 137);
             this.button1.Name = "button1";
@@ -499,7 +490,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.ImageIndex = 5;
+            this.button2.ImageIndex = 9;
             this.button2.ImageList = this.IconsList;
             this.button2.Location = new System.Drawing.Point(2, 64);
             this.button2.Name = "button2";
@@ -520,7 +511,7 @@
             this.btnProyeccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProyeccion.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnProyeccion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProyeccion.ImageIndex = 18;
+            this.btnProyeccion.ImageIndex = 7;
             this.btnProyeccion.ImageList = this.IconsList;
             this.btnProyeccion.Location = new System.Drawing.Point(1, 269);
             this.btnProyeccion.Name = "btnProyeccion";
@@ -557,7 +548,7 @@
             this.btnPromo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPromo.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnPromo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPromo.ImageIndex = 13;
+            this.btnPromo.ImageIndex = 8;
             this.btnPromo.ImageList = this.IconsList;
             this.btnPromo.Location = new System.Drawing.Point(2, 334);
             this.btnPromo.Name = "btnPromo";
@@ -578,7 +569,7 @@
             this.btnNewMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNewMovie.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnNewMovie.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNewMovie.ImageIndex = 9;
+            this.btnNewMovie.ImageIndex = 6;
             this.btnNewMovie.ImageList = this.IconsList;
             this.btnNewMovie.Location = new System.Drawing.Point(3, 205);
             this.btnNewMovie.Name = "btnNewMovie";
@@ -599,7 +590,7 @@
             this.btnAddEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddEmpleado.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnAddEmpleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddEmpleado.ImageIndex = 14;
+            this.btnAddEmpleado.ImageIndex = 5;
             this.btnAddEmpleado.ImageList = this.IconsList;
             this.btnAddEmpleado.Location = new System.Drawing.Point(2, 137);
             this.btnAddEmpleado.Name = "btnAddEmpleado";
@@ -620,7 +611,7 @@
             this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCliente.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCliente.ImageIndex = 12;
+            this.btnCliente.ImageIndex = 4;
             this.btnCliente.ImageList = this.IconsList;
             this.btnCliente.Location = new System.Drawing.Point(3, 64);
             this.btnCliente.Name = "btnCliente";
@@ -657,7 +648,7 @@
             this.btnFacturacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFacturacion.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnFacturacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFacturacion.ImageIndex = 15;
+            this.btnFacturacion.ImageIndex = 9;
             this.btnFacturacion.ImageList = this.IconsList;
             this.btnFacturacion.Location = new System.Drawing.Point(3, 70);
             this.btnFacturacion.Name = "btnFacturacion";
@@ -675,12 +666,12 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(206)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1908, 1045);
+            this.Controls.Add(this.panelVentas2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelSubMenu);
             this.Controls.Add(this.panelMenú);
             this.Controls.Add(this.panelReportes3);
             this.Controls.Add(this.panelAgregar1);
-            this.Controls.Add(this.panelVentas2);
             this.Name = "FrmPrincipall";
             this.Text = "Menú";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

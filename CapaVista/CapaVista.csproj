@@ -354,5 +354,8 @@
   <ItemGroup>
     <None Include="Resources\1486506266-off-on-light-disable-disabled-switch_81467.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Cancelar-40.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
