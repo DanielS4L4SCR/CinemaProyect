@@ -17,5 +17,13 @@ namespace CapaDatos
             dtUsarios = conexion.ejecutar("Select NombreUsuario from Usuario where NombreUsuario='" + user + "' and Contraseña='" + password + "' and Activo=1");
             return dtUsarios;
         }
+        public DataTable CargarTipoUsuario(String user)
+        {
+            CapaDatos.ClsConexion conexion = new ClsConexion();
+            DataTable dtUsarios;
+
+            dtUsarios = conexion.ejecutar("Select NombreUsuario,TipoUsuario_idTipoUsuario from Usuario where NombreUsuario='" + user + "'");
+            return dtUsarios;
+        }
     }
 }

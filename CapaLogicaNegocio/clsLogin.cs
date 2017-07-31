@@ -13,5 +13,9 @@ namespace CapaNegocios
         {
             return new CapaDatos.ClsLogin().CargarDatos(user, password);
         }
+        public DataTable TipoUsuario(String user)
+        {
+            return new CapaDatos.ClsLogin().CargarTipoUsuario(user);
+        }
     }
 }

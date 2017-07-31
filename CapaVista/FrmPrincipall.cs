@@ -56,6 +56,15 @@ namespace CapaVista
         {
             lbFecha.Text = DateTime.Today.ToShortDateString();
             timer1.Start();
+
+            CapaNegocios.clsLogin TipoUsuario = new CapaNegocios.clsLogin();
+            DataTable dtTipoUsuario;
+            dtTipoUsuario = TipoUsuario.TipoUsuario(lbUsuario.Text);
+            cboTipoUsuario.DataSource = dtTipoUsuario;
+            cboTipoUsuario.DisplayMember = "TipoUsuario_idTipoUsuario";
+            cboTipoUsuario.ValueMember = "TipoUsuario_idTipoUsuario";
+
+            tipoUsuario();
         }
         private void button5_Click(object sender, EventArgs e)
         {
@@ -234,6 +243,24 @@ namespace CapaVista
         private void timer1_Tick(object sender, EventArgs e)
         {
             lbReloj.Text = DateTime.Now.ToLongTimeString();
+        }
+        public void tipoUsuario()
+        {
+            if(cboTipoUsuario.Text=="2")
+            {
+                btnAgregar1.Enabled = false;
+                btnReportes3.Enabled = false;
+                btnInabilitador4.Enabled = false;
+            }else
+            {
+                btnAgregar1.Enabled = true;
+                btnReportes3.Enabled = true;
+                btnInabilitador4.Enabled = true;
+            }
+        }
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

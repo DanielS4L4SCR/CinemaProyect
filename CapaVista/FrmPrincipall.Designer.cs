@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipall));
             this.panelSubMenu = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnInabilitador4 = new System.Windows.Forms.Button();
             this.lbRegresar = new System.Windows.Forms.Label();
             this.btnVentas2 = new System.Windows.Forms.Button();
             this.IconsList = new System.Windows.Forms.ImageList(this.components);
@@ -67,9 +67,11 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.lbReloj = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lbFecha = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -79,12 +81,11 @@
             this.lbUsuario = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lbFecha = new System.Windows.Forms.Label();
+            this.cboTipoUsuario = new MetroFramework.Controls.MetroComboBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.lbReloj = new System.Windows.Forms.Label();
             this.panelSubMenu.SuspendLayout();
             this.panelMenú.SuspendLayout();
             this.panelAgregar1.SuspendLayout();
@@ -103,7 +104,7 @@
             // 
             this.panelSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(212)))), ((int)(((byte)(227)))));
             this.panelSubMenu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelSubMenu.Controls.Add(this.button3);
+            this.panelSubMenu.Controls.Add(this.btnInabilitador4);
             this.panelSubMenu.Controls.Add(this.lbRegresar);
             this.panelSubMenu.Controls.Add(this.btnVentas2);
             this.panelSubMenu.Controls.Add(this.btnReportes3);
@@ -115,25 +116,25 @@
             this.panelSubMenu.TabIndex = 6;
             this.panelSubMenu.Visible = false;
             // 
-            // button3
+            // btnInabilitador4
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(4, 310);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(211, 76);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Inabilitador";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnInabilitador4.BackColor = System.Drawing.Color.Transparent;
+            this.btnInabilitador4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnInabilitador4.FlatAppearance.BorderSize = 0;
+            this.btnInabilitador4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
+            this.btnInabilitador4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(223)))), ((int)(((byte)(229)))));
+            this.btnInabilitador4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInabilitador4.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnInabilitador4.Image = ((System.Drawing.Image)(resources.GetObject("btnInabilitador4.Image")));
+            this.btnInabilitador4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInabilitador4.Location = new System.Drawing.Point(4, 310);
+            this.btnInabilitador4.Name = "btnInabilitador4";
+            this.btnInabilitador4.Size = new System.Drawing.Size(211, 76);
+            this.btnInabilitador4.TabIndex = 7;
+            this.btnInabilitador4.Text = "Inabilitador";
+            this.btnInabilitador4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInabilitador4.UseVisualStyleBackColor = false;
+            this.btnInabilitador4.Click += new System.EventHandler(this.button3_Click);
             // 
             // lbRegresar
             // 
@@ -610,12 +611,12 @@
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.lbCinemaPro);
             this.panel1.Location = new System.Drawing.Point(451, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2000, 1000);
             this.panel1.TabIndex = 10;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel8
             // 
@@ -692,6 +693,17 @@
             this.panel6.Size = new System.Drawing.Size(722, 35);
             this.panel6.TabIndex = 15;
             // 
+            // lbReloj
+            // 
+            this.lbReloj.AutoSize = true;
+            this.lbReloj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(159)))), ((int)(((byte)(185)))));
+            this.lbReloj.Font = new System.Drawing.Font("Tekton Pro Ext", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbReloj.Location = new System.Drawing.Point(616, 5);
+            this.lbReloj.Name = "lbReloj";
+            this.lbReloj.Size = new System.Drawing.Size(52, 16);
+            this.lbReloj.TabIndex = 13;
+            this.lbReloj.Text = "2017";
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -725,6 +737,17 @@
             this.panel5.Size = new System.Drawing.Size(1071, 35);
             this.panel5.TabIndex = 14;
             // 
+            // lbFecha
+            // 
+            this.lbFecha.AutoSize = true;
+            this.lbFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(203)))), ((int)(((byte)(225)))));
+            this.lbFecha.Font = new System.Drawing.Font("Tekton Pro Ext", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFecha.Location = new System.Drawing.Point(881, 16);
+            this.lbFecha.Name = "lbFecha";
+            this.lbFecha.Size = new System.Drawing.Size(52, 16);
+            this.lbFecha.TabIndex = 12;
+            this.lbFecha.Text = "2017";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -750,9 +773,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(206)))));
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(161)))));
             this.label4.Font = new System.Drawing.Font("Tekton Pro Ext", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(970, 944);
+            this.label4.Location = new System.Drawing.Point(732, 8);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(489, 20);
             this.label4.TabIndex = 2;
@@ -815,24 +838,31 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(161)))));
+            this.panel3.Controls.Add(this.cboTipoUsuario);
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.lbUsuario);
             this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(0, 988);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(2039, 100);
             this.panel3.TabIndex = 12;
             // 
-            // lbFecha
+            // cboTipoUsuario
             // 
-            this.lbFecha.AutoSize = true;
-            this.lbFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(203)))), ((int)(((byte)(225)))));
-            this.lbFecha.Font = new System.Drawing.Font("Tekton Pro Ext", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFecha.Location = new System.Drawing.Point(892, 16);
-            this.lbFecha.Name = "lbFecha";
-            this.lbFecha.Size = new System.Drawing.Size(52, 16);
-            this.lbFecha.TabIndex = 12;
-            this.lbFecha.Text = "2017";
+            this.cboTipoUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(140)))), ((int)(((byte)(161)))));
+            this.cboTipoUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
+            this.cboTipoUsuario.FormattingEnabled = true;
+            this.cboTipoUsuario.ItemHeight = 23;
+            this.cboTipoUsuario.Location = new System.Drawing.Point(1390, 18);
+            this.cboTipoUsuario.Name = "cboTipoUsuario";
+            this.cboTipoUsuario.Size = new System.Drawing.Size(149, 29);
+            this.cboTipoUsuario.TabIndex = 180;
+            this.cboTipoUsuario.UseCustomBackColor = true;
+            this.cboTipoUsuario.UseCustomForeColor = true;
+            this.cboTipoUsuario.UseSelectable = true;
+            this.cboTipoUsuario.UseStyleColors = true;
+            this.cboTipoUsuario.Visible = false;
             // 
             // panel4
             // 
@@ -870,17 +900,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // lbReloj
-            // 
-            this.lbReloj.AutoSize = true;
-            this.lbReloj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(159)))), ((int)(((byte)(185)))));
-            this.lbReloj.Font = new System.Drawing.Font("Tekton Pro Ext", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbReloj.Location = new System.Drawing.Point(616, 5);
-            this.lbReloj.Name = "lbReloj";
-            this.lbReloj.Size = new System.Drawing.Size(52, 16);
-            this.lbReloj.TabIndex = 13;
-            this.lbReloj.Text = "2017";
             // 
             // FrmPrincipall
             // 
@@ -962,7 +981,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnInabilitador4;
         public System.Windows.Forms.Label lbUsuario;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label6;
@@ -985,6 +1004,7 @@
         private System.Windows.Forms.Label lbFecha;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lbReloj;
+        private MetroFramework.Controls.MetroComboBox cboTipoUsuario;
     }
 }
 
