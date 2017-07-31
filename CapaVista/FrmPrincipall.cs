@@ -54,7 +54,8 @@ namespace CapaVista
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            lbFecha.Text = DateTime.Today.ToShortDateString();
+            timer1.Start();
         }
         private void button5_Click(object sender, EventArgs e)
         {
@@ -194,12 +195,6 @@ namespace CapaVista
             FrmPromocion promocion = new FrmPromocion();
             promocion.Show();
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
         private void btnFacturacion_Click(object sender, EventArgs e)
         {
             FrmVentas ventas = new FrmVentas();
@@ -234,6 +229,11 @@ namespace CapaVista
         {
             FrmInabilitador inabilitador = new FrmInabilitador();
             inabilitador.Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbReloj.Text = DateTime.Now.ToLongTimeString();
         }
     }
 }
