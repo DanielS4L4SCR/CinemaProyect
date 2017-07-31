@@ -90,7 +90,7 @@ namespace CapaVista
             }
             else if(rbAdultM.Checked==true)
             {
-                return result = 2;
+                return result = 4;
             }
             else if (rbAdolescente.Checked == true)
             {
@@ -98,7 +98,7 @@ namespace CapaVista
             }
             else if (rbAdult.Checked == true)
             {
-                return result = 4;
+                return result = 2;
             }
             return result;
         }
@@ -115,6 +115,8 @@ namespace CapaVista
             rbChildren.Checked = false;
             rbAdult.Checked = false;
         }
-        }
+
+        
+    }
     }
 

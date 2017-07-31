@@ -412,7 +412,7 @@
             this.rbAdultM.AutoSize = true;
             this.rbAdultM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
             this.rbAdultM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.rbAdultM.Location = new System.Drawing.Point(99, 19);
+            this.rbAdultM.Location = new System.Drawing.Point(99, 47);
             this.rbAdultM.Name = "rbAdultM";
             this.rbAdultM.Size = new System.Drawing.Size(96, 15);
             this.rbAdultM.TabIndex = 20;
@@ -449,7 +449,7 @@
             this.rbAdult.AutoSize = true;
             this.rbAdult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
             this.rbAdult.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(100)))), ((int)(((byte)(104)))));
-            this.rbAdult.Location = new System.Drawing.Point(99, 50);
+            this.rbAdult.Location = new System.Drawing.Point(99, 19);
             this.rbAdult.Name = "rbAdult";
             this.rbAdult.Size = new System.Drawing.Size(59, 15);
             this.rbAdult.TabIndex = 22;

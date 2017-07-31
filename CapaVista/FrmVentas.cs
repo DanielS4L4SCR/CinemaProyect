@@ -196,6 +196,7 @@ namespace CapaVista
                 if (cboAsiento.Text=="")
                 {
                     MessageBox.Show("Debe seleccionar los asientos, puede visualizarlos en el botón: ''ver asientos''", "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                    dgvVentas.Rows.Remove(dgvVentas.CurrentRow);
                 }
                 else if (factura.insertarFactura(Convert.ToInt32(cboCliente.SelectedValue), cboCliente.Text, DtFecha.Text, total(), Convert.ToInt32(cboEmpleado.SelectedValue), Convert.ToInt32(cboTipoCliente.SelectedValue)))
                 {
