@@ -29,17 +29,17 @@ namespace CapaVista
             CapaNegocios.clsLogin login = new CapaNegocios.clsLogin();
             String text = txtUsuario.Text;
             FrmPrincipall Principal = new FrmPrincipall(text);
-
+            FrmLogin loginn = new FrmLogin();
             if(login.login(txtUsuario.Text,txtContraseña.Text).Rows.Count>0 &&txtUsuario.Text!=""&&txtContraseña.Text!="")
             {
                 Principal.Show();    
-                limpiar();
-                new FrmLogin().Close();
+                limpiar();          
             }
             else
             {
                 MessageBox.Show("Usuario o contraseña invalidos, intente de nuevo", "Error", MessageBoxButtons.RetryCancel,MessageBoxIcon.Error);
             }
+            
         }
         public void limpiar()
         {
